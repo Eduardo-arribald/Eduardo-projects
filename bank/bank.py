@@ -1,8 +1,7 @@
 greet = input("Greeting: ").lower().split()
 
-for 
-
-
+print(list(greet))
+print(str(list(greet)))
 
 if "hello" in greet:
     print("$0")
