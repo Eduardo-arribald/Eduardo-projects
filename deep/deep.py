@@ -1,6 +1,6 @@
 
-answer = input("What is the Answer to the Great Question of Life, the Universe, and Everything? ").strip()
-yes = ["42", "Forty Two", "forty-two"]
+answer = input("What is the Answer to the Great Question of Life, the Universe, and Everything? ").strip().lower()
+yes = ["42", "forty two", "forty-two"]
 
 if answer in yes:
     print("Yes")
