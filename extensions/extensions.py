@@ -2,13 +2,13 @@
 file = input("File name: ").split(".")
 
 info = {
-    {"termination":"gif", "type":"image/gif"},
-    {"termination":"jpg", "type":"image/jpeg"},
-    {"termination":"jpeg", "type":"image/jpeg"},
-    {"termination":"png", "type":"image/png"},
-    {"termination":"pdf", "type":"application/pdf"},
-    {"termination":"txt", "type":"text/plain"},
-    {"termination":"zip", "type":"application/zip"},
+    "gif":"image/gif",
+    "jpg":"image/jpeg",
+    "jpeg":"image/jpeg",
+    "png":"image/png",
+    "pdf":"application/pdf",
+    "txt":"text/plain",
+    "zip":"application/zip",
 }
 
 def main():
@@ -17,12 +17,12 @@ def main():
 print(file)
 
 def checking(doc):
-    for kind in info:
-        if file[i] == ".":
-            file[i] = "/"
-            file = ''.join(file)
-            print(file)
+    for k in info:
+        if k == file[1]:
+            print(info.get(k))
             break
-        elif "." not in file:
+        else:
             print("application/octet-stream")
             break
+
+checking()
