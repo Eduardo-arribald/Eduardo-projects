@@ -18,11 +18,11 @@ print(file)
 
 def checking(doc):
     for kind in info:
-    if file[i] == ".":
-        file[i] = "/"
-        file = ''.join(file)
-        print(file)
-        break
-    elif "." not in file:
-        print("application/octet-stream")
-        break"""
+        if file[i] == ".":
+            file[i] = "/"
+            file = ''.join(file)
+            print(file)
+            break
+        elif "." not in file:
+            print("application/octet-stream")
+            break
