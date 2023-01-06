@@ -1,4 +1,4 @@
-greet = input("Greeting: ").lower().split()
+greet = str(input("Greeting: ").lower().split())
 
 greet_list = list(greet)
 
