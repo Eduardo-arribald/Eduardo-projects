@@ -8,6 +8,6 @@ for i in range(len(file)):
     else:
         continue
 
+file = ''.join(file)
 
-
-print(str(file))
+print(file)
