@@ -1,7 +1,12 @@
 
-file = list(input("File name: "))
+file = input("File name: ").split(".")
 
 
+
+print(file)
+
+
+"""
 for i in range(len(file)):
     if file[i] == ".":
         file[i] = "/"
@@ -10,4 +15,4 @@ for i in range(len(file)):
         break
     elif "." not in file:
         print("application/octet-stream")
-        break
+        break"""
