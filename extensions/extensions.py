@@ -1,7 +1,7 @@
 
-file = input("File name: ").lower().split()
+file = ''.join((input("File name: ").lower().split()))
 
-print(file)
+file = file.split(".")
 
 info = {
     "gif":"image/gif",
@@ -22,4 +22,4 @@ def checking(doc):
             print("application/octet-stream")
             break
 
-#checking(file)
+checking(file)
