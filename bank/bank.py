@@ -1,10 +1,10 @@
 
-greet = input("Greeting: ").lower()
+greet = input("Greeting: ").lower().split()
 
 
-#.split()
 
-print(list(greet))
+print(list(greet[0]))
+
 #greet_list = list(greet)
 
 
