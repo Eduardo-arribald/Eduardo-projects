@@ -11,17 +11,12 @@ info = {
     "zip":"application/zip",
 }
 
-def main():
-    checking
-
-print(file)
-
 def checking(doc):
     for k in info:
         if k == doc[1]:
             print(info.get(k))
             break
-        else:
+        elif k not in doc:
             print("application/octet-stream")
 
 checking(file)
