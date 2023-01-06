@@ -1,9 +1,14 @@
 
 greet = input("Greeting: ").lower().split()
 
+first = list(greet[0])
 
+hello = list("hello")
 
-print(list(greet[0]))
+if hello in first:
+    print("simon")
+else:
+    print("mal")
 
 #greet_list = list(greet)
 
