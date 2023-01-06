@@ -3,4 +3,5 @@ greet = input("Greeting: ").lower().split()
 
 
 
-if greet == "Hello":
+if "hello" in greet:
+    print("$0")
