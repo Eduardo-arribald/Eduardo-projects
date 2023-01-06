@@ -18,5 +18,6 @@ def checking(doc):
             break
         elif doc[1] not in info.keys():
             print("application/octet-stream")
+            break
 
 checking(file)
