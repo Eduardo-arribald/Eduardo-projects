@@ -11,6 +11,3 @@ for i in range(len(file)):
     elif "." not in file:
         print("application/octet-stream")
         break
-    else:
-        continue
-
