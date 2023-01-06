@@ -15,7 +15,10 @@ info = {
 
 def checking(doc):
     for k in info:
-        if k == doc[1]:
+        if k == doc[2]:
+            print(info.get(k))
+            break
+        elif k == doc[1]:
             print(info.get(k))
             break
         elif doc[1] not in info.keys():
