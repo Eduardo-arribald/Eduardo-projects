@@ -18,11 +18,10 @@ print(file)
 
 def checking(doc):
     for k in info:
-        if k == file[1]:
+        if k == doc[1]:
             print(info.get(k))
             break
         else:
             print("application/octet-stream")
-            break
 
-checking()
+checking(file)
