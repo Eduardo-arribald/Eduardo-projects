@@ -16,7 +16,7 @@ def checking(doc):
         if k == doc[1]:
             print(info.get(k))
             break
-        elif k not in doc:
+        elif doc[1] not in info.keys():
             print("application/octet-stream")
 
 checking(file)
