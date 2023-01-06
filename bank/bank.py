@@ -1,12 +1,16 @@
 
 greet = input("Greeting: ").lower().split()
 
-first = list(greet[0])
+first = list(greet[0])[0:5]
 
 hello = list("hello")
 
-if hello in first:
+print(first)
+
+if hello == first:
     print("simon")
+elif first[0]=="h":
+    print("también")
 else:
     print("mal")
 
