@@ -1,5 +1,6 @@
 greet = input("Greeting: ").lower().split()
 
+for 
 
 
 
