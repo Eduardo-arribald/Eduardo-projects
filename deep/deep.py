@@ -4,6 +4,6 @@ yes = ["42", "forty two", "forty-two"]
 
 if answer in yes:
     print("Yes")
-elif answer == 50:
+elif answer == "50":
     print("No")
 
