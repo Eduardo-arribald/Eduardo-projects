@@ -1,5 +1,5 @@
 
-file = input("File name: ").split(".")
+file = input("File name: ").lower().split(".")
 
 info = {
     "gif":"image/gif",
