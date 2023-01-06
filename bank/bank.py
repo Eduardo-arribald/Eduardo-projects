@@ -1,6 +1,10 @@
-greet = input("Greeting: ").lower().split()
 
-print(greet)
+greet = input("Greeting: ").lower()
+
+
+#.split()
+
+print(list(greet))
 #greet_list = list(greet)
 
 
@@ -9,3 +13,4 @@ print(greet)
 
 #if ["hello", "hello", "hello.", "hello"] in greet:
     #print("$0")
+
