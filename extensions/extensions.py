@@ -21,11 +21,12 @@ def checking(doc):
                 case k:
                     print(info.get(k))
                     break
-        elif k == doc[1]:
+        elif doc[1] is not None:
             print(info.get(k))
             break
         elif doc[1] and doc[2] not in info.keys():
             print("application/octet-stream")
             break
+        else:
 
 checking(file)
