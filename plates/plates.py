@@ -39,7 +39,7 @@ def is_valid(s):
                     if s[i] in numbers and i+1 < len(s) and s[i+1] not in numbers:
                         #print("There are numbers in the middle.")
                         return False
-                    elif s[i] == '0' and s[i-1].lower() in alpha:
+                    elif s[i] == '0' and s[i-1] in alpha:
                         #print("Zero in the middle.")
                         return False
                 return True
