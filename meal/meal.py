@@ -1,7 +1,6 @@
 
 def main():
-    t = input("What time is it? ")
-    t = convert_2(t)
+    t = convert(input("What time is it? "))
     if 7 <= t <=8:
         print("breakfast time")
     elif 12 <= t <= 13:
@@ -19,6 +18,7 @@ def convert_2(time):
     n = time.split()
     print(n)
     h, m = n[0].split(":")
+    print(h)
     if n[-1] == "p.m.":
         return round((12 + int(h) + (int(m)/60)), 2)
     else:
