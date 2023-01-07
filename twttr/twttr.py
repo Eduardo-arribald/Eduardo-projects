@@ -11,8 +11,8 @@ def delete_vowels(w):
     print(w)
     for l in range(len(w)):
         if w[l] in vowels:
-            w.pop(l, inplace = True)
             print(w[l])
+            w.pop(l)
     return (''.join(w))
 
 main()
