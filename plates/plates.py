@@ -35,14 +35,13 @@ def is_valid(s):
                     if s[i] in punt:
                         print("You wrote a punctuation symbol.")
                         return False
-                    else:
-                        while i < (len(s)):
-                            if s[-(i+2)] in numbers and s[-(i+1)] not in numbers:
-                                print("There are numbers in the middle.")
-                                return False
-                            else:
-                                print("Todo bien")
-                                return True
+                    while i < (len(s)):
+                        if s[-(i+2)] in numbers and s[-(i+1)] not in numbers:
+                            print("There are numbers in the middle.")
+                            return False
+                        else:
+                            print("Todo bien")
+                            return True
             else:
                 print("The first two are not letters.")
         else:
