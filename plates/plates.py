@@ -12,7 +12,7 @@ def is_valid(s):
         'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u',
         'v', 'w', 'x', 'y', 'z'
     )
-    punctuations = (
+    punt = (
         '-', '.', ',', '?', '!', '*', '+', '/', '', ' '
     )
     numbers = (
@@ -32,7 +32,10 @@ def is_valid(s):
                 for i in range(len(s)):
                     print(s[i])
                     print(s[-(i+2)], s[-(i+1)])
-                    if s[i] not in punctuations:
+                    if s[i] in punt:
+                        print("You wrote a punctuation symbol.")
+                        return False
+                    else:
                         while i < (len(s)):
                             if s[-(i+2)] in numbers and s[-(i+1)] not in numbers:
                                 print("There are numbers in the middle.")
@@ -40,9 +43,6 @@ def is_valid(s):
                             else:
                                 print("Todo bien")
                                 return True
-                    else:
-                        print("You wrote a punctuation symbol.")
-                        return False
             else:
                 print("The first two are not letters.")
         else:
