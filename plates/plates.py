@@ -30,10 +30,9 @@ def is_valid(s):
             if s[0].lower() and s[1].lower() in alpha: #Check if the first two are letters.
                 ya = []
                 for i in range(len(s)):
-                    s[i]
+                    print(s[i])
+                    print(s[-(i+1)], s[-i])
                     if s[i] not in punctuations:
-                        print(s[i])
-                        print(s[-(i+1)], s[-i])
                         if s[-(i+1)] in numbers and s[-i] not in numbers:
                             print("There are numbers in the middle.")
                             return False
