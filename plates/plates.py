@@ -37,14 +37,8 @@ def is_valid(s):
                             print("There are numbers in the middle.")
                             return False
                         else:
-                            ya.append(s[i])
-                            if len(ya) == len(s):
-                                print("Se armó")
-                                return True
-                            else:
-                                print(ya, s, sep = '\n')
-                                print("They aren't the same lenght.")
-                                return False
+                            print("Todo bien")
+
                     else:
                         print("You wrote a punctuation symbol.")
                         return False
