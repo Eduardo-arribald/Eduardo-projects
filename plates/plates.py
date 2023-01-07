@@ -32,6 +32,7 @@ def is_valid(s):
                 for i in range(len(s)):
                     if s[i] not in punctuations:
                         if s[-i-1] in numbers and s[-i] not in numbers:
+                            print("There are numbers in the middle.")
                             return False
                         else:
                             ya.append(s[i])
@@ -39,9 +40,10 @@ def is_valid(s):
                                 print("Se armó")
                                 return True
                             else:
-                                print("Casi")
+                                print("They aren't the same lenght.")
                                 return False
                     else:
+                        print("You wrote a punctuation symbol.")
                         return False
         else:
             return False
