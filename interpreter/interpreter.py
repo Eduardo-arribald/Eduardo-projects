@@ -7,13 +7,13 @@ x, z = int(x), int(z)
 def mats(x, y, z):
     match y:
         case "+":
-            print("+")
+            print(x + y)
         case "-":
-            print("-")
+            print(x - y)
         case "/":
-            print("/")
+            print(x / y)
         case "*":
-            print("*")
+            print(x * y)
         case "^":
             print("^")
 
