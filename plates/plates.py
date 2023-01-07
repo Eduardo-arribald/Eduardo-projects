@@ -31,7 +31,7 @@ def is_valid(s):
                 ya = []
                 for i in range(len(s)):
                     if s[i] not in punctuations:
-                        if s[-i-1] in numbers and s[-i] not in numbers:
+                        if s[-(i+1)] in numbers and s[-i] not in numbers:
                             print("There are numbers in the middle.")
                             return False
                         else:
@@ -45,7 +45,10 @@ def is_valid(s):
                     else:
                         print("You wrote a punctuation symbol.")
                         return False
+            else:
+                print("The first two are not letters.")
         else:
+            print("You over passed the maximum or forgot about the minimum.")
             return False
 
 main()
