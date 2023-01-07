@@ -14,14 +14,20 @@ def is_valid(s):
     )
     #I take off the spaces before and after the text.
     s = s.split() #A list of the word given.
-    if len(s) >= 2:
+    if len(s) >= 2: #This corrects if the user gives me more than one word
         return False
     else:
         s = list(''.join(s))
         print(s)
-        if 2 <= s <= 6:
-            if s[0].lower() and s[1].lower() in alpha:
-                #print("yes")
+        if 2 <= s <= 6: #This checks the lenght of the word.
+            if s[0].lower() and s[1].lower() in alpha: #Check if the first two 
+
+
+
+
+
+
+                    #print("yes")
                     return True
         else:
             #print("no")
