@@ -20,12 +20,12 @@ def convert(time):
 
 def convert_2(time):
     n = time.split()
-    print(time.split())
+    print(n)
     h, m = n[0].split(":")
     if n[1] == "p.m.":
         return round((12 + int(h) + (int(m)/60)), 2)
     else:
-        return round((12 + int(h) + (int(m)/60)), 2)
+        return round((int(h) + (int(m)/60)), 2)
 
 if __name__ == "__main__":
     main()
