@@ -37,12 +37,9 @@ def is_valid(s):
                             if s[-(i+2)] in numbers and s[-(i+1)] not in numbers:
                                 print("There are numbers in the middle.")
                                 return False
-                                break
                             else:
                                 print("Todo bien")
-                                continue
                         return True
-                        break
                     else:
                         print("You wrote a punctuation symbol.")
                         return False
