@@ -2,7 +2,11 @@
 
 file = ''.join((input("File name: ").lower().split()))
 
+print(file)
+
 file = file.split(".")
+
+print(file[-1])
 
 info = {
     "gif":"image/gif",
@@ -15,18 +19,12 @@ info = {
 }
 
 def checking(doc):
-    for k in info:
-        if doc[2] is not None:
-            match doc[2]:
+    if doc[-1] in info.keys():
+        for k in info:
+            match doc[-1]:
                 case k:
                     print(info.get(k))
-                    break
-        elif doc[1] is not None:
-            print(info.get(k))
-            break
-        elif doc[1] and doc[2] not in info.keys():
-            print("application/octet-stream")
-            break
-        else:
+    else:
+        print("application/octet-stream")
 
-checking(file)
+#checking(file)
