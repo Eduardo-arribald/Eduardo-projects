@@ -19,12 +19,8 @@ def convert_2(time):
     n = time.split()
     print(n)
     h, m = n[0].split(":")
-    if n[1] is not None:
-        match n[1]:
-            case "p.m.":
-                return round((12 + int(h) + (int(m)/60)), 2)
-            case "a.m.":
-                return round((int(h) + (int(m)/60)), 2)
+    if n[-1] == "p.m.":
+        return round((12 + int(h) + (int(m)/60)), 2)
     else:
         return round((int(h) + (int(m)/60)), 2)
 
