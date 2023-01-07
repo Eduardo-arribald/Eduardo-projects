@@ -42,6 +42,7 @@ def is_valid(s):
                                 print("Se armó")
                                 return True
                             else:
+                                print(ya, s, sep = '\n')
                                 print("They aren't the same lenght.")
                                 return False
                     else:
