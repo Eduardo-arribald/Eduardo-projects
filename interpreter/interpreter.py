@@ -5,23 +5,19 @@ def mats():
         x, z = int(x), int(z)
         match y:
             case "+":
-                print(float(x + z, 2))
-                break
+                print(round(float(x + z, 2), 1))
             case "-":
-                print(float(x - z))
-                break
+                print(round(float(x - z), 1))
             case "/":
                 if z != 0:
-                    print(float(x / z))
-                    break
+                    print(round(float(x / z), 1))
                 else:
                     continue
             case "*":
-                print(float(x * z))
-                break
+                print(round(float(x * z), 1))
             case "^":
-                print(float(x^z))
-                break
+                print(round(float(x^z), 1))
+        break
 
 mats()
 
