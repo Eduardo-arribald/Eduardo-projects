@@ -4,8 +4,9 @@ def main():
     print(x)
     for i in x:
         if i == ':)' or i == ':(':
-            x[i] = convert(i)
-    print(' '.join(x))
+            print(type(i))
+            #x[i] = convert(i)
+    #print(' '.join(x))
 
 def convert(face:str):
     if ':)' == face:
