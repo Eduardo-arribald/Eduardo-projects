@@ -19,7 +19,7 @@ def is_valid(s):
     else:
         s = list(s)
         if s[0:2].lower() not in alpha:
-            print("No")
-            return False
+            print("yes")
+            return True
 
 main()
