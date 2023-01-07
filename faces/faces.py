@@ -5,7 +5,7 @@ def main():
     for i in x:
         if i == ':)' or i == ':(':
             print(type(i))
-            i = convert(i)
+            x[i] = convert(i)
     print(' '.join(x))
 
 def convert(face:str):
