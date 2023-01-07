@@ -6,7 +6,7 @@ def main():
     #print ("Output", delete_vowels(words))
 
 def delete_vowels(w):
-    vowels = ("a", "e", "i", "o", "u")
+    vowels = ["a", "e", "i", "o", "u"]
     w = list(''.join(w.split()))
     print(w)
     for l in range(len(w)):
