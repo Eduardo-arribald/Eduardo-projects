@@ -9,8 +9,8 @@ def main():
 
 def convert(face):
     if ":)" == face:
-        return 🙂
+        return ":-)"
     elif ":(" == face:
-        return 🙁
+        return ":-("
 
 main()
