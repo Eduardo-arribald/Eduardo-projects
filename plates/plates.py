@@ -18,7 +18,6 @@ def is_valid(s):
     numbers = (
         '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'
     )
-
     #I take off the spaces before and after the text.
     s = s.split() #A list of the word given.
     if len(s) >= 2: #This corrects if the user gives me more than one word
@@ -30,6 +29,10 @@ def is_valid(s):
         if 2 <= len(s) <= 6: #This checks the lenght of the word.
             if s[0].lower() and s[1].lower() in alpha: #Check if the first two are letters.
                 if s[-2] and s[-3] in numbers and s[-1] not in numbers:
+                    return False
+                elif s[-1] and s[-3] in numbers and s[-2] not in numbers:
+                    return False
+                elif s[-2] and s[-3] in numbers and s[-1] not in numbers:
                     return False
                 elif s[-2] in numbers and s[-1] not in numbers:
                     return False
