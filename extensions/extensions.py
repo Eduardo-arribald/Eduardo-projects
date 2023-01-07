@@ -21,8 +21,8 @@ def checking(doc):
                 case k
                 print(info.get(k))
                 break
-        else:
-            continue
+            case _:
+                continue
         elif k == doc[1]:
             print(info.get(k))
             break
