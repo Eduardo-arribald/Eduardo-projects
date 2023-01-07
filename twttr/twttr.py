@@ -10,7 +10,7 @@ def delete_vowels(w):
     w = list(''.join(w.split()))
     for l in range(len(w)):
         if w[l] in vowels:
-            w[l] = None
+            w.remove(l)
     return (''.join(w))
 
 main()
