@@ -18,11 +18,11 @@ def is_valid(s):
         return False
     else:
         s = list(s)
-        if s[0].lower() or s[1].lower() not in alpha:
-            print("no")
-            return False
-        else:
+        if s[0].lower() and s[1].lower() in alpha:
             print("yes")
             return True
+        else:
+            print("no")
+            return False
 
 main()
