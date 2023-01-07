@@ -48,6 +48,7 @@ def is_valid(s):
                         return True
             else:
                 print("The first two are not letters.")
+                return False
         else:
             print("You over passed the maximum or forgot about the minimum.")
             return False
