@@ -8,17 +8,10 @@ def main():
     elif 18 <= t <= 19:
         print("dinner time")
 
-def convert(time):
-    n = (''.join(time.split())).split(":")
-    h, m = n[0], n[1]
-    new = round((int(h) + (int(m)/60)), 2)
-    return new
 
-def convert_2(time):
+def convert(time):
     n = time.split()
-    print(n)
     h, m = n[0].split(":")
-    print(h)
     if n[-1] == "p.m.":
         return round((12 + int(h) + (int(m)/60)), 2)
     else:
