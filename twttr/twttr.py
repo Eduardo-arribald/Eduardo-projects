@@ -2,6 +2,7 @@
 
 def main():
     words = input("Input: ")
+    #delete_vowels(words)
     print ("Output", delete_vowels(words))
 
 def delete_vowels(w):
@@ -9,7 +10,7 @@ def delete_vowels(w):
     w = list(''.join(w.split()))
     for l in range(len(w)):
         if w[l] in vowels:
-            del w[l]
-    return w
+            w[l] = ''
+    return (' '.join(w))
 
 main()
