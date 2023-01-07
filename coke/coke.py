@@ -7,7 +7,7 @@ def main():
         coin = input("Insert Coin: ")
         money = money + check_coins(coin)
         if money >= 50:
-            print(f"Change Owerd: {money - x}")
+            print(f"Change Owed: {money - x}")
             break
 
 def check_coins(c):
@@ -15,5 +15,7 @@ def check_coins(c):
     if c in coins:
         c = int(c)
         return c
+    else:
+        return 0
 
 main()
