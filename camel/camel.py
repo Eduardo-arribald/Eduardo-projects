@@ -1,15 +1,13 @@
 
 
-x = "Holamundo"
+camel = input("camelCase: ").split()
 
-x = list(x.split())
+camel = list(''.join(camel))
 
+for i in range(len(camel)):
+    if camel[i].isupper() and camel[i] != camel[0]:
+        camel[i] = "_"+ camel[i].lower()
 
-new = []
-
-for i in range(len(x)):
-    if x[i].isupper():
-        x[i] = "_"+ x[i].lower()
-        print("upper" + L[0])
+print("snake_case:", ''.join(camel))
 
 
