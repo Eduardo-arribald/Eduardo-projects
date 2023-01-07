@@ -1,8 +1,8 @@
 
 def main():
     t = input("What time is it? ")
-    convert(t)
-    print(convert(t))
+    t = convert(t)
+    print(t)
 
 def convert(time):
     n = (''.join(time.split())).split(":")
