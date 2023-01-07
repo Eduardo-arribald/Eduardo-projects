@@ -1,4 +1,5 @@
 
+
 file = ''.join((input("File name: ").lower().split()))
 
 file = file.split(".")
