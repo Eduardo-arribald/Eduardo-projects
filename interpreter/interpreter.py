@@ -21,9 +21,4 @@ def mats():
 
 mats()
 
-#print(x+z)
-
-#print(type(z))
-
-#print(type(x))
 
