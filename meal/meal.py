@@ -21,7 +21,7 @@ def convert(time):
 def convert_2(time):
     n = time.split()
     print(time.split())
-    n = ''.join(n[0:2])
+    n = n[0].split(":"))
     print(n)
     #h, m = n[0], n[1]
     #new = round((int(h) + (int(m)/60)), 2)
