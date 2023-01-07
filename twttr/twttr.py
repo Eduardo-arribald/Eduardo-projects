@@ -9,10 +9,12 @@ def delete_vowels(w):
     vowels = ["a", "e", "i", "o", "u"]
     w = list(''.join(w.split()))
     print(w)
+
+    """
     for l in range(len(w)):
         if w[l] in vowels:
             #print(w[l])
-            w.remove(w[l])
-    #return (''.join(w))
+            w.remove(w[l])"""
+    return (''.join(w-vowels))
 
 main()
