@@ -1,27 +1,29 @@
 
-x, y, z = input("Expression: ").split(" ")
-
-x, z = int(x), int(z)
-
-
-def mats(x, y, z):
-    match y:
-        case "+":
-            print(float(x + z))
-        case "-":
-            print(float(x - z))
-        case "/":
-            while True:
+def mats():
+    while True:
+        x, y, z = input("Expression: ").split(" ")
+        x, z = int(x), int(z)
+        match y:
+            case "+":
+                print(float(x + z))
+                break
+            case "-":
+                print(float(x - z))
+                break
+            case "/":
                 if z != 0:
                     print(float(x / z))
+                    break
                 else:
-                    print("Type ")
-        case "*":
-            print(float(x * z))
-        case "^":
-            print(float(x^z))
+                    continue
+            case "*":
+                print(float(x * z))
+                break
+            case "^":
+                print(float(x^z))
+                break
 
-mats(x, y, z)
+mats()
 
 #print(x+z)
 
