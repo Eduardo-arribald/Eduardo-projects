@@ -26,8 +26,6 @@ def is_valid(s):
 
 
 
-
-
                     #print("yes")
                     return True
         else:
