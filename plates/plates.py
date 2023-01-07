@@ -31,7 +31,7 @@ def is_valid(s):
                 ya = []
                 for i in range(len(s)):
                     if s[i] not in punctuations:
-                        if s[i] in numbers and s[i+1] not in numbers:
+                        if s[-i-1] in numbers and s[-i] not in numbers:
                             return False
                         else:
                             ya.append(s[i])
