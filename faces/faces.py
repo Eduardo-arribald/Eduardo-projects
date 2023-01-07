@@ -1,12 +1,12 @@
 
 def main():
     x = str(input()).split()
-    print(x)
+    #print(x)
     for i in x:
         if i == ':)' or i == ':(':
             print(type(i))
-            #x[i] = convert(i)
-    #print(' '.join(x))
+            i = convert(i)
+    print(' '.join(x))
 
 def convert(face:str):
     if ':)' == face:
