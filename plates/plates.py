@@ -12,6 +12,10 @@ def is_valid(s):
         'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u',
         'v', 'w', 'x', 'y', 'z'
     )
+    punctuations = (
+        '-', '.', ',', '?', '!', '*', '+', '/', '\', ' ')
+    )
+
     #I take off the spaces before and after the text.
     s = s.split() #A list of the word given.
     if len(s) >= 2: #This corrects if the user gives me more than one word
