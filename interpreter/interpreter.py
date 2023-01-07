@@ -9,10 +9,12 @@ def mats(x, y, z):
         case "+":
             print(float(x + z))
         case "-":
-            if z
             print(float(x - z))
         case "/":
-            print(float(x / z))
+            if z != 0:
+                print(float(x / z))
+            else:
+                print
         case "*":
             print(float(x * z))
         case "^":
