@@ -13,7 +13,10 @@ def is_valid(s):
         'v', 'w', 'x', 'y', 'z'
     )
     punctuations = (
-        '-', '.', ',', '?', '!', '*', '+', '/', '\', ' ')
+        '-', '.', ',', '?', '!', '*', '+', '/', '', ' '
+    )
+    numbers = (
+        '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'
     )
 
     #I take off the spaces before and after the text.
@@ -26,18 +29,23 @@ def is_valid(s):
         print(s)
         if 2 <= len(s) <= 6: #This checks the lenght of the word.
             if s[0].lower() and s[1].lower() in alpha: #Check if the first two are letters.
-                if int(s[-2]) and int(s[-3]) is int and int(s[-1]) is not int:
+                if s[-2] and s[-3] in numbers and s[-1] not in numbers:
                     return False
-                elif int(s[-2]) is int and int(s[-1]) is not int
+                elif s[-2] in numbers and s[-1] not in numbers:
                     return False
                 else:
+                    ya = []
                     for i in range(len(s)):
                         if s[i] not in punctuations:
-                            
-
-
-                    #print("yes")
-                    return True
+                            ya.append(s[i])
+                    if len(ya) == len(s):
+                        print("Se armó")
+                        return True
+                    else:
+                        print("Casi")
+                        return False
+            else:
+                return False
         else:
             #print("no")
             return False
