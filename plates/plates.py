@@ -29,7 +29,7 @@ def is_valid(s):
                 if 
                     for i in range(len(s)):
                         if s[i] not in punctuations:
-                            if
+
 
                     #print("yes")
                     return True
