@@ -24,7 +24,7 @@ def is_valid(s):
         #print("Two much words")
         return False
     else:
-        s = list(''.join(s))
+        s = list(''.join(s).lower())
         #print(s)
         if 2 <= len(s) <= 6: #This checks the lenght of the word.
             if s[0].lower() and s[1].lower() in alpha: #Check if the first two are letters.
@@ -39,7 +39,7 @@ def is_valid(s):
                     if s[i] in numbers and i+1 < len(s) and s[i+1] not in numbers:
                         #print("There are numbers in the middle.")
                         return False
-                    elif s[i] == '0' and s[i-1] in alpha:
+                    elif s[i] == '0' and s[i-1].lower() in alpha:
                         #print("Zero in the middle.")
                         return False
                 return True
