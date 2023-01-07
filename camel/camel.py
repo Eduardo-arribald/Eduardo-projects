@@ -1,14 +1,15 @@
 
 
-x = "hola, mundo"
+x = "Holamundo"
 
-x = x.split()
+x = list(x.split())
+
 
 new = []
 
 for i in range(len(x)):
-    L = x[i].split()
-    if L[0].isupper():
-        L[0] = "_"+ L[0].lower()
-    
+    if x[i].isupper():
+        x[i] = "_"+ x[i].lower()
+        print("upper" + L[0])
+
 
