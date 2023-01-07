@@ -4,8 +4,11 @@ x = "hola, mundo"
 
 x = x.split()
 
+new = []
 
 for i in range(len(x)):
     L = x[i].split()
-    if (x[i].split())[0].isupper():
-        x[i]
+    if L[0].isupper():
+        L[0] = "_"+ L[0].lower()
+    
+
