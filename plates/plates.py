@@ -26,9 +26,10 @@ def is_valid(s):
         print(s)
         if 2 <= len(s) <= 6: #This checks the lenght of the word.
             if s[0].lower() and s[1].lower() in alpha: #Check if the first two are letters.
-                if
+                if int(s[-2]) or is int and s[]
                     for i in range(len(s)):
                         if s[i] not in punctuations:
+                            if int(s[-1]) and
 
 
                     #print("yes")
