@@ -14,11 +14,14 @@ def is_valid(s):
     )
     #I take off the spaces before and after the text.
     s = s.split() #A list of the word given.
-    if s[1] is not None:
+    if len(s) >= 2:
         return False
     else:
         s = list(s)
-        if s[0:2].lower() not in alpha:
+        if s[0].lower() or s[1].lower() not in alpha:
+            print("no")
+            return False
+        else:
             print("yes")
             return True
 
