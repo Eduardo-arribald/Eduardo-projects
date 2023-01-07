@@ -21,11 +21,11 @@ def is_valid(s):
     #I take off the spaces before and after the text.
     s = s.split() #A list of the word given.
     if len(s) >= 2: #This corrects if the user gives me more than one word
-        print("Two much words")
+        #print("Two much words")
         return False
     else:
         s = list(''.join(s))
-        print(s)
+        #print(s)
         if 2 <= len(s) <= 6: #This checks the lenght of the word.
             if s[0].lower() and s[1].lower() in alpha: #Check if the first two are letters.
                 ya = []
@@ -33,23 +33,23 @@ def is_valid(s):
                     #print(s[i])
                     #print(s[-(i+2)], s[-(i+1)])
                     if s[i] in punt:
-                        print("You wrote a punctuation symbol.")
+                        #print("You wrote a punctuation symbol.")
                         return False
                 for i in range(len(s)):
                     if s[i] in numbers and i+1 < len(s) and s[i+1] not in numbers:
-                        print("There are numbers in the middle.")
+                        #print("There are numbers in the middle.")
                         return False
                     elif s[i] == '0' and s[i-1] in alpha:
-                        print("Zero in the middle.")
+                        #print("Zero in the middle.")
                         return False
                     else:
-                        print("Todo bien")
+                        #print("Todo bien")
                 return True
             else:
-                print("The first two are not letters.")
+                #print("The first two are not letters.")
                 return False
         else:
-            print("You over passed the maximum or forgot about the minimum.")
+            #print("You over passed the maximum or forgot about the minimum.")
             return False
 
 main()
