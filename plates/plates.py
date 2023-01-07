@@ -30,8 +30,8 @@ def is_valid(s):
             if s[0].lower() and s[1].lower() in alpha: #Check if the first two are letters.
                 ya = []
                 for i in range(len(s)):
-                    print(s[i])
-                    print(s[-(i+2)], s[-(i+1)])
+                    #print(s[i])
+                    #print(s[-(i+2)], s[-(i+1)])
                     if s[i] in punt:
                         print("You wrote a punctuation symbol.")
                         return False
