@@ -19,6 +19,7 @@ def is_valid(s):
     else:
         s = list(''.join(s))
         print(s)
+        
         if s[0].lower() and s[1].lower() in alpha:
             #print("yes")
             return True
