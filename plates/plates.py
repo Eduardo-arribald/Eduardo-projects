@@ -40,9 +40,12 @@ def is_valid(s):
                         if s[-(i+2)] in numbers and s[-(i+1)] not in numbers:
                             print("There are numbers in the middle.")
                             return False
+                        elif s[-(i+2)] == '0' and s[-(i+1)] in alpha:
+                            print("Zero in the middle.")
+                            return False
                         else:
                             print("Todo bien")
-                            return True
+                        return True
             else:
                 print("The first two are not letters.")
         else:
