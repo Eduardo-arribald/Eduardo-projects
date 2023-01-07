@@ -1,16 +1,16 @@
 
 def main():
     x = input().split()
-    if ":)" in x:
-        x[i] =
-
-    if ":)" in x:
-
+    for i in x:
+        if i in [":)", ":("]:
+            x[i] = convert(i)
+    print(' '.join(x))
 
 
 def convert(face):
-    if ":)" in script:
-        x[i] =
+    if ":)" == face:
+        return 🙂
+    elif ":(" == face:
+        return 🙁
 
-    🙁
-    🙂
+main()
