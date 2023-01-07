@@ -7,6 +7,6 @@ def main():
         print("Invalid")
 
 def is_valid(s):
-    ...
+    
 
 main()
