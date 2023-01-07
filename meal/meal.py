@@ -2,7 +2,7 @@
 def main():
     t = input("What time is it? ")
     t = convert(t)
-    print(t)
+    
 
 def convert(time):
     n = (''.join(time.split())).split(":")
