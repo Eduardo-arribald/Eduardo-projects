@@ -1,13 +1,7 @@
 
-vars = input("Expression: ").split(" ")
-x, y, z = vars[0], vars[1], vars[2]
-
-print(vars)
-
 def mats():
     while True:
-        vars = input("Expression: ").split(" ")
-        x, y, z = input("Expression: ").split(" ")
+        x, y, z = input("Expression: ").split()
         x, z = int(x), int(z)
         match y:
             case "+":
@@ -29,7 +23,7 @@ def mats():
                 print(float(x^z))
                 break
 
-#mats()
+mats()
 
 #print(x+z)
 
