@@ -28,29 +28,22 @@ def is_valid(s):
         print(s)
         if 2 <= len(s) <= 6: #This checks the lenght of the word.
             if s[0].lower() and s[1].lower() in alpha: #Check if the first two are letters.
-                if s[-2] and s[-3] in numbers and s[-1] not in numbers:
-                    return False
-                elif s[-1] and s[-3] in numbers and s[-2] not in numbers:
-                    return False
-                elif s[-2] and s[-3] in numbers and s[-1] not in numbers:
-                    return False
-                elif s[-2] in numbers and s[-1] not in numbers:
-                    return False
-                else:
-                    ya = []
-                    for i in range(len(s)):
-                        if s[i] not in punctuations:
+                ya = []
+                for i in range(len(s)):
+                    if s[i] not in punctuations:
+                        if s[i] in numbers and s[i+1] not in numbers:
+                            return False
+                        else:
                             ya.append(s[i])
-                    if len(ya) == len(s):
-                        print("Se armó")
-                        return True
+                            if len(ya) == len(s):
+                                print("Se armó")
+                                return True
+                            else:
+                                print("Casi")
+                                return False
                     else:
-                        print("Casi")
                         return False
-            else:
-                return False
         else:
-            #print("no")
             return False
 
 main()
