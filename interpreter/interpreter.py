@@ -5,7 +5,7 @@ def mats():
         x, z = int(x), int(z)
         match y:
             case "+":
-                print(round(float(x + z, 2), 1))
+                print(round(float(x + z), 1))
             case "-":
                 print(round(float(x - z), 1))
             case "/":
