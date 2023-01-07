@@ -20,7 +20,7 @@ def convert(time):
 
 def convert_2(time):
     n = time.split()
-    print(n)
+    print(time.split())
     n = ''.join(n[0:2])
     print(n)
     #h, m = n[0], n[1]
