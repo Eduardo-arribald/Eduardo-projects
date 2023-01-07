@@ -16,9 +16,13 @@ info = {
 
 def checking(doc):
     for k in info:
-        if k == doc[2]:
-            print(info.get(k))
-            break
+        if doc[2] is not None:
+            match doc[2]:
+                case k
+                print(info.get(k))
+                break
+        else:
+            continue
         elif k == doc[1]:
             print(info.get(k))
             break
