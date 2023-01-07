@@ -2,11 +2,11 @@
 
 file = ''.join((input("File name: ").lower().split()))
 
-print(file)
+#print(file)
 
 file = file.split(".")
 
-print(file[-1])
+#print(file[-1])
 
 info = {
     "gif":"image/gif",
@@ -24,7 +24,8 @@ def checking(doc):
             match doc[-1]:
                 case k:
                     print(info.get(k))
+                    break
     else:
         print("application/octet-stream")
 
-#checking(file)
+checking(file)
