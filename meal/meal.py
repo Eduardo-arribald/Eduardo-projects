@@ -2,7 +2,7 @@
 def main():
     t = input("What time is it? ")
     t = convert(t)
-    print(t)
+    #print(t)
     if 7 <= t <=8:
         print("breakfast time")
     elif 12 <= t <= 13:
