@@ -8,8 +8,7 @@ def grocery_list():
             if order in lista.keys():
                 lista[order] += 1
             else:
-                lista[order] == 1
-                
+                lista[order] = 1
                 #print(lista)
                 #break
 
