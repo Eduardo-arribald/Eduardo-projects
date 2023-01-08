@@ -13,7 +13,7 @@ def fuel():
             data = (''.join(input("Fraction: ").split())).split("/")
             x = int(data[0])
             y = int(data[1])
-            print(x/y)
+            #print(x/y)
             if x/y <= .01:
                 print("E")
             elif x/y >= .99:
