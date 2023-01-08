@@ -1,9 +1,16 @@
 
+#data = (''.join(input("Fraction: ").split())).split("/")
+
+#print(data)
+
+#x = int(data[0])
+#y = int(data[2])
+#print(x/y)
 
 def fuel():
     while True:
         try:
-            data = list(''.join(input("Fraction: ").split()))
+            data = (''.join(input("Fraction: ").split())).split("/")
             x = int(data[0])
             y = int(data[2])
             print(x/y)
