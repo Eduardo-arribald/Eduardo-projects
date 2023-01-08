@@ -13,7 +13,9 @@ def fuel():
             else:
                 print(str(x/y)+"%")
             break
-        except ValueError or ZeroDivisionError:
+        except ZeroDivisionError:
+            continue
+        except ValueError:
             continue
 
 fuel()
