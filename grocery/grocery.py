@@ -13,10 +13,9 @@ def grocery_list():
                 #break
 
         except EOFError:
-            print(sep = "\n")
+            
             for i in lista.keys():
                 print(lista.get(i), i, end = " ")
-            print(sep = "\n")
             break
 
 grocery_list()
