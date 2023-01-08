@@ -13,7 +13,7 @@ def grocery_list():
                 #break
 
         except EOFError:
-            lista = sorted(lista)
+            lista = dict(sorted(lista))
             for i in lista.keys():
                 print(lista.get(i), i, end = " ")
             break
