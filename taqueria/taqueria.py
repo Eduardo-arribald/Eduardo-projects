@@ -22,6 +22,6 @@ def felipe():
                 count += menu.get(order)
                 print("Total: "+ "$" + format(count, ".2f"))
         except EOFError:
-            break
+            print("Total: "+ "$" + format(count, ".2f"))
 
 felipe()
