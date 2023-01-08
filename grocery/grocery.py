@@ -13,9 +13,11 @@ def grocery_list():
                 #break
 
         except EOFError:
-            lista = dict(sorted(lista))
-            for i in lista.keys():
-                print(lista.get(i), i, end = " ")
+            keys = list(lista.keys())
+            keys.sort()
+            new_list = {i : lista[i] for i in keys}
+            for i in new_list.keys():
+                print(new_list.get(i), i)
             break
 
 grocery_list()
