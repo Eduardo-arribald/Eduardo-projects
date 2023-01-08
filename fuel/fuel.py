@@ -19,7 +19,7 @@ def fuel():
             elif 1 >= x/y >= .99:
                 print("F")
             elif x/y > 1:
-                return ValueError
+                continue
             else:
                 print(str(int(100*x/y))+"%")
             break
