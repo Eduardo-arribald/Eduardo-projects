@@ -4,7 +4,7 @@ def felipe():
     count = 0
     while True:
         try:
-            order = raw_input("Item: ").strip().title()
+            order = input("Item: ").strip().title()
             menu = {
                 "Baja Taco": 4.00,
                 "Burrito": 7.50,
