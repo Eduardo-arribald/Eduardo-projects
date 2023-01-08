@@ -10,7 +10,7 @@ def change_date():
     date_2 = list(''.join(date))
     print(date_1)
     print(date_2)
-    if len(date) > 0:
+    if len(date) > 1:
         for i in range(len(date)):
             for n in range(len(meses)):
                 if date[i] == meses[n]:
