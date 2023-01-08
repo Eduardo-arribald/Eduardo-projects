@@ -7,6 +7,7 @@ def fuel():
         print(data[0])
         print(data[2])
         if data[0] or data[2] not in n:
+            print(data[0])
             continue
         else:
             if int(data[0])/int(data[2]) <= .01:
