@@ -16,7 +16,6 @@ def grocery_list():
             #print(sep = "\n")
             for i in lista.keys():
                 print(lista.get(i), i)
-            break #print("\nTotal: "+ "$" + format(count, ".2f"))
-
+            break
 
 grocery_list()
