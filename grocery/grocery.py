@@ -13,7 +13,7 @@ def grocery_list():
 
         except EOFError:
             #print(sep = "\n")
-
+            print(l)
             break #print("\nTotal: "+ "$" + format(count, ".2f"))
 
 jola = {}
