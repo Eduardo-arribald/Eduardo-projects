@@ -7,7 +7,7 @@ def grocery_list():
             if order in lista.keys()
                 count[order] += 1
             else:
-                
+
 
                 print(count)
                 break
@@ -17,4 +17,10 @@ def grocery_list():
 
             break #print("\nTotal: "+ "$" + format(count, ".2f"))
 
-grocery_list()
+jola = {}
+
+jola.append("no":"si")
+
+print(jola)
+
+#grocery_list()
