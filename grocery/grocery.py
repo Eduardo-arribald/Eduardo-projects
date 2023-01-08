@@ -3,11 +3,13 @@ def grocery_list():
     lista = {}
     while True:
         try:
-            order = input("Item: ").strip()
+            order = input("")
+            print(order)
             if order in lista.keys():
                 lista[order] += 1
             else:
                 lista[order] == 1
+                
                 #print(lista)
                 #break
 
