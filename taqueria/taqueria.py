@@ -21,7 +21,8 @@ def felipe():
             else:
                 count += menu.get(order)
                 print("Total: "+ "$" + format(count, ".2f"))
-        except:
-            return print("\nTotal: "+ "$" + format(count, ".2f"))
+        except EOFError:
+            #print("\n")
+            break #print("\nTotal: "+ "$" + format(count, ".2f"))
 
 felipe()
