@@ -11,7 +11,7 @@ def fuel():
             elif x/y >= .99:
                 print("F")
             else:
-                print(str(100*x/y)+"%")
+                print(str(int(100*x/y))+"%")
             break
         except ZeroDivisionError:
             continue
