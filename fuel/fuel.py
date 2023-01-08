@@ -21,7 +21,7 @@ def fuel():
             elif x/y > 1:
                 continue
             else:
-                print(str(int(x/y))+"%")
+                print(str(int(100*round(x/y, 2)))+"%")
             break
         except ZeroDivisionError:
             pass
