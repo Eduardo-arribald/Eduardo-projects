@@ -4,9 +4,12 @@ def grocery_list():
     while True:
         try:
             order = input("Item: ").strip()
-            count[order] += 1
-            print(count)
-            break
+            if order in count.keys()
+                count[order] += 1
+            else:
+                
+                print(count)
+                break
 
         except EOFError:
             print(sep = "\n")
