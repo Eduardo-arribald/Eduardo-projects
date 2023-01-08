@@ -4,9 +4,10 @@ def grocery_list():
     while True:
         try:
             order = input("Item: ").strip()
-            if order in lista.keys()
-                count[order] += 1
+            if order in lista.keys():
+                lista[order] += 1
             else:
+                
 
 
                 print(count)
@@ -19,7 +20,7 @@ def grocery_list():
 
 jola = {}
 
-jola.append("no":"si")
+jola.append("no")
 
 print(jola)
 
