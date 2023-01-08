@@ -4,7 +4,8 @@ def grocery_list():
     while True:
         try:
             order = input("Item: ").strip()
-            
+            count[order] += 1
+            print(count)
             break
 
         except EOFError:
