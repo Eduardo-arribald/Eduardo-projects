@@ -5,6 +5,7 @@ def change_date():
         "August", "September", "October", "November", "December"
         ]
     date = input("Date: ").split()
+    
     if len(date) > 0:
         for i in range(len(date)):
             for n in range(len(meses)):
