@@ -6,6 +6,7 @@ def fuel():
             data = list(''.join(input("Fraction: ").split()))
             x = int(data[0])
             y = int(data[2])
+            print(x/y)
             if data[1] != "/":
                 print("mal")
                 continue
