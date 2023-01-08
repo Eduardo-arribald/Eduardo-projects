@@ -14,7 +14,7 @@ def change_date():
                 if date[i] == meses[n]:
                     date[i] == n+1
     elif "/" in list(date):
-        date.split("/")
+        date = (''.join(date)).split("/")
     print(date)
 
 change_date()
