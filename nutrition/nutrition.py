@@ -6,5 +6,6 @@ def nutrition():
         }
     x = input("Item: ").lower()
     if x in fruits.keys():
-        print( )
+        print("Calories:", str(fruits.get(x)))
 
+nutrition()
