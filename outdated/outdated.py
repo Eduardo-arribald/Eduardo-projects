@@ -9,7 +9,11 @@ def change_date():
     date = input("Date: ").split()
     if len(date) > 1:
         for i in range(len(date)):
-            if date[i] in meses:
+            for n in range(len(meses)):
+                if date[i] == meses[n]:
+                    date[i] == n+1
     elif "/" in list(date):
         date.split("/")
+    print(date)
 
+change_date()
