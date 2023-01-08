@@ -2,20 +2,21 @@
 
 def fuel():
     #while True:
-    data = list(''.join(input("Fraction: ").split()))
-    n = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "/"]
-    print(data[0])
-    print(data[1])
-    if data[0] or data[2] not in n:
-        print(data[0])
-        #continue
-    else:
-        if int(data[0])/int(data[2]) <= .01:
+    try:
+
+        data = list(''.join(input("Fraction: ").split()))
+        x = int(data[0])
+        y = int(data[2])
+        print(str(x))
+        print(str(y))
+        if x/y <= .01:
             print("E")
-        elif int(data[0])/int(data[2]) >= .99:
+        elif x/y >= .99:
             print("F")
         else:
-            print(str(int(data[0])/int(data[2]))+"%")
+            print(str(x/y)+"%")
         #break
+    except ValueError:
+        print("Not a number")
 
 fuel()
