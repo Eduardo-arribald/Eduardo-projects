@@ -13,19 +13,11 @@ def grocery_list():
 
         except EOFError:
             #print(sep = "\n")
-            #print(lista)
+            for i in lista.keys():
+                print(lista.get(i), i)
             break #print("\nTotal: "+ "$" + format(count, ".2f"))
 
-jola = {}
-
-jola["hola"] = 1
-jola["hola"] += 1
-
-#print(jola["hola"])
-
-#for i in jola.keys()
- #   print(jola.keys(i), jola.get(i))
 
 #print(jola)
 
-#grocery_list()
+grocery_list()
