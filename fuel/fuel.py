@@ -7,6 +7,7 @@ def fuel():
             x = int(data[0])
             y = int(data[2])
             if data[1] != "/":
+                print("mal")
                 continue
             else:
                 if x/y <= .01:
