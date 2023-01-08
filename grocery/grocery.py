@@ -7,10 +7,8 @@ def grocery_list():
             if order in lista.keys():
                 lista[order] += 1
             else:
-                
-
-
-                print(count)
+                lista[order] == 1
+                print(lista)
                 break
 
         except EOFError:
@@ -20,8 +18,9 @@ def grocery_list():
 
 jola = {}
 
-jola.append("no")
+jola["hola"] = 1
+jola["hola"] += 1
 
-print(jola)
+print(jola["hola"])
 
 #grocery_list()
