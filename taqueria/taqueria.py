@@ -17,6 +17,6 @@ def felipe():
         if menu.get(order) == None:
             continue
         else:
-            return print("Total: "+ "$" + str(round(menu.get(order),3)))
+            return print("Total: "+ "$" + format(menu.get(order), ".2f"))
 
 felipe()
