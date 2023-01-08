@@ -3,8 +3,8 @@ def grocery_list():
     lista = {}
     while True:
         try:
-            order = input("").upper()
-            print(order)
+            order = input().upper()
+            #print(order)
             if order in lista.keys():
                 lista[order] += 1
             else:
