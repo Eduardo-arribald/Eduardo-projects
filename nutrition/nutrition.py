@@ -5,7 +5,7 @@ def nutrition():
         "lime":20, "nectarine":60, "orange":80, "peach":60, "pear":100, "pineapple":50,"plums":70, "strawberries":50, "sweet cherries": 100, "tangerine":50, "watermelon":80
         }
     x = (' '.join(input("Item: ").split())).lower()
-    print(x)
+    #print(x)
     if x in fruits.keys():
         print("Calories:", str(fruits.get(x)))
 
