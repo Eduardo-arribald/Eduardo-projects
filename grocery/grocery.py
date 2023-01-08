@@ -18,6 +18,4 @@ def grocery_list():
             break #print("\nTotal: "+ "$" + format(count, ".2f"))
 
 
-#print(jola)
-
 grocery_list()
