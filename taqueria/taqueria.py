@@ -1,6 +1,7 @@
 
 
 def felipe():
+    count = 0
     while True:
         order = input("Item: ").strip().title()
         menu = {
@@ -17,6 +18,8 @@ def felipe():
         if menu.get(order) == None:
             continue
         else:
-            return print("Total: "+ "$" + format(menu.get(order), ".2f"))
+            count += menu.get(order)
+            print("Total: "+ "$" + format(count, ".2f"))
+
 
 felipe()
