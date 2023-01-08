@@ -6,16 +6,19 @@ def fuel():
             data = list(''.join(input("Fraction: ").split()))
             x = int(data[0])
             y = int(data[2])
-            if x/y <= .01:
-                print("E")
-            elif x/y >= .99:
-                print("F")
+            if data[1] != "/":
+                continue
             else:
-                print(str(int(100*x/y))+"%")
-            break
+                if x/y <= .01:
+                    print("E")
+                elif x/y >= .99:
+                    print("F")
+                else:
+                    print(str(int(100*x/y))+"%")
+                break
         except ZeroDivisionError:
-            continue
+            pass
         except ValueError:
-            continue
+            pass
 
 fuel()
