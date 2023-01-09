@@ -65,10 +65,12 @@ def string_and_slashes():
     x = (''.join(x)).split("/")
     print(x)
     try:
+        print(int(x[0]))
         print(int(x[1]))
         print(int(x[2]))
+        print("No hay problema")
     except ValueError:
-        return print("Si")
+        return print("valor")
     #except IndexError:
         #return print("index corregido")
     except:
