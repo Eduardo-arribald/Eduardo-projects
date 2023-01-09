@@ -30,8 +30,8 @@ def change_date():
                 to_int(date)
                 return print(f"{date[2]:02}-{date[1]:02}-{date[0]:02}")
         except:
-            #continue
-            break
+            continue
+            #break
 
 def to_int(lista:list):
     for i in range(len(lista)):
