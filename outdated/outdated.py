@@ -60,7 +60,8 @@ def small():
 #change_date()
 
 def string_and_slashes():
-    x = "October/29/1999".split()
+    #try:
+    x = "October 29/1999".split()
     #print(x)
     x = (''.join(x)).split("/")
     if len(x) > 1:
@@ -70,6 +71,8 @@ def string_and_slashes():
         print(int(x[1]))
         print(int(x[2]))
         print("No hay problema")
+    else:
+        return print("todo chido")
         """
         except ValueError:
             return print("valor")
