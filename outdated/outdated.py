@@ -61,7 +61,7 @@ def small():
 
 def string_and_slashes():
     #try:
-    x = "October 29/1999".split()
+    x = "October 29, 1999".split()
     #print(x)
     x = (''.join(x)).split("/")
     if len(x) > 1:
