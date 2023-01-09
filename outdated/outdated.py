@@ -38,7 +38,7 @@ def comas(x:str):
         print("No faltó la coma")
         return True
 
-#comas("September 8, 2020")
+comas("September 8 2020")
 
 def to_int(lista:list):
     for i in range(len(lista)):
@@ -105,5 +105,5 @@ def string_and_slashes(data:str):
 
 #string_and_slashes()
 
-change_date()
+#change_date()
 
