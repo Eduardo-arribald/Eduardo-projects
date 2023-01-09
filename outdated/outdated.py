@@ -10,7 +10,8 @@ def change_date():
             print(date)
             date_1 = ('/'.join(date)).split("/")
             date = (','.join(date_1)).split(",")
-
+            if "" in date:
+                del date[""]
             print(date)
             if date[0] in meses:
                 date[0] = meses.index(date[0]) + 1
