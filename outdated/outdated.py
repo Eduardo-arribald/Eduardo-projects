@@ -71,7 +71,6 @@ def string_and_slashes():
     except ValueError:
         return True
         
-
 string_and_slashes()
 
 #if date_check[0] == str and int[date_check[0:2]] is int:
