@@ -17,7 +17,7 @@ def change_date():
 
             elif date[1] or date[2] in meses:
                 continue
-            elif int(date[1]) > 12:
+            elif int(date[0]) > 12 or int(date[1]) > 31:
                 continue
             else:
                 to_int(date)
