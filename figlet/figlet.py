@@ -27,6 +27,7 @@ def main():
     #If one argument given, prompt an error message.
     elif len(sys.argv) == 2:
         print("Invalid usage")
+        sys.exit()
         print("Invalid usage")
         sys.exit()
 
