@@ -3,9 +3,9 @@ def change_date():
     while True:
         try:
             meses = [
-            "January", "February", "March", "April", "May", "June", "July",
-            "August", "September", "October", "November", "December"
-            ]
+                "January", "February", "March", "April", "May", "June", "July",
+                "August", "September", "October", "November", "December"
+                ]
             date = input("Date: ").split()
             date_1 = ('/'.join(date)).split("/")
             date = (','.join(date_1)).split(",")
