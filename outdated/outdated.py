@@ -5,9 +5,8 @@ def change_date():
         "August", "September", "October", "November", "December"
         ]
     date = input("Date: ").split()
-    date_1 = (''.join(date)).split("/")
-    date_2 = list(''.join(date))
-
+    date_1 = ('/'.join(date)).split("/")
+    date_2 = (','.join(date_1)).split(",")
     print(date)
     print(date_1)
     print(date_2)
@@ -15,7 +14,7 @@ def change_date():
         for i in range(len(date)):
             if date[i] in meses:
                 date[i] = meses.index(date[i]) + 1
-                print(date)
+                #print(date)
 
     elif "/" in list(''.join(date)):
         date = ''.join(date).split("/")
