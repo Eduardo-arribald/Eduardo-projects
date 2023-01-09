@@ -20,7 +20,7 @@ def main():
         x = input("Input: ")
         print(figlet.renderText(x))
     else:
-        #print("Invalid usage")
+        print("Invalid usage")
         sys.exit()
 main()
 
