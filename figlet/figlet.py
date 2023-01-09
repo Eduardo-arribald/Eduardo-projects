@@ -3,6 +3,8 @@ from pyfiglet import Figlet
 
 figlet = Figlet()
 
-x = input("Hola ")
-
-print(figlet.renderText(x))
+def main():
+    figlet.getFonts()
+    figlet.setFont(font = f)
+    x = input("Input: ")
+    print(figlet.renderText(x))
