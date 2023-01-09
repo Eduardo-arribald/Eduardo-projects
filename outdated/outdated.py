@@ -13,10 +13,10 @@ def change_date():
             print(date)
             date = date.split(",")
             print(date)
-            
-            
+
+
             if "" in date:
-                del date[""]
+                date.remove("")
 
             print(date)
 
