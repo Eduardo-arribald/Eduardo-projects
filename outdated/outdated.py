@@ -21,6 +21,7 @@ def change_date():
                         date.remove("")
                     int(date[1])
                     conditions(date)
+                    print(date)
                     #print("Todo bien")
                     break
 
@@ -72,6 +73,8 @@ def conditions(x:list):
     elif month_day(date) == True:
         to_int(date)
         return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
+    else:
+        return False
 
 def small():
     meses = [
