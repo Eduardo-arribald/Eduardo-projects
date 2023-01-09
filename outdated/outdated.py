@@ -20,10 +20,13 @@ def change_date():
                     if "" in date:
                         date.remove("")
                     int(date[1])
-                    conditions(date)
-                    print(date)
+                    if conditions(date) == False:
+                        continue
+                    else:
+                        break
+                    #print(date)
                     #print("Todo bien")
-                    break
+                    #break
 
         except:
             continue
