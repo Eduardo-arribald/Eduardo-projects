@@ -28,8 +28,6 @@ def main():
     elif len(sys.argv) == 2:
         print("Invalid usage")
         sys.exit()
-        print("Invalid usage")
-        sys.exit()
 
 main()
 
