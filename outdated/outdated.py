@@ -41,4 +41,5 @@ def months_small(lista:list):
     for i in range(len(meses)):
         
 
+
 #change_date()
