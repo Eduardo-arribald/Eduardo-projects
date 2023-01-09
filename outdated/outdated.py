@@ -8,7 +8,7 @@ def change_date():
                 ]
             date = input("Date: ").split()
             print(date)
-            
+
             if date[1] != "/" and int[date[0]] is int:
                 date = ('/'.join(date)).split("/")
                 date = (','.join(date))
@@ -32,8 +32,8 @@ def change_date():
                     to_int(date)
                     return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}", end = "")
         except:
-            continue
-            #break
+            #continue
+            break
 
 def to_int(lista:list):
     for i in range(len(lista)):
