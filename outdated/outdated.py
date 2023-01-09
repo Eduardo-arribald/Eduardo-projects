@@ -8,9 +8,9 @@ def change_date():
                 ]
             date = input("Date: ").split()
             print(date)
-            date_check = list(''.join(date))
+            date_check = (''.join(date)).split("/")
             print(date_check)
-            if date_check[0:3] != "/" and int[date_check[0:2]] is int:
+            if date_check[0] == str and int[date_check[0:2]] is int:
                 date = ('/'.join(date)).split("/")
                 date = (','.join(date))
                 #print(date)
@@ -59,4 +59,12 @@ def small():
 
 #change_date()
 
-x = 'October/
+x = "October29/1999".split()
+print(x)
+
+
+x = (''.join(x)).split("/")
+print(x)
+
+#if date_check[0] == str and int[date_check[0:2]] is int:
+
