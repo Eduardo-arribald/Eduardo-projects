@@ -27,7 +27,7 @@ def to_int(lista:list):
         lista[i] = int(lista[i])
 
 def month_day(lista:list):
-    if int(lista[0]) > 12 or int(lista[1]):
+    if int(lista[0]) > 12 or int(lista[1]) > 31:
         return False
     else:
         return True
