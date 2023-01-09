@@ -20,6 +20,7 @@ def change_date():
             elif int(date[1]) > 12:
             continue"""
             else:
+                to_int(date)
                 return print(f"{date[2]:02}-{date[1]:02}-{date[0]:02}")
         except:
             continue
