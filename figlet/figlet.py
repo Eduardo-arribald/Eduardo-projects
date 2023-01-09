@@ -17,7 +17,7 @@ def main():
             print(figlet.renderText(x))
         #if not valids, print an error message.
         else:
-            #print("Invalid usage")
+            #dprint("Invalid usage")
             print("Invalid usage")
             sys.exit()
     #if no arguments given, prompt the input message anyway.
