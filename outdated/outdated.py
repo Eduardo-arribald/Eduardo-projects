@@ -14,9 +14,9 @@ def change_date():
                 if comas(d) == True:
                     date = ('/'.join(date)).split("/")
                     date = (','.join(date))
-                    print(date)
+                    #print(date)
                     date = date.split(",")
-                    print(date)
+                    #print(date)
                     if "" in date:
                         date.remove("")
                     int(date[1])
