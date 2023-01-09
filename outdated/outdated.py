@@ -6,9 +6,11 @@ def change_date():
                 "January", "February", "March", "April", "May", "June", "July",
                 "August", "September", "October", "November", "December"
                 ]
-            date = input("Date: ").split()
-            print(date)
-            if string_and_slashes():
+            d = input("Date: ")
+            date = d.split()
+            #print(date)
+
+            if string_and_slashes(d):
                 date = ('/'.join(date)).split("/")
                 date = (','.join(date))
                 #print(date)
@@ -21,15 +23,15 @@ def change_date():
                     date[0] = meses.index(date[0]) + 1
                     to_int(date)
                     if month_day(date):
-                        return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}", end = "")
+                        return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
                 elif date[0] in small():
                     date[0] = small().index(date[0]) + 1
                     to_int(date)
                     if month_day(date):
-                        return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}", end = "")
+                        return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
                 elif month_day(date):
                     to_int(date)
-                    return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}", end = "")
+                    return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
         except:
             #continue
             break
@@ -63,9 +65,9 @@ def string_and_slashes(data:str):
         if len(x) > 1:
             print(x)
             #try:
-            print(int(x[0]))
-            print(int(x[1]))
-            print(int(x[2]))
+            int(x[0])
+            int(x[1])
+            int(x[2])
             return True
         else:
             return True
