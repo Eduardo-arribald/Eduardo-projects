@@ -8,9 +8,7 @@ def change_date():
                 ]
             date = input("Date: ").split()
             print(date)
-            date_check = (''.join(date)).split("/")
-            print(date_check)
-            if date_check[0] == str and int[date_check[0:2]] is int:
+            if string_and_slashes():
                 date = ('/'.join(date)).split("/")
                 date = (','.join(date))
                 #print(date)
@@ -57,11 +55,9 @@ def small():
     #print(small)
     return small
 
-#change_date()
-
-def string_and_slashes():
+def string_and_slashes(data:str):
     try:
-        x = "1/ 29".split()
+        x = data.split()
         #print(x)
         x = (''.join(x)).split("/")
         if len(x) > 1:
@@ -70,15 +66,15 @@ def string_and_slashes():
             print(int(x[0]))
             print(int(x[1]))
             print(int(x[2]))
-            print("No hay problema")
+            return True
         else:
-            return print("todo chido")
+            return True
     except ValueError or IndexError:
-        print("Hay un problema con el valor o faltan datos.")
+        return False
     except:
-        print("Hay un problema con el índice")
+        return False
 
-string_and_slashes()
+#string_and_slashes()
 
-#if date_check[0] == str and int[date_check[0:2]] is int:
+change_date()
 
