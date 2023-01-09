@@ -68,11 +68,15 @@ def conditions(x:list):
         to_int(date)
         if month_day(date) == True:
             return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
+        else:
+            return False
     elif date[0] in small():
         date[0] = small().index(date[0]) + 1
         to_int(date)
         if month_day(date) == True:
             return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
+        else:
+            return False
     elif month_day(date) == True:
         to_int(date)
         return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
