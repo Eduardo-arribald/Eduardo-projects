@@ -76,6 +76,9 @@ def string_and_slashes(data:str):
     except:
         return False
 
+
+
+
 #string_and_slashes()
 
 change_date()
