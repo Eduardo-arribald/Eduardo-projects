@@ -18,20 +18,8 @@ def change_date():
                 #print(date)
                 if "" in date:
                     date.remove("")
-
-                if date[0] in meses:
-                    date[0] = meses.index(date[0]) + 1
-                    to_int(date)
-                    if month_day(date):
-                        return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
-                elif date[0] in small():
-                    date[0] = small().index(date[0]) + 1
-                    to_int(date)
-                    if month_day(date):
-                        return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
-                elif month_day(date):
-                    to_int(date)
-                    return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
+                int(date[1])
+                conditions(date)
         except:
             #continue
             break
@@ -45,6 +33,27 @@ def month_day(lista:list):
         return False
     else:
         return True
+
+def conditions(x:list):
+    date = x
+    meses = [
+        "January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"
+        ]
+    if date[0] in meses:
+        date[0] = meses.index(date[0]) + 1
+        to_int(date)
+        if month_day(date):
+            return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
+    elif date[0] in small():
+        date[0] = small().index(date[0]) + 1
+        to_int(date)
+        if month_day(date):
+            return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
+    elif month_day(date):
+        to_int(date)
+        return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
+
 
 def small():
     meses = [
