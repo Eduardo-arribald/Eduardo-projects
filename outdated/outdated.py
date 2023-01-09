@@ -9,14 +9,14 @@ def change_date():
             date = input("Date: ").split()
             date_1 = ('/'.join(date)).split("/")
             date = (','.join(date_1)).split(",")
-            #print(date)
+            print(date)
             if date[0] in meses:
                 date[0] = meses.index(date[0]) + 1
                 to_int(date)
                 if month_day(date):
                     return print(f"{date[2]:02}-{date[1]:02}-{date[0]:02}")
-            elif date[0] in months_small():
-                date[0] = months_small().index(date[0]) + 1
+            elif date[0] in small():
+                date[0] = small().index(date[0]) + 1
                 to_int(date)
                 if month_day(date):
                     return print(f"{date[2]:02}-{date[1]:02}-{date[0]:02}")
@@ -37,7 +37,7 @@ def month_day(lista:list):
     else:
         return True
 
-def months_small():
+def small():
     meses = [
         "January", "February", "March", "April", "May", "June", "July",
         "August", "September", "October", "November", "December"
