@@ -8,8 +8,10 @@ def change_date():
                 ]
             date = input("Date: ").split()
             print(date)
+            date_check = list(''.join(date))
+            print(date_check)
 
-            if date[1] != "/" and int[date[0]] is int:
+            if date_check[1] != "/" and int[date_check[0]] is int:
                 date = ('/'.join(date)).split("/")
                 date = (','.join(date))
                 #print(date)
