@@ -12,12 +12,12 @@ def change_date():
     print(date_2)
     if len(date) > 1:
         for i in range(len(date)):
-            for n in range(len(meses)):
-                if date[i] == meses[n]:
-                    date[i] == n+1
+            if date[i] in meses:
+                date[i] == meses.index(date[i]) + 1
+                print(date)
 
     elif "/" in list(''.join(date)):
         date = ''.join(date).split("/")
-    print(date)
+    #print(date)
 
 change_date()
