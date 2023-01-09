@@ -60,17 +60,13 @@ def small():
 #change_date()
 
 def string_and_slashes():
-    x = "October 29, 1999".split()
+    x = "October/29/1999".split()
     #print(x)
     x = (''.join(x)).split("/")
-    #print(x)
-    #print(int(x[1]))
+    print(x)
     try:
         print(int(x[1]))
-        if int(x[2]) in x:
-            return x[2]
-        else:
-            return print("Wrong writen")
+        print(int(x[2]))
     except ValueError:
         return print("Si")
     except IndexError:
