@@ -63,19 +63,21 @@ def string_and_slashes():
     x = "October/29/1999".split()
     #print(x)
     x = (''.join(x)).split("/")
-    print(x)
-    try:
+    if len(x) > 1:
+        print(x)
+        #try:
         print(int(x[0]))
         print(int(x[1]))
         print(int(x[2]))
         print("No hay problema")
-    except ValueError:
-        return print("valor")
-    #except IndexError:
-        #return print("index corregido")
-    except:
-        return print("Si")
-
+        """
+        except ValueError:
+            return print("valor")
+        #except IndexError:
+            #return print("index corregido")
+        except:
+            return print("Si")
+    """
 string_and_slashes()
 
 #if date_check[0] == str and int[date_check[0:2]] is int:
