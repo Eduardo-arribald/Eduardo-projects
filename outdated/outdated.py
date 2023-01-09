@@ -65,9 +65,10 @@ def string_and_slashes():
     x = (''.join(x)).split("/")
     #print(x)
     print(int(x[1]))
-    if int(x[0]) != str: #and int(x[1]) == int:
-        return print("Wrong writen")
-    else:
+    try:
+        if int(x[1]) is not None: #and int(x[1]) == int:
+            return print("Wrong writen")
+    except ValueError:
         return True
 
 string_and_slashes()
