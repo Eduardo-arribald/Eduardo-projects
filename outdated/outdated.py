@@ -59,13 +59,18 @@ def small():
 
 #change_date()
 
-x = "October29/1999".split()
-print(x)
+def string_and_slashes():
+    x = "October/29/1999".split()
+    #print(x)
+    x = (''.join(x)).split("/")
+    #print(x)
+    print(int(x[1]))
+    if x[0] is str: #and int(x[1]) == int:
+        return print("Wrong writen")
+    else:
+        return True
 
-
-x = (''.join(x)).split("/")
-print(x)
-
+string_and_slashes()
 
 #if date_check[0] == str and int[date_check[0:2]] is int:
 
