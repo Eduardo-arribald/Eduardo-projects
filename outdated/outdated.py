@@ -10,8 +10,8 @@ def change_date():
             date = d.split()
             #print(date)
 
-            if string_and_slashes(d):
-                if comas(d):
+            if string_and_slashes(d) == True:
+                if comas(d) == True:
                     date = ('/'.join(date)).split("/")
                     date = (','.join(date))
                     #print(date)
@@ -21,6 +21,7 @@ def change_date():
                         date.remove("")
                     int(date[1])
                     conditions(date)
+                    print("Todo bien")
                     break
         except:
             #continue
@@ -67,9 +68,6 @@ def conditions(x:list):
     elif month_day(date):
         to_int(date)
         return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
-    elif date[1] in small() or date[1] in meses:
-        continue
-
 
 def small():
     meses = [
@@ -106,5 +104,5 @@ def string_and_slashes(data:str):
 
 #string_and_slashes()
 
-#change_date()
+change_date()
 
