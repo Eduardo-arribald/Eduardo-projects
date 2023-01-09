@@ -35,7 +35,7 @@ def comas(x:str):
             #print("Faltó la coma")
             return False
         else:
-            return
+            return True
     except:
         #print("No faltó la coma")
         return True
