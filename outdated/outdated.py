@@ -64,15 +64,17 @@ def string_and_slashes():
     #print(x)
     x = (''.join(x)).split("/")
     #print(x)
-    print(int(x[1]))
+    #print(int(x[1]))
     try:
-        int(x[0])
-        int(x[1])
-        return print("Wrong writen")
+        print(int(x[1]))
+        if int(x[2]) in x:
+            return x[2]
+        else:
+            return print("Wrong writen")
     except ValueError:
         return print("Si")
     except IndexError:
-        return print("Si")
+        return print("index corregido")
     except:
         return print("Si")
 
