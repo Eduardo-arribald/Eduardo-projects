@@ -36,7 +36,7 @@ def comas(x:str):
         #print("No faltó la coma")
         return True
 
-comas("September 8, 2020")
+#comas("September 8, 2020")
 
 def to_int(lista:list):
     for i in range(len(lista)):
@@ -67,6 +67,8 @@ def conditions(x:list):
     elif month_day(date):
         to_int(date)
         return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}")
+    elif date[1] in small() or date[1] in meses:
+        continue
 
 
 def small():
