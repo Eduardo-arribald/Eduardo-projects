@@ -11,19 +11,25 @@ def change_date():
             #print(date)
 
             if string_and_slashes(d):
-                date = ('/'.join(date)).split("/")
-                date = (','.join(date))
-                #print(date)
-                date = date.split(",")
-                #print(date)
-                if "" in date:
-                    date.remove("")
-                int(date[1])
-                conditions(date)
-                break
+                if comas(d):
+                    date = ('/'.join(date)).split("/")
+                    date = (','.join(date))
+                    #print(date)
+                    date = date.split(",")
+                    #print(date)
+                    if "" in date:
+                        date.remove("")
+                    int(date[1])
+                    conditions(date)
+                    break
         except:
             #continue
             break
+
+def comas(x:str):
+    try:
+        x = x.split(",")
+
 
 def to_int(lista:list):
     for i in range(len(lista)):
