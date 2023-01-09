@@ -14,11 +14,11 @@ def change_date():
                 date[0] = meses.index(date[0]) + 1
                 to_int(date)
                 return print(f"{date[2]:02}-{date[1]:02}-{date[0]:02}")
-                """
+
             elif date[1] or date[2] in meses:
-            continue
+                continue
             elif int(date[1]) > 12:
-            continue"""
+                continue
             else:
                 to_int(date)
                 return print(f"{date[2]:02}-{date[1]:02}-{date[0]:02}")
