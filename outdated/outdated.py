@@ -23,6 +23,7 @@ def change_date():
                     conditions(date)
                     #print("Todo bien")
                     break
+
         except:
             continue
             #break
