@@ -60,13 +60,14 @@ def small():
 #change_date()
 
 def string_and_slashes():
-    x = "October/29/1999".split()
+    x = "October 29, 1999".split()
     #print(x)
     x = (''.join(x)).split("/")
     #print(x)
     print(int(x[1]))
     try:
-        int(x[1]): #and int(x[1]) == int:
+        int(x[0])
+        int(x[1])
         return print("Wrong writen")
     except ValueError:
         return True
