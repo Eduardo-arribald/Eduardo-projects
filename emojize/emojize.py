@@ -3,12 +3,9 @@ from emoji import emojize
 
 def search(x:str):
     #x = input()
+    #print(emojize(x))
 
-    if 
+    print(emojize(emojize(x, language = 'alias'))) #variant = "emoji_type"))
 
-    print(emojize(x))
-
-    print(emojize(x, language = 'alias')) #variant = "emoji_type"))
-
-search(":thumbs_up:")
+search(":thumbsup:   :thumbs_up:")
 search(":thumbsup:")
