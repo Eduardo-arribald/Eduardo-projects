@@ -6,10 +6,8 @@ def change_date():
         ]
     date = input("Date: ").split()
     date_1 = ('/'.join(date)).split("/")
-    date_2 = (','.join(date_1)).split(",")
+    date = (','.join(date_1)).split(",")
     print(date)
-    print(date_1)
-    print(date_2)
     for i in range(len(date)):
         if date[i] in meses:
             date[i] = meses.index(date[i]) + 1
