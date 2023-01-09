@@ -20,6 +20,7 @@ def change_date():
                     date.remove("")
                 int(date[1])
                 conditions(date)
+                break
         except:
             #continue
             break
