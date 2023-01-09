@@ -13,7 +13,7 @@ def main():
             figlet.setFont(font = sys.argv[2])
             x = input("Input: ")
             if x != " " or x != "":
-                print(figlet.renderText(x))
+                print("Output:", figlet.renderText(x))
             else:
                 sys.exit()
         #if not valids, print an error message.
@@ -23,7 +23,7 @@ def main():
     #if no arguments given, prompt the input message anyway.
     elif len(sys.argv) == 1:
         x = input("Input: ")
-        print(figlet.renderText(x))
+        print("Output:", figlet.renderText(x))
     #If one argument given, prompt an error message.
     elif len(sys.argv) == 2:
         print("Invalid usage")
