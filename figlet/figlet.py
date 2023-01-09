@@ -26,8 +26,10 @@ def main():
         print(figlet.renderText(x))
     #If one argument given, prompt an error message.
     elif len(sys.argv) == 2:
-        print("Invalid usage")
+        #print("Invalid usage")
         sys.exit()
+
+
 
 main()
 
