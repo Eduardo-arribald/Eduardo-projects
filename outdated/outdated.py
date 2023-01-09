@@ -65,7 +65,7 @@ def string_and_slashes():
     x = (''.join(x)).split("/")
     #print(x)
     print(int(x[1]))
-    if x[0] is str: #and int(x[1]) == int:
+    if int(x[0]) != str: #and int(x[1]) == int:
         return print("Wrong writen")
     else:
         return True
