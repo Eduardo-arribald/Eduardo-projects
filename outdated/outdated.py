@@ -7,15 +7,15 @@ def change_date():
                 "August", "September", "October", "November", "December"
                 ]
             date = input("Date: ").split()
-            print(date)
+            #print(date)
             date = ('/'.join(date)).split("/")
             date = (','.join(date))
-            print(date)
+            #print(date)
             date = date.split(",")
-            print(date)
+            #print(date)
             if "" in date:
                 date.remove("")
-            print(date)
+            #print(date)
             if date[0] in meses:
                 date[0] = meses.index(date[0]) + 1
                 to_int(date)
