@@ -21,15 +21,14 @@ def main():
             print("Invalid usage")
             print("Invalid usage")
             sys.exit()
-    #"""if the users gives zero arguments"""
     elif len(sys.argv) == 1:
         x = input("Input: ")
         print(figlet.renderText(x))
-    elif len(sys.argv) == 2:
+    """elif len(sys.argv) == 2:
         #print("Invalid usage")
         print("Invalid usage")
         sys.exit()
-
+"""
 
 main()
 
