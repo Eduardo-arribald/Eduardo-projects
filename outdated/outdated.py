@@ -32,7 +32,6 @@ def comas(x:str):
         if len(y) > 1:
             int(x[1])
             return False
-        
     except:
         #print("No faltó la coma")
         return True
