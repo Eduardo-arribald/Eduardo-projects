@@ -66,11 +66,11 @@ def string_and_slashes():
     #print(x)
     print(int(x[1]))
     try:
-        if int(x[1]) is not None: #and int(x[1]) == int:
-            return print("Wrong writen")
+        int(x[1]): #and int(x[1]) == int:
+        return print("Wrong writen")
     except ValueError:
         return True
-        
+
 string_and_slashes()
 
 #if date_check[0] == str and int[date_check[0:2]] is int:
