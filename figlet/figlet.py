@@ -13,6 +13,9 @@ def main():
             figlet.setFont(font = sys.argv[2])
             x = input("Input: ")
             print(figlet.renderText(x))
+        else:
+            print("Invalid usage")
+            sys.exit()
     elif len(sys.argv) == 1:
         x = input("Input: ")
         print(figlet.renderText(x))
