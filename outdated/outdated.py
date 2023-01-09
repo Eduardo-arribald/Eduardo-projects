@@ -11,7 +11,7 @@ def change_date():
             date_check = list(''.join(date))
             print(date_check)
 
-            if date_check[1] != "/" and int[date_check[0]] is int:
+            if date_check[0:3] != "/" and int[date_check[0:2]] is int:
                 date = ('/'.join(date)).split("/")
                 date = (','.join(date))
                 #print(date)
