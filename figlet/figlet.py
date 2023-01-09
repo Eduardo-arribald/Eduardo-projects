@@ -19,9 +19,11 @@ def main():
     elif len(sys.argv) == 1:
         x = input("Input: ")
         print(figlet.renderText(x))
-    else:
+    elif len(sys.argv) == 2:
         print("Invalid usage")
         sys.exit()
+
+
 main()
 
 #print(figlet.getFonts())
