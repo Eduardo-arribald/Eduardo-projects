@@ -63,7 +63,7 @@ def string_and_slashes(data:str):
         #print(x)
         x = (''.join(x)).split("/")
         if len(x) > 1:
-            print(x)
+            #print(x)
             #try:
             int(x[0])
             int(x[1])
