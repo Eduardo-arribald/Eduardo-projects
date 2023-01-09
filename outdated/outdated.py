@@ -8,7 +8,7 @@ def change_date():
                 ]
             date = input("Date: ").split()
             print(date)
-            date_1 = (''.join(date)).split("/")
+            date_1 = ('/'.join(date)).split("/")
             date = (','.join(date_1)).split(",")
 
             print(date)
