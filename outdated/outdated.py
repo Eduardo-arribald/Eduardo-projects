@@ -66,5 +66,6 @@ print(x)
 x = (''.join(x)).split("/")
 print(x)
 
+
 #if date_check[0] == str and int[date_check[0:2]] is int:
 
