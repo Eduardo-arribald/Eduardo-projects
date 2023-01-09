@@ -9,8 +9,10 @@ def change_date():
             date = input("Date: ").split()
             print(date)
             date = ('/'.join(date)).split("/")
-            date = (','.join(date)).split(",")
-
+            date = (','.join(date))
+            print(date)
+            date = date.split(",")
+            print(date)
             if "" in date:
                 del date[""]
 
