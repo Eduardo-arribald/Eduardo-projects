@@ -1,6 +1,6 @@
 
-import figlet
+import figlet 
 
 x = input("Hola")
 
-print(figlet(x))
+print(figlet.text(x))
