@@ -21,24 +21,26 @@ def change_date():
                         date.remove("")
                     int(date[1])
                     conditions(date)
-                    print("Todo bien")
+                    #print("Todo bien")
                     break
         except:
-            #continue
-            break
+            continue
+            #break
 
 def comas(x:str):
     try:
         y = x.split(" ")
         if len(y) > 1:
-            int(x[1])
-            print("Faltó la coma")
+            int(y[1])
+            #print("Faltó la coma")
             return False
+        else:
+            return
     except:
-        print("No faltó la coma")
+        #print("No faltó la coma")
         return True
 
-comas("September 8 2020")
+#comas("September 8 2020")
 
 def to_int(lista:list):
     for i in range(len(lista)):
@@ -105,5 +107,5 @@ def string_and_slashes(data:str):
 
 #string_and_slashes()
 
-#change_date()
+change_date()
 
