@@ -70,6 +70,7 @@ def string_and_slashes():
             return print("Wrong writen")
     except ValueError:
         return True
+        
 
 string_and_slashes()
 
