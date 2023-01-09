@@ -32,4 +32,13 @@ def month_day(lista:list):
     else:
         return True
 
-change_date()
+def months_small(lista:list):
+    meses = [
+        "January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"
+        ]
+    small = []
+    for i in range(len(meses)):
+        
+
+#change_date()
