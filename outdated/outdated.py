@@ -13,18 +13,14 @@ def change_date():
             print(date)
             date = date.split(",")
             print(date)
-
-
             if "" in date:
                 date.remove("")
-
             print(date)
-
             if date[0] in meses:
                 date[0] = meses.index(date[0]) + 1
                 to_int(date)
                 if month_day(date):
-                    return print(f"{date[2]:02}-{date[1]:02}-{date[0]:02}")
+                    return print(f"{date[2]:04}-{date[1]:02}-{date[0]:02}")
             elif date[0] in small():
                 date[0] = small().index(date[0]) + 1
                 to_int(date)
