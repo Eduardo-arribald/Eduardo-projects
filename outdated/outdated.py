@@ -57,7 +57,6 @@ def small():
     #print(small)
     return small
 
-#x = months_small()
-#print(x)
+#change_date()
 
-change_date()
+x = 'October/
