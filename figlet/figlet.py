@@ -1,6 +1,8 @@
 
-import figlet 
+from pyfiglet import Figlet
 
-x = input("Hola")
+figlet = Figlet()
 
-print(figlet.text(x))
+x = input("Hola ")
+
+print(figlet.renderText(x))
