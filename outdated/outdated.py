@@ -10,7 +10,7 @@ def change_date():
             date_1 = ('/'.join(date)).split("/")
             date = (','.join(date_1)).split(",")
             #print(date)
-            if date[0] in meses:
+            if date[0] in meses or date[0] in month_small():
                 date[0] = meses.index(date[0]) + 1
                 to_int(date)
                 if month_day(date):
@@ -40,8 +40,9 @@ def months_small():
     small = []
     for i in range(len(meses)):
         small.append(meses[i][0:3])
-    print(small)
+    #print(small)
+    return small
 
-months_small()
-
+x = months_small()
+print(x)
 #change_date()
