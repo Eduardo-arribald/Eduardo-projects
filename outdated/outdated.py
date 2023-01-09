@@ -70,7 +70,11 @@ def string_and_slashes():
         int(x[1])
         return print("Wrong writen")
     except ValueError:
-        return True
+        return print("Si")
+    except IndexError:
+        return print("Si")
+    except:
+        return print("Si")
 
 string_and_slashes()
 
