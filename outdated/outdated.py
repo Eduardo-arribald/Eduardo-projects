@@ -69,8 +69,8 @@ def string_and_slashes():
         print(int(x[2]))
     except ValueError:
         return print("Si")
-    except IndexError:
-        return print("index corregido")
+    #except IndexError:
+        #return print("index corregido")
     except:
         return print("Si")
 
