@@ -32,9 +32,10 @@ def comas(x:str):
         y = x.split(" ")
         if len(y) > 1:
             int(x[1])
+            print("Faltó la coma")
             return False
     except:
-        #print("No faltó la coma")
+        print("No faltó la coma")
         return True
 
 #comas("September 8, 2020")
