@@ -9,7 +9,7 @@ def change_date():
             date = input("Date: ").split()
             date_1 = ('/'.join(date)).split("/")
             date = (','.join(date_1)).split(",")
-            print(date)
+            #print(date)
             if date[0] in meses:
                 date[0] = meses.index(date[0]) + 1
                 to_int(date)
@@ -27,9 +27,6 @@ def change_date():
 
 def to_int(lista:list):
     for i in range(len(lista)):
-        try:
-            lista[i] = int(lista[i])
-        except:
-            pass
+        lista[i] = int(lista[i])
 
 change_date()
