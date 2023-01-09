@@ -10,15 +10,12 @@ def main():
     if len(sys.argv) == 3:
         #Check if those arguments are valids.
         if (sys.argv[1] == '-f' or sys.argv[1] == '--font') and sys.argv[2] in fonts:
-            #sys.argv[1]
-            #figlet.getFonts()
             figlet.setFont(font = sys.argv[2])
             x = input("Input: ")
             print(figlet.renderText(x))
         #if not valids, print an error message.
         else:
-            #dprint("Invalid usage")
-            print("Invalid usage")
+            #print("Invalid usage")
             sys.exit()
     #if no arguments given, prompt the input message anyway.
     elif len(sys.argv) == 1:
