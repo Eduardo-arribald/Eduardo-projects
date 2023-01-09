@@ -13,14 +13,9 @@ def change_date():
             if date[0] in meses:
                 date[0] = meses.index(date[0]) + 1
                 to_int(date)
-                if date[]
-                return print(f"{date[2]:02}-{date[1]:02}-{date[0]:02}")
-
-            elif date[1] or date[2] in meses:
-                continue
-            elif int(date[0]) > 12 or int(date[1]) > 31:
-                continue
-            else:
+                if month_day(date):
+                    return print(f"{date[2]:02}-{date[1]:02}-{date[0]:02}")
+            elif month_day(date):
                 to_int(date)
                 return print(f"{date[2]:02}-{date[1]:02}-{date[0]:02}")
         except:
@@ -30,5 +25,11 @@ def change_date():
 def to_int(lista:list):
     for i in range(len(lista)):
         lista[i] = int(lista[i])
+
+def month_day(lista:list):
+    if int(lista[0]) > 12 or int(lista[1]):
+        return False
+    else:
+        return True
 
 change_date()
