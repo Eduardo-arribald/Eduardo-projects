@@ -60,27 +60,24 @@ def small():
 #change_date()
 
 def string_and_slashes():
-    #try:
-    x = "October 29 1999".split()
-    #print(x)
-    x = (''.join(x)).split("/")
-    if len(x) > 1:
-        print(x)
-        #try:
-        print(int(x[0]))
-        print(int(x[1]))
-        print(int(x[2]))
-        print("No hay problema")
-    else:
-        return print("todo chido")
-        """
-        except ValueError:
-            return print("valor")
-        #except IndexError:
-            #return print("index corregido")
-        except:
-            return print("Si")
-    """
+    try:
+        x = "1/ 29".split()
+        #print(x)
+        x = (''.join(x)).split("/")
+        if len(x) > 1:
+            print(x)
+            #try:
+            print(int(x[0]))
+            print(int(x[1]))
+            print(int(x[2]))
+            print("No hay problema")
+        else:
+            return print("todo chido")
+    except ValueError or IndexError:
+        print("Hay un problema con el valor o faltan datos.")
+    except:
+        print("Hay un problema con el índice")
+
 string_and_slashes()
 
 #if date_check[0] == str and int[date_check[0:2]] is int:
