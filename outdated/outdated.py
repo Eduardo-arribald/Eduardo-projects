@@ -8,28 +8,28 @@ def change_date():
                 ]
             date = input("Date: ").split()
             print(date)
-            if date[1] != "/":
-            date = ('/'.join(date)).split("/")
-            date = (','.join(date))
-            #print(date)
-            date = date.split(",")
-            #print(date)
-            if "" in date:
-                date.remove("")
+            if date[1] != "/" and int[date[0]] is int:
+                date = ('/'.join(date)).split("/")
+                date = (','.join(date))
+                #print(date)
+                date = date.split(",")
+                #print(date)
+                if "" in date:
+                    date.remove("")
 
-            if date[0] in meses:
-                date[0] = meses.index(date[0]) + 1
-                to_int(date)
-                if month_day(date):
+                if date[0] in meses:
+                    date[0] = meses.index(date[0]) + 1
+                    to_int(date)
+                    if month_day(date):
+                        return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}", end = "")
+                elif date[0] in small():
+                    date[0] = small().index(date[0]) + 1
+                    to_int(date)
+                    if month_day(date):
+                        return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}", end = "")
+                elif month_day(date):
+                    to_int(date)
                     return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}", end = "")
-            elif date[0] in small():
-                date[0] = small().index(date[0]) + 1
-                to_int(date)
-                if month_day(date):
-                    return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}", end = "")
-            elif month_day(date):
-                to_int(date)
-                return print(f"{date[2]:02}-{date[0]:02}-{date[1]:02}", end = "")
         except:
             continue
             #break
