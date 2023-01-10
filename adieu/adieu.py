@@ -20,8 +20,10 @@ while True:
         for i in range(len(names)):
             if len(names) == 1:
                 print(", to " + names[i])
-            elif len(names) > 1 and names[i] != names[-1]:
+            elif len(names) == 2 and names[i] != names[-1]:
                 print(f", to {names[i]}", end = "")
-            elif len(names) > 1 and names[i] == names[-1]:
+            elif len(names) > 2 and names[i] != names[-1]:
+                print(f" to {names[i]},", end = "")
+            elif len(names) >= 2 and names[i] == names[-1]:
                 print(f" and {names[i]}")
         break
