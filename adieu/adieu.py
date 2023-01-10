@@ -3,7 +3,7 @@ import inflect
 
 p = inflect.engine()
 
-thing = "car"
+thing = "example"
 
 idea = " digit"
 
