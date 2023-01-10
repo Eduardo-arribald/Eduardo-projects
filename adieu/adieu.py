@@ -16,4 +16,9 @@ while True:
         print("Did you want ", p.a(thing), "or", p.an(idea))
         break
     except:
-        
+        print("Adieu, adieu, to", end = " ")
+        for i in names:
+            if len(names) == 1:
+                print(names[0])
+            elif len(names) > 1:
+                print(names)
