@@ -34,6 +34,7 @@ def main():
             x = generate_integer(a)
             y = generate_integer(a)
             wrongs += 1
+            print("EEE")
         else:
             print("EEE")
             tries += 1
