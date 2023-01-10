@@ -21,7 +21,7 @@ def main():
                     print("Too small!")
                 elif guess > random_number:
                     print("Too large!")
-                else:
+                elif guess == random_number:
                     print("Just right!")
                     break
         except:
