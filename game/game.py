@@ -17,13 +17,13 @@ def main():
         try:
             guess = int(input("Guess: "))
             if 1 <= guess <= top_of_range:
-                if guess < random_number:
+                if guess == random_number:
+                    print("Just right!")
+                    break
+                elif guess < random_number:
                     print("Too small!")
                 elif guess > random_number:
                     print("Too large!")
-                elif guess == random_number:
-                    print("Just right!")
-                    break
         except:
             continue
 
