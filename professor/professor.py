@@ -32,7 +32,8 @@ def main():
                 break
         else:
             print("EEE")
-            
+            tries += 1
+
 
 def get_level():
     while True:
