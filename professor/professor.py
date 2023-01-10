@@ -18,11 +18,13 @@ def main():
         elif answer != (x + y):
             tries += 1
             if tries == 3:
+                print(f"{x} + {y} =", str(x+y))
                 x = generate_integer(a)
                 y = generate_integer(a)
                 solved += 1
-
-
+        #Check if 10 problems were solved
+        if solved == 10:
+            break
 
 def get_level():
     while True:
