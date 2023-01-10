@@ -12,6 +12,7 @@ def get_level(n):
 
 
 
+
 def generate_integer(level):
     ...
 
