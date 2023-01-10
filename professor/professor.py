@@ -2,8 +2,26 @@
 import random
 
 def main():
-    get_level()
-    
+    a = get_level()
+    x = generate_integer(a)
+    y = generate_integer(a)
+    solved = 0
+    tries = 0
+    #Here is where the loop should begin.
+    while True:
+        answer = input(f"{x} + {y} =")
+        if answer == (x + y):
+            tries = 0
+            solved += 1
+            x = generate_integer(a)
+            y = generate_integer(a)
+        elif answer != (x + y):
+            tries += 1
+            if tries == 3:
+                x = generate_integer(a)
+                y = generate_integer(a)
+                solved += 1
+
 
 
 def get_level():
