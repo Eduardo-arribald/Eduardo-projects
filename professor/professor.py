@@ -2,10 +2,11 @@
 import random
 
 def main():
-    z 
+    z = input("Level: ")
 
 
-def get_level():
+def get_level(z):
+    
     ...
 
 
