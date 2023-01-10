@@ -58,9 +58,9 @@ def get_level():
             n = int(n)
             if n in range(1,4):
                 return n
-        except:
+        except ValueError:
             #print("error")
-            break
+            pass
 
 
 def generate_integer(x):
