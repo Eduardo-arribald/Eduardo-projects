@@ -25,9 +25,6 @@ def main():
                     print("Just right!")
                     break
         except:
-            #print("Hubo un error!")
-            continue
-        else:
             continue
 
 main()
