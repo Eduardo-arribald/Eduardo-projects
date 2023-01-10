@@ -10,7 +10,7 @@ def main():
             break
         else:
             print("Try with a number")
-            break
+            continue
         #continue
 
     while True:
