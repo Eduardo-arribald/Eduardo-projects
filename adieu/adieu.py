@@ -13,13 +13,15 @@ while True:
         x = input("Name: ")
         names.append(x)
 
-        print("Did you want ", p.a(thing), "or", p.an(idea))
-        break
+        #print("Did you want ", p.a(thing), "or", p.an(idea))
+        #break
     except:
         print("Adieu, adieu, to", end = " ")
         for i in range(len(names)):
             if len(names) == 1:
                 print(names[i])
-            elif len(names) > 1:
+            elif len(names) > 1 and names[i] != names[-1]:
                 print(f" {names[i]},")
-        break
+            elif len(names) > 1 and names[i] == names[-1]:
+                print(f" and {names[i]}")
+    break
