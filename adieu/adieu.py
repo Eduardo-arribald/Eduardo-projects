@@ -17,8 +17,9 @@ while True:
         break
     except:
         print("Adieu, adieu, to", end = " ")
-        for i in names:
+        for i in range(len(names)):
             if len(names) == 1:
-                print(names[0])
+                print(names[i])
             elif len(names) > 1:
-                print(names)
+                print(f" {names[i]},")
+        break
