@@ -21,7 +21,7 @@ while True:
             if len(names) == 1:
                 print(names[i])
             elif len(names) > 1 and names[i] != names[-1]:
-                print(f" {names[i]},")
+                print(f" {names[i]},", end = " ")
             elif len(names) > 1 and names[i] == names[-1]:
-                print(f" and {names[i]}")
+                print(f"and {names[i]}")
         break
