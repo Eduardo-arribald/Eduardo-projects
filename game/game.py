@@ -24,6 +24,7 @@ while True:
         else:
             continue
     except:
+        print("Hubo un error!)
         continue
 
 
