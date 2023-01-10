@@ -24,4 +24,4 @@ while True:
                 print(f" {names[i]},")
             elif len(names) > 1 and names[i] == names[-1]:
                 print(f" and {names[i]}")
-    break
+        break
