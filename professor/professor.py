@@ -35,7 +35,7 @@ def get_level():
             #Check if users input a number in the range
             n = input("Level: ")
             n = int(n)
-            if n in range(1:4):
+            if n in range(1,4):
                 return n
         except:
             print("error")
@@ -44,7 +44,7 @@ def get_level():
 
 def generate_integer(x):
     if x in [1, 2, 3]:
-        x = random.ranint(1, (int("1"*x)*9))
+        x = random.randint(1, (int("1"*x)*9))
         return x
     else:
         return ValueError
