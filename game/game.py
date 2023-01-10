@@ -4,14 +4,23 @@ import random
 guesses = 0
 
 while True:
-    top_of_range = input("Level: ")
-    if top_of_range.isdigit() and int(top_of_range) > 0:
-        random_number = random.randint(0, top_of_range)
-        guesses += 1
-        guess = input("Guess: ")
-        i
-
-
+    try:
+        top_of_range = input("Level: ")
+        if top_of_range.isdigit() and int(top_of_range) > 0:
+            random_number = random.randint(0, top_of_range)
+            guesses += 1
+            guess = int(input("Guess: "))
+            if guess < random_number:
+                print("Too small!")
+            elif guess > random_number:
+                print("Too large!")
+            else:
+                print("Just right!")
+                break
+        else:
+            
+    except:
+        break
 
     else:
         print('Por favor intenta escribiendo un número.')
