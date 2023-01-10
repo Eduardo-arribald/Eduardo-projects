@@ -30,7 +30,7 @@ def main():
                     wrongs += 1
             #Check if 10 problems were solved
             if (solved + wrongs) == maximum_points:
-                print(f"Score: {solved/maximum_points}")
+                print(f"Score: {int(10*solved/maximum_points)}")
                 break
         elif tries == 3:
             print(f"{x} + {y} = ", str(x+y))
@@ -39,7 +39,7 @@ def main():
             wrongs += 1
             print("EEE")
         elif (solved + wrongs) == maximum_points:
-            print(f"Score: {solved/maximum_points}")
+            print(f"Score: {int(10*solved/maximum_points)}")
             break
         else:
             print("EEE")
