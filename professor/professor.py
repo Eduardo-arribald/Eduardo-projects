@@ -10,7 +10,7 @@ def main():
     tries = 0
     #Here is where the loop should begin.
     while True:
-        answer = input(f"{x} + {y} =")
+        answer = input(f"{x} + {y} = ")
         if answer.isdigit() and tries < 3:
             answer = int(answer)
             if answer == (x + y):
@@ -23,7 +23,7 @@ def main():
                 tries += 1
                 wrongs += 1
                 if tries == 3:
-                    print(f"{x} + {y} =", str(x+y))
+                    print(f"{x} + {y} = ", str(x+y))
                     x = generate_integer(a)
                     y = generate_integer(a)
                     wrongs += 1
@@ -32,6 +32,7 @@ def main():
                 print(f"Your score is: {solved/10}")
                 break
         elif tries == 3:
+            print(f"{x} + {y} = ", str(x+y))
             x = generate_integer(a)
             y = generate_integer(a)
             wrongs += 1
