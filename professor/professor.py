@@ -29,6 +29,7 @@ def main():
                     wrongs += 1
             #Check if 10 problems were solved
             if (solved + wrongs) == 10:
+                print(f"Your score is: {solved/10}")
                 break
         elif tries == 3:
             x = generate_integer(a)
