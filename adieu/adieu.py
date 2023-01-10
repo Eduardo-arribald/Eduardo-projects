@@ -16,10 +16,10 @@ while True:
         #print("Did you want ", p.a(thing), "or", p.an(idea))
         #break
     except:
-        print("Adieu, adieu", end = " ")
+        print("Adieu, adieu", end = "")
         for i in range(len(names)):
-            if len(", to " + names) == 1:
-                print(names[i])
+            if len(names) == 1:
+                print(", to " + names[i])
             elif len(names) > 1 and names[i] != names[-1]:
                 print(f", to {names[i]}", end = "")
             elif len(names) > 1 and names[i] == names[-1]:
