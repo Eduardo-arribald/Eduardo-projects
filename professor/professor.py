@@ -35,6 +35,9 @@ def main():
             y = generate_integer(a)
             wrongs += 1
             print("EEE")
+        elif (solved + wrongs) == 10:
+            print(f"Your score is: {solved/10}")
+            break
         else:
             print("EEE")
             tries += 1
