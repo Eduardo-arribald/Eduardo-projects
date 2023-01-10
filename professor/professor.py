@@ -29,7 +29,7 @@ def main():
                     wrongs += 1
             #Check if 10 problems were solved
             if (solved + wrongs) == 10:
-                print(f"Your score is: {solved/10}")
+                print(f"Score: {solved/10}")
                 break
         elif tries == 3:
             print(f"{x} + {y} = ", str(x+y))
@@ -38,7 +38,7 @@ def main():
             wrongs += 1
             print("EEE")
         elif (solved + wrongs) == 10:
-            print(f"Your score is: {solved/10}")
+            print(f"Score: {solved/10}")
             break
         else:
             print("EEE")
