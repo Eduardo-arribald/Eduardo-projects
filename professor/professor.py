@@ -30,6 +30,10 @@ def main():
             #Check if 10 problems were solved
             if (solved + wrongs) == 10:
                 break
+        elif tries == 3:
+            x = generate_integer(a)
+            y = generate_integer(a)
+            wrongs += 1
         else:
             print("EEE")
             tries += 1
