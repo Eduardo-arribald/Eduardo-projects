@@ -17,16 +17,16 @@ def main():
             guess = int(input("Guess: "))
             if guess < random_number:
                 print("Too small!")
-                break
-                #continue
+
             elif guess > random_number:
                 print("Too large!")
-                break
             else:
                 print("Just right!")
                 break
         except:
             print("Hubo un error!")
             break
+        else:
+            continue
 
 main()
