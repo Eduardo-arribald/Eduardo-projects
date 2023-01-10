@@ -11,7 +11,7 @@ def main():
     #Here is where the loop should begin.
     while True:
         answer = input(f"{x} + {y} =")
-        if answer.isdigit():
+        if answer.isdigit() and tries < 3:
             answer = int(answer)
             if answer == (x + y):
                 tries = 0
