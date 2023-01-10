@@ -29,16 +29,16 @@ def main():
                     y = generate_integer(a)
                     wrongs += 1
             #Check if 10 problems were solved
-            """
             if (solved + wrongs) == maximum_points:
                 print(f"Score: {int(10*solved/maximum_points)}")
-                break"""
+                break
         elif tries == 3:
             print(f"{x} + {y} = ", str(x+y))
             x = generate_integer(a)
             y = generate_integer(a)
             wrongs += 1
             print("EEE")
+
         elif (solved + wrongs) == maximum_points:
             print(f"Score: {int(10*solved/maximum_points)}")
             break
@@ -46,9 +46,7 @@ def main():
             print("EEE")
             tries += 1
 
-        if (solved + wrongs) == maximum_points:
-            print(f"Score: {int(10*solved/maximum_points)}")
-                break
+
 
 
 def get_level():
