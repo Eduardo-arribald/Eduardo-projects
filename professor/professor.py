@@ -64,8 +64,14 @@ def get_level():
 
 
 def generate_integer(x):
-    if x in [1, 2, 3]:
+    if x == 1:
         x = random.randint(0, (int("1"*x)*9))
+        return x
+    elif x == 2:
+        x = random.randint(10, (int("1"*x)*9))
+        return x
+    elif x == 3:
+        x = random.randint(100, (int("1"*x)*9))
         return x
     else:
         return ValueError
