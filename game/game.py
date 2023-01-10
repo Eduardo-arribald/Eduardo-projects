@@ -9,7 +9,7 @@ def main():
             random_number = random.randint(0, top_of_range)
             break
         else:
-            print("Try with a number")
+            #print("Try with a number")
             continue
         #continue
 
