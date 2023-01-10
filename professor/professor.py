@@ -2,7 +2,7 @@
 import random
 
 def main():
-    maximum_points = 3
+    maximum_points = 10
     a = get_level()
     x = generate_integer(a)
     y = generate_integer(a)
@@ -32,13 +32,13 @@ def main():
             if (solved + wrongs) == maximum_points:
                 print(f"Score: {int(10*solved/maximum_points)}")
                 break
-        elif tries == 3 and (solved + wrongs) < maximum_points:
+        elif tries == 2 and (solved + wrongs) < maximum_points:
+            print("EEE")
             print(f"{x} + {y} =", str(x+y))
             x = generate_integer(a)
             y = generate_integer(a)
             wrongs += 1
             tries = 0
-            #print("EEE")
 
         elif (solved + wrongs) == maximum_points:
             print(f"Score: {int(10*solved/maximum_points)}")
