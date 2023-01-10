@@ -11,24 +11,28 @@ def main():
     #Here is where the loop should begin.
     while True:
         answer = input(f"{x} + {y} =")
-        answer = int(answer)
-        if answer == (x + y):
-            tries = 0
-            solved += 1
-            x = generate_integer(a)
-            y = generate_integer(a)
-        elif answer != (x + y):
-            print("EEE")
-            tries += 1
-            wrongs += 1
-            if tries == 3:
-                print(f"{x} + {y} =", str(x+y))
+        if answer.isdigit():
+            answer = int(answer)
+            if answer == (x + y):
+                tries = 0
+                solved += 1
                 x = generate_integer(a)
                 y = generate_integer(a)
+            elif answer != (x + y):
+                print("EEE")
+                tries += 1
                 wrongs += 1
-        #Check if 10 problems were solved
-        if (solved + wrongs) == 10:
-            break
+                if tries == 3:
+                    print(f"{x} + {y} =", str(x+y))
+                    x = generate_integer(a)
+                    y = generate_integer(a)
+                    wrongs += 1
+            #Check if 10 problems were solved
+            if (solved + wrongs) == 10:
+                break
+        else:
+            print("EEE")
+            
 
 def get_level():
     while True:
