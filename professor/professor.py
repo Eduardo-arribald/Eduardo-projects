@@ -6,6 +6,7 @@ def main():
     x = generate_integer(a)
     y = generate_integer(a)
     solved = 0
+    wrongs = 0
     tries = 0
     #Here is where the loop should begin.
     while True:
@@ -16,14 +17,16 @@ def main():
             x = generate_integer(a)
             y = generate_integer(a)
         elif answer != (x + y):
+            print("EEE")
             tries += 1
+            wrongs += 1
             if tries == 3:
                 print(f"{x} + {y} =", str(x+y))
                 x = generate_integer(a)
                 y = generate_integer(a)
-                solved += 1
+                wrongs += 1
         #Check if 10 problems were solved
-        if solved == 10:
+        if (solved + wrongs) == 10:
             break
 
 def get_level():
