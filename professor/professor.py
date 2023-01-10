@@ -37,6 +37,7 @@ def main():
             x = generate_integer(a)
             y = generate_integer(a)
             wrongs += 1
+            tries = 0
             #print("EEE")
 
         elif (solved + wrongs) == maximum_points:
