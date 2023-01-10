@@ -1,22 +1,22 @@
 
 import random
 
-top_of_range = input("Level: ")
-
-if top_of_range.isdigit():
-    top_of_range = int(top_of_range)
-    if top_of_range <= 0:
-        print('Intenta con un número más grande que 0.')
-        quit()
-else:
-    print('Por favor intenta escribiendo un número.')
-    quit()
-
-random_number = random.randint(0, top_of_range)
-
 guesses = 0
 
 while True:
+    top_of_range = input("Level: ")
+    if top_of_range.isdigit() and int(top_of_range) > 0:
+        random_number = random.randint(0, top_of_range)
+        guesses += 1
+        guess = input("Guess: ")
+        i
+
+
+
+    else:
+        print('Por favor intenta escribiendo un número.')
+        continue
+
     guesses += 1
     user_guess = input(f"Adivina un número entre 0 y {top_of_range}: ")
     if user_guess.isdigit():
