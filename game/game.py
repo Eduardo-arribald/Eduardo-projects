@@ -8,8 +8,9 @@ def main():
             top_of_range = int(top_of_range)
             random_number = random.randint(0, top_of_range)
             break
-        print("Try with a number")
-        break
+        else:
+            print("Try with a number")
+            break
         #continue
 
     while True:
