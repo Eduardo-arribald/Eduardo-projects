@@ -11,6 +11,7 @@ def main():
     #Here is where the loop should begin.
     while True:
         answer = input(f"{x} + {y} =")
+        answer = int(answer)
         if answer == (x + y):
             tries = 0
             solved += 1
