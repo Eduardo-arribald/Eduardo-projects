@@ -66,6 +66,7 @@ def main():
         elif tries == 3 and (solved + wrongs) == maximum_points:
             #print(f"Score: {int(10*solved/maximum_points)}")
             print(f"Score of solved: {int(solved)}")
+            print(f"Wrongs: {int(wrongs)}")
             break
         #else
         else:
