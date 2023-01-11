@@ -22,8 +22,8 @@ def main():
             elif answer != (x + y):
                 print("EEE")
                 tries += 1
-                wrongs += 1
-                if tries == 3:
+                #wrongs += 1
+                if tries == 2:
                     print(f"{x} + {y} =", str(x+y))
                     x = generate_integer(a)
                     y = generate_integer(a)
