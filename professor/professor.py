@@ -42,8 +42,8 @@ def main():
                     #total of problems, print the score and break the loop.
                     elif tries == 3 and (solved + wrongs) == maximum_points:
                         #print(f"Score: {int(10*solved/maximum_points)}")
-                        print(f"Score of solved: {int(solved)}")
-                        print(f"Wrongs: {int(wrongs)}")
+                        print(f"Score: {int(solved)}")
+                        #print(f"Wrongs: {int(wrongs)}")
                         break
                     #Else, print "EEE".
                     else:
@@ -66,8 +66,8 @@ def main():
         #final score and break the loop.
         elif tries == 3 and (solved + wrongs) == maximum_points:
             #print(f"Score: {int(10*solved/maximum_points)}")
-            print(f"Score of solved: {int(solved)}")
-            print(f"Wrongs: {int(wrongs)}")
+            print(f"Score: {int(solved)}")
+            #print(f"Wrongs: {int(wrongs)}")
             break
         #else
         else:
