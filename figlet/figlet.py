@@ -1,5 +1,6 @@
 
-#Score: 
+#Score: 4/7
+#Not submited
 
 from pyfiglet import Figlet
 import sys
