@@ -11,7 +11,7 @@ try:
     dictionary = price.json()
     print(price)
     print(p)
-    for i un
+    for 
 
 except requests.RequestException:
     print("Problema Request")
