@@ -47,10 +47,10 @@ def main():
                     #Else, print "EEE".
                     else:
                         print("EEE")
-                #If input isn't a digit, print "EEE" and add 1 to tries.
-                else:
-                    print("EEE")
-                    tries += 1
+            #If input isn't a digit, print "EEE" and add 1 to tries.
+            else:
+                print("EEE")
+                tries += 1
         #If user already inputed 3 tries and hasn't solved all the problems,
         #print the correct answer, generate new numbers, resent the tries and
         #add 1 to "wrongs".
