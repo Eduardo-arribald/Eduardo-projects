@@ -1,4 +1,6 @@
 
+#Score: 9/8
+
 import random
 
 def main():

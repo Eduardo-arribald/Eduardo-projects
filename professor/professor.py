@@ -1,6 +1,6 @@
 
 
-
+#Score: 100
 
 import random
 
