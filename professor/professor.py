@@ -41,8 +41,9 @@ def main():
                     #If tries equal 3 and the sum of solved and wrongs are equal to the
                     #total of problems, print the score and break the loop.
                     elif tries == 3 and (solved + wrongs) == maximum_points:
-                        print(f"Score: {int(10*solved/maximum_points)}")
+                        #print(f"Score: {int(10*solved/maximum_points)}")
                         print(f"Score of solved: {int(solved)}")
+                        print(f"Wrongs: {int(wrongs)}")
                         break
                     #Else, print "EEE".
                     else:
