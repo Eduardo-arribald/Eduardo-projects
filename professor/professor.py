@@ -33,7 +33,7 @@ def main():
                 print(f"Score: {int(10*solved/maximum_points)}")
                 break
         elif tries == 2 and (solved + wrongs) < maximum_points:
-            print("EEE")
+            #print("EEE")
             print(f"{x} + {y} =", str(x+y))
             x = generate_integer(a)
             y = generate_integer(a)
@@ -41,7 +41,8 @@ def main():
             tries = 0
 
         elif (solved + wrongs) == maximum_points:
-            print(f"Score: {int(10*solved/maximum_points)}")
+            #print(f"Score: {int(10*solved/maximum_points)}")
+            print(f"Score: {int(solved)}")
             break
         else:
             print("EEE")
