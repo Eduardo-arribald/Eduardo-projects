@@ -1,6 +1,7 @@
 
 import sys
 import requests
+import json
 
 try:
     x = input("Request: ")
