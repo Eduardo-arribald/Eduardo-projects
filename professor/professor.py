@@ -27,12 +27,14 @@ def main():
                     x = generate_integer(a)
                     y = generate_integer(a)
                     wrongs += 1
+                    tries = 0
                 else:
                     print("EEE")
 
             #Check if 10 problems were solved
             if (solved + wrongs) == maximum_points:
                 print(f"Score: {int(10*solved/maximum_points)}")
+                print()
                 break
         elif tries == 2 and (solved + wrongs) < maximum_points:
             #print("EEE")
