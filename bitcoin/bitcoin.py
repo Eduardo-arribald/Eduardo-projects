@@ -6,7 +6,9 @@ try:
     x = input("Request: ")
     x = float(x)
     price = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+    p = json.dumps(price.json(), indent= 2)
     print(price)
+    print(p)
 
 except requests.RequestException:
     print("Problema Request")
