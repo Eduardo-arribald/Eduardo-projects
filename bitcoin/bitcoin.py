@@ -11,7 +11,10 @@ try:
     dictionary = price.json()
     print(price)
     print(p)
-    for 
+    bpi = dictionary["bpi"]
+    usd = bpi["USD"]
+    final = usd["rate_float"]
+    print(final)
 
 except requests.RequestException:
     print("Problema Request")
