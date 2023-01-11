@@ -8,8 +8,10 @@ try:
     x = float(x)
     price = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     p = json.dumps(price.json(), indent= 2)
+    dictionary = price.json()
     print(price)
     print(p)
+    for i un
 
 except requests.RequestException:
     print("Problema Request")
