@@ -23,7 +23,7 @@ def main():
                 print("EEE")
                 tries += 1
                 #wrongs += 1
-                if tries == 2:
+                if tries == 3:
                     print(f"{x} + {y} =", str(x+y))
                     x = generate_integer(a)
                     y = generate_integer(a)
