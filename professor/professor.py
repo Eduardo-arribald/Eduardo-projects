@@ -20,7 +20,6 @@ def main():
                 x = generate_integer(a)
                 y = generate_integer(a)
             elif answer != (x + y):
-                print("EEE")
                 tries += 1
                 #wrongs += 1
                 if tries == 3:
@@ -28,6 +27,9 @@ def main():
                     x = generate_integer(a)
                     y = generate_integer(a)
                     wrongs += 1
+                else:
+                    print("EEE")
+
             #Check if 10 problems were solved
             if (solved + wrongs) == maximum_points:
                 print(f"Score: {int(10*solved/maximum_points)}")
