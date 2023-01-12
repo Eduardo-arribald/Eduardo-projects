@@ -30,7 +30,7 @@ def get_price(n:float):
         usd_price = price*n
         return usd_price
     except requests.RequestException:
-        print("Problema Request")
+        return False
 
 
 main()
