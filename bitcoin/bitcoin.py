@@ -5,7 +5,7 @@ import json
 
 def main():
     try:
-        if len(sys.argv) == 2 and sys.argv[1].isdigit():
+        if len(sys.argv) > 1 and sys.argv[1].isdigit():
             x = float(sys.argv[1])
             bitcoin = get_price(x)
             #print(f"${round(bitcoin, 4)}")
