@@ -5,8 +5,8 @@ import json
 
 def main():
     try:
-        if len(sys.argv) > 1 and sys.argv[1].isdigit():
-            x = float(sys.argv[1])
+        if len(sys.argv) >= 2:
+            x = round(float(sys.argv[1]), 4)
             bitcoin = get_price(x)
             #print(f"${round(bitcoin, 4)}")
             print(f"${bitcoin:,.4f}")
@@ -23,7 +23,7 @@ def main():
 def get_price(n:float):
     try:
         price = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-        p = json.dumps(price.json(), indent= 2)
+        #p = json.dumps(price.json(), indent= 2)
         dictionary = price.json()
         bpi = dictionary["bpi"]
         usd = bpi["USD"]
@@ -35,3 +35,5 @@ def get_price(n:float):
 
 
 main()
+
+#print(type(float(sys.argv[1])))
