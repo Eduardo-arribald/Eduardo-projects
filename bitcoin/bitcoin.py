@@ -1,4 +1,7 @@
 
+#Score: 100
+#Submited
+
 import sys
 import requests
 import json
