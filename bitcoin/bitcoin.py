@@ -8,7 +8,8 @@ def main():
         if len(sys.argv) == 2 and sys.argv[1].isdigit():
             x = float(sys.argv[1])
             bitcoin = get_price(x)
-            print(f"${round(bitcoin, 4)}")
+            #print(f"${round(bitcoin, 4)}")
+            print(f"${bitcoin:,.4f}")
         elif len(sys.argv) < 2:
             print("Missing command-line argument")
             sys.exit()
