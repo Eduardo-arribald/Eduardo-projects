@@ -11,14 +11,14 @@ def main():
             #print(f"${round(bitcoin, 4)}")
             print(f"${bitcoin:,.4f}")
         elif len(sys.argv) < 2:
-            print("Missing command-line argument")
-            sys.exit()
+            #print("Missing command-line argument")
+            sys.exit("Missing command-line argument")
         else:
-            print("Command-line argument is not a number")
-            sys.exit()
+            #print("Command-line argument is not a number")
+            sys.exit("Command-line argument is not a number")
     except ValueError:
-        print("Command-line argument is not a number")
-        sys.exit()
+        #print("Command-line argument is not a number")
+        sys.exit("Command-line argument is not a number")
 
 def get_price(n:float):
     try:
