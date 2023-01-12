@@ -3,20 +3,21 @@ import sys
 import requests
 import json
 
-try:
-    if len(sys.argv) == 2 and sys.argv[1].isdigit():
-        x = float(sys.argv[1])
-        bitcoin = get_price(x)
-        print(f"${round(bitcoin, 4)}")
-    elif len(sys.argv) < 2:
-        print("Missing command-line argument")
-        sys.exit()
-    else:
+def main():
+    try:
+        if len(sys.argv) == 2 and sys.argv[1].isdigit():
+            x = float(sys.argv[1])
+            bitcoin = get_price(x)
+            print(f"${round(bitcoin, 4)}")
+        elif len(sys.argv) < 2:
+            print("Missing command-line argument")
+            sys.exit()
+        else:
+            print("Command-line argument is not a number")
+            sys.exit()
+    except ValueError:
         print("Command-line argument is not a number")
         sys.exit()
-except ValueError:
-    print("Command-line argument is not a number")
-    sys.exit()
 
 def get_price(n:float):
     try:
@@ -30,3 +31,6 @@ def get_price(n:float):
         return usd_price
     except requests.RequestException:
         print("Problema Request")
+
+
+main()
