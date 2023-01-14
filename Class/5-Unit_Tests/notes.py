@@ -18,6 +18,7 @@ documentation: docs.pytest.org
 
 import pytest
 from calculator import square
+from hello import hello
 
 #To run the tests in a better way and debug it, I can run in the prompt:
 # pytest file_name.py
@@ -25,9 +26,11 @@ from calculator import square
 
 def main():
     #test_square()
-    test_positives()
-    test_negatives()
-    test_zero()
+    #test_positives()
+    #test_negatives()
+    #test_zero()
+    test_hello()
+
 
 def test_square():
     try:
@@ -78,6 +81,9 @@ def test_zero():
 def test_str():
     with pytest.raises(TypeError):
         square("cat")
+
+def test_hello():
+    assert hello("Eduardo") == "Hello, Eduardo"
 
 
 if __name__=="__main__":
