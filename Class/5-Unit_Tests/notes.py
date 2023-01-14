@@ -17,7 +17,7 @@ documentation: docs.pytest.org
 """
 
 import pytest
-from calculator_1 import square
+from calculator import square
 
 #To run the tests in a better way and debug it, I can run in the prompt:
 # pytest file_name.py
@@ -74,6 +74,10 @@ def test_negatives():
 
 def test_zero():
     assert square(0) == 0
+
+def test_str():
+    with pytest.raises(TypeError):
+        square("cat")
 
 
 if __name__=="__main__":
