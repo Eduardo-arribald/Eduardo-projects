@@ -2,6 +2,7 @@
 
 Is used when testing code.
 Tests are made for returned values, not for printing or side effects.
+It's important to keep test simple and readable.
 
 > assert: a key function used to assert/claim that something is true.
 If it is, nothing happens. But if itsn't true, it pop ups an error.
@@ -92,6 +93,13 @@ def test_hello():
 def test_default():
     assert hello() == "Hello, World"
 
+#For making multiple tests at the same time, I can create a module and a package called:
+# "__init__.py" that must be in the same folder than the code tested.
+#The folder must be called "Test" and all, the module to be test like the test code
+#have also to be inside.
+
+#I can run that folder writing in the prompt:
+"""$ pytest test"""
 
 if __name__=="__main__":
     main()
