@@ -1,6 +1,7 @@
 """ Unit Test
 
-Is used when testing code
+Is used when testing code.
+Tests are made for returned values, not for printing or side effects.
 
 > assert: a key function used to assert/claim that something is true.
 If it is, nothing happens. But if itsn't true, it pop ups an error.
@@ -81,6 +82,8 @@ def test_zero():
 def test_str():
     with pytest.raises(TypeError):
         square("cat")
+
+#Tests are made for returned values, not for printing or side effects.
 
 def test_hello():
     assert hello("Eduardo") == "Hello, Eduardo"
