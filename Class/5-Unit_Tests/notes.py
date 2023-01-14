@@ -31,8 +31,9 @@ def main():
     #test_negatives()
     #test_zero()
     test_hello()
+    test_default()
 
-
+"""
 def test_square():
     try:
         assert square(2) == 4
@@ -81,12 +82,15 @@ def test_zero():
 
 def test_str():
     with pytest.raises(TypeError):
-        square("cat")
+        square("cat") """
 
 #Tests are made for returned values, not for printing or side effects.
 
 def test_hello():
     assert hello("Eduardo") == "Hello, Eduardo"
+
+def test_default():
+    assert hello() == "Hello, World"
 
 
 if __name__=="__main__":
