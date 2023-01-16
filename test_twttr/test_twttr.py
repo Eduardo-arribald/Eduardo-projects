@@ -6,12 +6,12 @@ def main():
     test_phrases()
 
 def test_names():
-    assert shorten("EDUARDO") == "drd"
-    assert shorten("ARANTZA") == "rntza"
+    assert shorten("EDUARDO") == "DRD"
+    assert shorten("ARANTZA") == "RNTZ"
     assert shorten("Humberto") == "Hmbrt"
 
 def test_phrases():
-    assert shorten("HOLA, MI AMORCITO") == "Hl, m mrct"
+    assert shorten("HOLA, MI AMORCITO") == "HL, M MRCT"
     assert shorten("BUENAS NOCHES!") == "BNS NCHS!"
 
 
