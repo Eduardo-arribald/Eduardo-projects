@@ -14,7 +14,8 @@ def main():
 
 
 def convert(fraction):
-    ...
+    fraction = (''.join(input("Fraction: ").split())).split("/")
+
 
 
 def gauge(percentage):
