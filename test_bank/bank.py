@@ -1,11 +1,12 @@
 
+
 def main():
     g = input("Greet: ")
     print(value(g))
 
 
 def value(greeting:str):
-    greeting = input("Greeting: ").lower().split()
+    greeting = greeting.lower().split()
     first = list(greeting[0])[0:5]
     hello = list("hello")
     if hello == first:
