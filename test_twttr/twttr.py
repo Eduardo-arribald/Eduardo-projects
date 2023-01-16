@@ -5,11 +5,11 @@ def main():
 
 
 def shorten(word:str):
-    vowels = ("A", "E", "I", "O", "U")
+    vowels = ("a", "e", "i", "o", "u")
     word = list(' '.join(word.split()))
     n = []
     for l in range(len(word)):
-        if word[l] not in vowels:
+        if word[l].lower() not in vowels:
             n.append(word[l])
     return (''.join(n))
 
