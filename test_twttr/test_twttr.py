@@ -6,13 +6,13 @@ def main():
     test_phrases()
 
 def test_names():
-    assert shorten("Eduardo") == "drd"
-    assert shorten("Arantza") == "rntza"
+    assert shorten("EDUARDO") == "drd"
+    assert shorten("ARANTZA") == "rntza"
     assert shorten("Humberto") == "Hmbrt"
 
 def test_phrases():
-    assert shorten("Hola, mi amorcito") == "Hl, m mrct"
-    assert shorten()
+    assert shorten("HOLA, MI AMORCITO") == "Hl, m mrct"
+    assert shorten("BUENAS NOCHES!") == "BNS NCHS!"
 
 
 if __name__=="__main__":
