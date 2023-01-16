@@ -7,6 +7,25 @@
 #y = int(data[2])
 #print(x/y)
 
+
+def main():
+    convert()
+    gauge()
+
+
+def convert(fraction):
+    ...
+
+
+def gauge(percentage):
+    ...
+
+
+if __name__ == "__main__":
+    main()
+
+
+
 def fuel():
     while True:
         try:
