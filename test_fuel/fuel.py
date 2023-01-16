@@ -16,25 +16,23 @@ def main():
 
 
 def convert(fraction):
+    print(fraction.split())
     fraction = (''.join(fraction.split())).split("/")
     data = fraction
     x = int(data[0])
     y = int(data[1])
     if x > y:
         return ValueError
-    #if y == 0:
-        #return ZeroDivisionError
-    #print(x/y)
     else:
-        return(int(round(x/y, 2)))
+        return(int(100*round(x/y, 2)))
 
 
 def gauge(percentage):
-    if percentage <= .01:
+    if percentage <= 1:
         return "E"
-    elif .99 <= percentage == 1:
+    elif 99 <= percentage == 100:
         return "F"
-    elif .01 < percentage < .99:
+    elif 1 < percentage < 99:
         return f"{percentage}%"
 
 
