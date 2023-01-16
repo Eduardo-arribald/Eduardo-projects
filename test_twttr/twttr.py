@@ -14,9 +14,8 @@ def shorten(word:str):
     return (''.join(n))
 
 
-"""
+
 if __name__ == "__main__":
     main()
-"""
 
 
