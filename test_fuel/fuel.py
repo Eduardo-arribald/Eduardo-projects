@@ -37,10 +37,6 @@ def gauge(percentage):
         return f"{percentage}%"
 
 
-if __name__ == "__main__":
-    main()
-
-
 """
 def fuel():
     while True:
