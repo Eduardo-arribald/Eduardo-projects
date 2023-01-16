@@ -14,6 +14,7 @@ def test_names():
 def test_phrases():
     assert shorten("HOLA, MI AMORCITO") == "HL, M MRCT"
     assert shorten("BUENAS NOCHES!") == "BNS NCHS!"
+    assert shorten("2 tacos, por favor") == " tcs, pr fvr"
 
 #def test_numbers():
     #assert shorten("2 tacos, por favor") == " tcs, pr fvr"
