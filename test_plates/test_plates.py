@@ -6,15 +6,15 @@ def main():
 
 
 def test_valids():
-    assert value("ECTO88") == True
-    assert value("NRVOUS") == True
+    assert is_valid("ECTO88") == True
+    assert is_valid("NRVOUS") == True
 
 def test_invalids():
-    assert value("CS05") == False
-    assert value("CS50P2") == False
-    assert value("PI3.14") == False
-    assert value("H") == False
-    assert value("OUTATIME") == False
+    assert is_valid("CS05") == False
+    assert is_valid("CS50P2") == False
+    assert is_valid("PI3.14") == False
+    assert is_valid("H") == False
+    assert is_valid("OUTATIME") == False
 
 
 if __name__ == "__main__":
