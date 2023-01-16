@@ -10,7 +10,6 @@
 
 def main():
     n = input("Fraction: ")
-    print(convert(n))
     w = convert(n)
     print(gauge(w))
 
@@ -26,7 +25,7 @@ def convert(fraction):
         #return ZeroDivisionError
     #print(x/y)
     else:
-        return(int(100*round(x/y, 2)))
+        return(int(round(x/y, 2)))
 
 
 def gauge(percentage):
