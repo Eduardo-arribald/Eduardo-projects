@@ -11,7 +11,6 @@ def shorten(word:str):
     n = []
     for l in range(len(word)):
         if word[l].lower() not in vowels or word[l] not in numbs:
-        #if word[l].isdigit():
             n.append(word[l])
     return (''.join(n))
 
