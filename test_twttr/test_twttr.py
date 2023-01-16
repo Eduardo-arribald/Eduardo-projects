@@ -4,6 +4,7 @@ from twttr import shorten
 def main():
     test_names()
     test_phrases()
+    test_numbers()
 
 def test_names():
     assert shorten("EDUARDO") == "DRD"
