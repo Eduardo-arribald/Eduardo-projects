@@ -3,7 +3,7 @@ def main():
     plate = input("Plate: ")
     print(is_valid(plate))
 
-def is_valid(s):
+def is_valid(s:str):
     alpha = (
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
         'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u',
