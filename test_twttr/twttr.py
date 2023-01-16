@@ -1,7 +1,7 @@
 
 def main():
     tweet = input()
-    sorten(tweet)
+    print(sorten(tweet))
 
 
 def shorten(word:str):
