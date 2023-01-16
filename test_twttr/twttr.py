@@ -10,7 +10,7 @@ def shorten(word:str):
     word = list(' '.join(word.split()))
     n = []
     for l in range(len(word)):
-        if word[l].lower() not in vowels or word[l] not in numbs:
+        if word[l].lower() not in vowels and word[l] not in numbs:
             n.append(word[l])
     return (''.join(n))
 
