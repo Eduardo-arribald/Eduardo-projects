@@ -1,16 +1,16 @@
 
 def main():
     tweet = input()
-    print(sorten(tweet))
+    print(shorten(tweet))
 
 
 def shorten(word:str):
     vowels = ("a", "e", "i", "o", "u")
     word = list(' '.join(word.split()))
     n = []
-    for l in range(len(w)):
-        if w[l].lower() not in vowels:
-            n.append(w[l])
+    for l in range(len(word)):
+        if word[l].lower() not in vowels:
+            n.append(word[l])
     return (''.join(n))
 
 
