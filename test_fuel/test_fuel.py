@@ -1,4 +1,4 @@
-from fuel import is_valid
+from fuel import convert, gauge
 
 def main():
     test_valids()

@@ -41,7 +41,7 @@ if __name__ == "__main__":
     main()
 
 
-
+"""
 def fuel():
     while True:
         try:
@@ -62,5 +62,7 @@ def fuel():
             pass
         except ValueError:
             pass
+"""
 
-fuel()
+if __name__=="__main__":
+    main()
