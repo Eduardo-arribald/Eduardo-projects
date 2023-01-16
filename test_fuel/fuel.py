@@ -15,7 +15,25 @@ def main():
 
 def convert(fraction):
     fraction = (''.join(input("Fraction: ").split())).split("/")
-
+    data = fraction
+    x = int(data[0])
+    y = int(data[1])
+    if x > y:
+        return ValueError
+    #print(x/y)
+    if x/y <= .01:
+        print("E")
+    elif 1 >= x/y >= .99:
+        print("F")
+    elif x/y > 1:
+        continue
+    else:
+        print(str(int(100*round(x/y, 2)))+"%")
+    break
+except ZeroDivisionError:
+    pass
+except ValueError:
+    pass
 
 
 def gauge(percentage):
