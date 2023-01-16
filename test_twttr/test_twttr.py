@@ -9,7 +9,7 @@ def main():
 def test_names():
     assert shorten("EDUARDO") == "DRD"
     assert shorten("ARANTZA") == "RNTZ"
-    assert shorten("777 Humberto") == " Hmbrt"
+    assert shorten("777 Humberto") == "777 Hmbrt"
 
 def test_phrases():
     assert shorten("HOLA, MI AMORCITO") == "HL, M MRCT"
