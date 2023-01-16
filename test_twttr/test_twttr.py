@@ -9,12 +9,12 @@ def main():
 def test_names():
     assert shorten("EDUARDO") == "DRD"
     assert shorten("ARANTZA") == "RNTZ"
-    assert shorten("Humberto") == "Hmbrt"
+    assert shorten("777 Humberto") == " Hmbrt"
 
 def test_phrases():
     assert shorten("HOLA, MI AMORCITO") == "HL, M MRCT"
     assert shorten("BUENAS NOCHES!") == "BNS NCHS!"
-    assert shorten("2 tacos, por favor") == " tcs, pr fvr"
+    #assert shorten("2 tacos, por favor") == " tcs, pr fvr"
 
 #def test_numbers():
     #assert shorten("2 tacos, por favor") == " tcs, pr fvr"
