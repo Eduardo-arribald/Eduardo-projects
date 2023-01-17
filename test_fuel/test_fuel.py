@@ -5,9 +5,13 @@ def main():
     test_invalids()
 
 
-def test_valids():
-    assert is_valid("ECTO88") == True
-    assert is_valid("NRVOUS") == True
+def test_convert():
+    assert convert("ECTO88") == True
+    assert convert("NRVOUS") == True
+
+def test_gauge():
+    assert gauge("ECTO88") == True
+    assert gauge("NRVOUS") == True
 
 
 if __name__ == "__main__":
