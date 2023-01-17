@@ -3,7 +3,7 @@
 def main():
     n = input("Fraction: ")
     w = convert(n)
-    print(w)
+    #print(w)
     print(gauge(w))
 
 
