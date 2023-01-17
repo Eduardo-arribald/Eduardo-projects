@@ -3,12 +3,12 @@ from fuel import convert, gauge
 def main():
     test_convert()
     test_gauge()
-    #test_errors()
 
 
 def test_convert():
     assert convert("3/4") == 75
     assert convert("4/4") == 100
+    assert convert("1/0") == ZeroDivisionError
 
 
 #def test_errors():
@@ -22,7 +22,7 @@ def test_gauge():
     assert gauge(1) == "E"
     assert gauge(75) == "75%"
     assert gauge(99) == "F"
-    
+
 
 if __name__ == "__main__":
     main()
