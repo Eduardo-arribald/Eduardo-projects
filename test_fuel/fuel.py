@@ -7,7 +7,7 @@ def main():
 
 
 def convert(fraction):
-    print(fraction.split())
+    #print(fraction.split())
     fraction = (''.join(fraction.split())).split("/")
     data = fraction
     x = int(data[0])

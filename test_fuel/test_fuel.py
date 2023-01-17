@@ -16,7 +16,8 @@ def test_gauge():
     assert gauge(100) == "F"
     assert gauge(1) == "E"
     assert gauge(75) == "75%"
-    
+    assert gauge(99) == "F"
+    assert gauge(98) == "98%"
 
 if __name__ == "__main__":
     main()
