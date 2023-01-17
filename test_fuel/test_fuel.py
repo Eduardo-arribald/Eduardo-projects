@@ -10,6 +10,7 @@ def test_convert():
     assert convert("3/4") == 75
     assert convert("4/4") == 100
 
+
 #def test_errors():
     assert convert("5/4") == ValueError
     #assert convert("4/0") == ZeroDivisionError
