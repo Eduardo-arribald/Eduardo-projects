@@ -3,6 +3,7 @@
 def main():
     n = input("Fraction: ")
     w = convert(n)
+    print(w)
     print(gauge(w))
 
 
@@ -23,7 +24,7 @@ def convert(fraction):
 def gauge(percentage):
     if percentage <= 1:
         return "E"
-    elif 99 <= percentage == 100:
+    elif 99 <= percentage <= 100:
         return "F"
     elif 1 < percentage < 99:
         return f"{percentage}%"
