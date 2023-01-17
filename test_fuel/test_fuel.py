@@ -12,7 +12,8 @@ def test_convert():
 
 #def test_errors():
     assert convert("5/4") == ValueError
-    assert convert("4/0") == ZeroDivisionError
+    #assert convert("4/0") == ZeroDivisionError
+    assert convert("4/0") == class ZeroDivisionError
 
 
 def test_gauge():
