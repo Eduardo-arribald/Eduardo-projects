@@ -14,10 +14,7 @@ def convert(fraction):
         data = fraction
         x = int(data[0])
         y = int(data[1])
-        if x > y:
-            return ValueError
-        else:
-            return(int(100*round(x/y, 2)))
+        return(int(100*round(x/y, 2)))
     except ZeroDivisionError:
         pass
     except:
@@ -31,6 +28,8 @@ def gauge(percentage):
         return "F"
     elif 1 < percentage < 99:
         return f"{percentage}%"
+    else:
+        return ValueError
 
 
 if __name__=="__main__":
