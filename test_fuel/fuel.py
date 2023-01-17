@@ -13,9 +13,9 @@ def convert(fraction):
     data = fraction
     x = int(data[0])
     y = int(data[1])
-    if y == 0:
-        return x / 0
-    elif x > y:
+    #if y == 0:
+        #return x / 0
+    if x > y:
         return ValueError
     else:
         return(int(100*round(x/y, 2)))

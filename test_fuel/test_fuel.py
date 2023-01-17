@@ -11,8 +11,8 @@ def test_convert():
     assert convert("4/4") == 100
 
 #def test_errors():
-    #assert convert("5/4") == ValueError
-    #assert convert("4/0") == ZeroDivisionError
+    assert convert("5/4") == ValueError
+    assert convert("4/0") == ZeroDivisionError
 
 
 def test_gauge():
