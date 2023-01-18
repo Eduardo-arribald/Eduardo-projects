@@ -1,10 +1,9 @@
 
 
 def main():
-    n = input("Fraction: ")
-    w = convert(n)
-    #print(w)
-    print(gauge(w))
+    n = input()
+    n = convert(n)
+    print(gauge(n))
 
 
 def convert(fraction):
