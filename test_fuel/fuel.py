@@ -19,13 +19,17 @@ def convert(fraction):
     fraction = fraction.split()
     fraction = (''.join(fraction)).split("/")
     data = fraction
-    if y
-    x = int(data[0])
-    y = int(data[1])
-    #print(x)
-    #print(y)
-    #print(data)
-    return (int(100*round(x/y, 2)))
+    x = data[0]
+    y = data[1]
+    if y.isdigit() and x.isdigit() and int(x) >= int(y):
+        x = int(x)
+        y = int(y)
+        #print(x)
+        #print(y)
+        #print(data)
+        return (int(100*round(x/y, 2)))
+    else:
+        return ValueError
         #except ZeroDivisionError:
             #pass
         #except:
