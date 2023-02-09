@@ -5,8 +5,9 @@ count = 0
 with open("example.py") as file:
     for line in file:
         x = line.lstrip()
-        print(x)
+        #print(x)
         if x != '' and not x.startswith("print") and not x.startswith("#"):
+            print(x)
             #y = list(''.join(x))
             #print(y)
             #if file != '#':
