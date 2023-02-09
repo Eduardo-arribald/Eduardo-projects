@@ -53,7 +53,8 @@ def gauge(percentage):
             return f"{percentage}%"
         else:
             #print("Es mayor a 100")
-            return 'f'/'f'
+            ValueError
+            #i = int('hola')
             #return percentage
 
 
