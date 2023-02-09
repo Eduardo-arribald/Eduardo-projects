@@ -28,8 +28,8 @@ def convert(fraction):
         #print(y)
         #print(data)
         return (int(100*round(x/y, 2)))
-    else:
-        return ValueError
+    #else:
+        #return ValueError
         #except ZeroDivisionError:
             #pass
         #except:
