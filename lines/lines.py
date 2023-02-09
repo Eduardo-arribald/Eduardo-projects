@@ -2,8 +2,15 @@ import sys
 
 
 def main():
-    
-    search_for(x)
+    #Argument 0 is this file name itself.
+    #Argument 1 is the file that I need to count for.
+    print(sys.argv[0])
+    if len(sys.argv) > 1:
+        x = sys.argv[1]
+        #search_for(x)
+
+    else:
+        sys.exit("Too few arguments.")
 
 
 def search_for(file):
@@ -19,6 +26,6 @@ def search_for(file):
                 #if file != '#':
                 #print(line)
                 count +=1
+        print(str(count))
 
-
-print(str(count))
+main()
