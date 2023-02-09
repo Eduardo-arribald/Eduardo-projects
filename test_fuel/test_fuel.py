@@ -2,6 +2,7 @@ from fuel import convert, gauge
 
 def main():
     test_convert()
+    test_errors()
     test_gauge()
 
 
