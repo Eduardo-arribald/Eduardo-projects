@@ -5,13 +5,14 @@ def main():
     #Argument 0 is this file name itself.
     #Argument 1 is the file that I need to count for.
     #print(sys.argv[0])
-    if len(sys.argv) > 1:
+    if len(sys.argv) == 2:
         x = sys.argv[1]
         print(x)
         #search_for(x)
-
+    elif len(sys.argv) > 2:
+        print("Too many command-line arguments")
     else:
-        sys.exit("Too few arguments.")
+        sys.exit("Too few arguments")
 
 
 def search_for(file):
