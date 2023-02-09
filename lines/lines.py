@@ -9,8 +9,12 @@ with open("example.py") as file:
             y = list(''.join(x))
             #print(y)
             if y[0] != '#':
-                print(line)
+                #print(line)
                 count +=1
 
+word = 'Eduardo'
 
-print(str(count))
+w.lstrip()
+w.startswith()
+
+#print(str(count))
