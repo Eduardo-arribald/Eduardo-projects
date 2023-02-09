@@ -14,7 +14,8 @@ with open("example.py") as file:
 
 word = 'Eduardo'
 
-w.lstrip()
-w.startswith()
+print(word.lstrip())
+
+print(word.startswith('E'))
 
 #print(str(count))
