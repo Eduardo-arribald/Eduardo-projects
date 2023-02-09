@@ -7,6 +7,9 @@ def main():
         n = gauge(n)
         if n == None or type(n) == int:
             continue
+        elif n == ValueError:
+            return ValueError
+            break
         else:
             print(n)
             break
@@ -50,8 +53,8 @@ def gauge(percentage):
             return f"{percentage}%"
         else:
             #print("Es mayor a 100")
-            return ValueError
-            return percentage
+            return 'f'/'f'
+            #return percentage
 
 
 if __name__=="__main__":
