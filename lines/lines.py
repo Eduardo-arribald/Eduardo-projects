@@ -12,9 +12,9 @@ with open("example.py") as file:
                 #print(line)
                 count +=1
 
-word = 'Eduardo'
+word = '     Eduardo'
 
-print(word.lstrip())
+print(word.lstrip()) #Removes spaces from the left. 
 
 print(word.startswith('E'))
 
