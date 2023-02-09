@@ -1,12 +1,8 @@
-
-
 def main():
     n = input('Fraction: ')
     n = convert(n)
     n = gauge(n)
     print(n)
-
-
 def convert(fraction):
     #while True:
         #try:
@@ -33,8 +29,6 @@ def convert(fraction):
 
         #else:
             #break
-
-
 def gauge(percentage):
     #print(type(percentage))
     #return percentage
@@ -50,7 +44,6 @@ def gauge(percentage):
             ValueError
             #i = int('hola')
             #return percentage
-
-
 if __name__=="__main__":
     main()
+
