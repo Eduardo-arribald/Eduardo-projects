@@ -1,18 +1,10 @@
 
 
 def main():
-    while True:
-        n = input('Fraction: ')
-        n = convert(n)
-        n = gauge(n)
-        if n == None or type(n) == int:
-            continue
-        elif n == ValueError:
-            return ValueError
-            break
-        else:
-            print(n)
-            break
+    n = input('Fraction: ')
+    n = convert(n)
+    n = gauge(n)
+    print(n)
 
 
 def convert(fraction):
