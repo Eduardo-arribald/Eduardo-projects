@@ -21,7 +21,7 @@ def convert(fraction):
     data = fraction
     x = data[0]
     y = data[1]
-    if y.isdigit() and x.isdigit() and int(x) >= int(y):
+    if y.isdigit() and x.isdigit() and int(x) <= int(y):
         x = int(x)
         y = int(y)
         #print(x)
@@ -41,15 +41,16 @@ def convert(fraction):
 def gauge(percentage):
     #print(type(percentage))
     #return percentage
-    if float(percentage) <= 1:
-        return "E"
-    elif 98 < float(percentage) <= 100:
-        return "F"
-    elif 1 < float(percentage) < 99:
-        return f"{percentage}%"
-    else:
-        #print("Es mayor a 100")
-        return percentage
+    if type(percentage) == int:
+        if float(percentage) <= 1:
+            return "E"
+        elif 98 < float(percentage) <= 100:
+            return "F"
+        elif 1 < float(percentage) < 99:
+            return f"{percentage}%"
+        else:
+            #print("Es mayor a 100")
+            return percentage
 
 
 if __name__=="__main__":
