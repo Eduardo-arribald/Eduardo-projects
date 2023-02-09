@@ -25,7 +25,7 @@ def search_for(file):
                     count +=1
             print(str(count))
     except FileNotFoundError:
-        print("File does not exist")
+        sys.exit("File does not exist")
 
 
 main()
