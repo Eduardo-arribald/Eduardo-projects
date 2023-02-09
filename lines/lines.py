@@ -5,7 +5,7 @@ def main():
     #Argument 0 is this file name itself.
     #Argument 1 is the file that I need to count for.
     #print(sys.argv[0])
-    if len(sys.argv) == 2:
+    if len(sys.argv) == 2 and :
         x = sys.argv[1]
         print(x)
         #search_for(x)
