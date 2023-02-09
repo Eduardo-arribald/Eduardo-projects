@@ -24,15 +24,17 @@ def convert(fraction):
     data = fraction
     x = data[0]
     y = data[1]
-    if y.isdigit() and x.isdigit() and int(x) <= int(y):
+    if y == '0':
+        return ZeroDivisionError
+    elif y.isdigit() and x.isdigit() and int(x) <= int(y):
         x = int(x)
         y = int(y)
         #print(x)
         #print(y)
         #print(data)
         return (int(100*round(x/y, 2)))
-    #else:
-        #return ValueError
+    else:
+        return ValueError
         #except ZeroDivisionError:
             #pass
         #except:
