@@ -20,11 +20,13 @@ def convert(fraction):
             #print(x)
             #print(y)
             #print(data)
-            return(int(100*round(x/y, 2)))
+            return (int(100*round(x/y, 2)))
         except ZeroDivisionError:
             pass
         except:
             pass
+        else:
+            break
 
 
 def gauge(percentage):
