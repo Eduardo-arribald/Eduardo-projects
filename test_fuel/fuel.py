@@ -2,7 +2,7 @@
 
 def main():
     n = input()
-    n = convert(n)
+    print(convert(n))
     #print(gauge(n))
 
 
@@ -11,13 +11,14 @@ def convert(fraction):
         #print(fraction.split())
         #split fraction to eliminate the spaces before and after the text.
         fraction = fraction.split()
-        print(fraction)
+        #print(fraction)
         fraction = (''.join(fraction)).split("/")
         data = fraction
         x = int(data[0])
         y = int(data[1])
         print(x)
         print(y)
+        print(data)
         return(int(100*round(x/y, 2)))
     except ZeroDivisionError:
         pass
