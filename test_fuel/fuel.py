@@ -5,7 +5,7 @@ def main():
         n = input('Fraction: ')
         n = convert(n)
         n = gauge(n)
-        if n is not None and n > 100:
+        if n == None or type(n) == int:
             continue
         else:
             print(n)
