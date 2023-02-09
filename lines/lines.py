@@ -2,11 +2,11 @@ import sys
 import csv
 
 count = 0
-with open("example.py") as file:
+with open("fuel.py") as file:
     for line in file:
         x = line.lstrip()
         #print(x)
-        if x != '' and not x.startswith("print") and not x.startswith("#"):
+        if x != '' and not x.startswith("#"):
             print(x)
             #y = list(''.join(x))
             #print(y)
