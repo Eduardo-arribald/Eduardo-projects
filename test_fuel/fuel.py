@@ -3,7 +3,9 @@
 def main():
     n = input('Fraction: ')
     n = convert(n)
-    print(gauge(n))
+    while True:
+        n = gauge(n)
+        if n 
 
 
 def convert(fraction):
