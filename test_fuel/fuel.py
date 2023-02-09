@@ -5,7 +5,10 @@ def main():
     n = convert(n)
     while True:
         n = gauge(n)
-        if n 
+        if type(n) == int and int(n) > 100:
+            continue
+        else:
+            print(n)
 
 
 def convert(fraction):
@@ -39,7 +42,7 @@ def gauge(percentage):
     elif 1 < float(percentage) < 99:
         return f"{percentage}%"
     else:
-        return ValueError
+        return percentage
 
 
 if __name__=="__main__":
