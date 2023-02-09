@@ -2,11 +2,15 @@ import sys
 import csv
 
 count = 0
-with open("fuel.py") as file:
+with open("example.py") as file:
     for line in file:
         x = line.split()
-        print(str(len(x)))
-        #if len(x) >0 is not None:
-        count +=1
+        if len(x) > 0: #and x[0] != '#':
+            y = list(''.join(x))
+            #print(y)
+            if y[0] != '#':
+                print(line)
+                count +=1
+
 
 print(str(count))
