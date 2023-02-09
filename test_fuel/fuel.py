@@ -1,7 +1,7 @@
 
 
 def main():
-    n = input()
+    n = input('Fraction: ')
     n = convert(n)
     print(gauge(n))
 
