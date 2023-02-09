@@ -2,7 +2,7 @@
 
 def main():
     n = input()
-    print(convert(n))
+    n = convert(n)
     print(gauge(n))
 
 
@@ -16,9 +16,9 @@ def convert(fraction):
         data = fraction
         x = int(data[0])
         y = int(data[1])
-        print(x)
-        print(y)
-        print(data)
+        #print(x)
+        #print(y)
+        #print(data)
         return(int(100*round(x/y, 2)))
     except ZeroDivisionError:
         pass
@@ -27,11 +27,11 @@ def convert(fraction):
 
 
 def gauge(percentage):
-    if percentage <= 1:
+    if float(percentage) <= 1:
         return "E"
-    elif 98 < percentage <= 100:
+    elif 98 < float(percentage) <= 100:
         return "F"
-    elif 1 < percentage < 99:
+    elif 1 < float(percentage) < 99:
         return f"{percentage}%"
     else:
         return ValueError
