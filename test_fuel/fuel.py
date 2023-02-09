@@ -22,8 +22,8 @@ def convert(fraction):
             data = fraction
             x = int(data[0])
             y = int(data[1])
-            #print(x)
-            #print(y)
+            print(x)
+            print(y)
             #print(data)
             return (int(100*round(x/y, 2)))
         except ZeroDivisionError:
