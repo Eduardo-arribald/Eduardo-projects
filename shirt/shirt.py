@@ -23,7 +23,7 @@ def costumes(file):
         if x[1] == y[1]:
             #try:
             images = []
-            x = file[1]
+            mupet = file[1]
             print(x)
             #p_1 = Image.open(x[0])
             #p_2 = ImageOps.fit(p_1)
