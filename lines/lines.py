@@ -1,4 +1,6 @@
 
+#Score 10/10
+
 import sys
 
 def main():
@@ -8,9 +10,9 @@ def main():
         x = sys.argv[1]
         search_for(x)
     elif len(sys.argv) == 2 and not sys.argv[1].endswith(".py"):
-        print("Not a python file")
+        sys.exit("Not a python file")
     elif len(sys.argv) > 2:
-        print("Too many command-line arguments")
+        sys.exit("Too many command-line arguments")
     else:
         sys.exit("Too few arguments")
 
