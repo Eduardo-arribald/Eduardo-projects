@@ -23,12 +23,13 @@ def read_file(x):
                     house = row["house"]
                     #print(row["name"], "=", first)
                     #print(row)
+                    writer.writeheader()
                     writer.writerow({
                         "first":first,
                         "last":last,
                         "house": house
                         })
-            print(writer[1])
+            #print(writer[1])
 
 #    name = input("What's your name? ")
 #    home = input("What's your home? ")
