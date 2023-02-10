@@ -33,6 +33,7 @@ def costumes(file):
                 mupet_size = mupet.size
                 shirt = op.fit(shirt, size = mupet.size)
                 mupet_with_shirt.paste(shirt, shirt)
+                mupet_with_shirt.save("new_muppet"+ x[1])
 
 
                 #p_2 = ImageOps.fit(p_1)
