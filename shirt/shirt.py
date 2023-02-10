@@ -10,12 +10,15 @@ def main():
     costumes(file_1)
 
 
-def costumes():
+def costumes(file):
     images = []
+    x = splitext(file)
+    print(x)
     #for arg in sys.argv:
      #   image = Image.open(arg)
       #  images.append(image)
 
+    """
     image1 = Image.open("costume1.gif")
     image2 = Image.open("costume2.gif")
     images.append(image1)
@@ -27,4 +30,6 @@ def costumes():
         append_images = [images[1]],
         duration = 200,
         loop = 0
-    )
+    )"""
+
+main()
