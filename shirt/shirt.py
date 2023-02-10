@@ -32,7 +32,7 @@ def costumes(file):
                 print("Mupet:",mupet.size)
                 mupet_size = mupet.size
                 shirt = op.fit(shirt, size = mupet.size)
-                mupet.paste(shirt, shirt)
+                mupet.paste(mupet, shirt)
                 mupet.save("new_shirt.png")
 
 
