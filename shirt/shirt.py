@@ -29,12 +29,11 @@ def costumes(file):
             #p_2 = ImageOps.fit(p_1)
             #Image.paste
             #Image.save
+
+
         else:
             sys.exit("Input and output have different extensions")
 
-        #for arg in sys.argv:
-     #   image = Image.open(arg)
-      #  images.append(image)
     elif len(file) > 3:
         sys.exit("Too many command-line arguments")
     elif len(file) < 3:
