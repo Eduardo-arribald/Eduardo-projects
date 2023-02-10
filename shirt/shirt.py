@@ -11,13 +11,19 @@ def main():
 
 
 def costumes(file):
-    images = []
-    x = splitext(file)
+    x = splitext(file[1])
     print(x)
-    #for arg in sys.argv:
+    extensions = [".jpg", ".jpeg", ".png"]
+    if len(file) == 3 and x[1] in extensions:
+        images = []
+        x = splitext(file)
+        print(x)
+        #for arg in sys.argv:
      #   image = Image.open(arg)
       #  images.append(image)
+    elif len(file) > 3:
 
+        
     """
     image1 = Image.open("costume1.gif")
     image2 = Image.open("costume2.gif")
