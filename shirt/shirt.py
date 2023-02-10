@@ -12,15 +12,15 @@ def main():
 
 
 def costumes(file):
-    x = splitext(file[1])
-    y = splitext(file[2])
+    x = splitext(file.index(1))
+    y = splitext(file.index(2))
     print("x =", x)
     print("y =", y)
     extensions = [".jpg", ".jpeg", ".png"]
     if len(file) == 3 and x[1] in extensions:
         images = []
-        #x = splitext(file)
-        #print(x)
+        x = splitext(file)
+        print(x)
         #p_1 = Image.open(x[0])
         #p_2 = ImageOps.fit(p_1)
         #Image.paste
