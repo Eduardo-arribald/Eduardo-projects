@@ -31,7 +31,7 @@ def costumes(file):
                 print("Shirt:",shirt.size)
                 print("Mupet:",mupet.size)
                 mupet_size = mupet.size
-                mupet_size = (mupet.size[0] -20, mupet.size[1] -20)
+                mupet_size = (mupet.size[0] -100, mupet.size[1] -100)
 
                 shirt = op.fit(shirt, size = mupet_size)
                 print("Shirt:",shirt.size)
