@@ -5,7 +5,7 @@ from os.path import splitext
 
 def main():
     files = sys.argv
-    files_1 = [1, "before.jpg", "after.jpg"]
+    files_1 = [1, "before1.jpg", "after.jpg"]
     files_2 = [1, "before.png", "after.jpg"]
     files_3 = [1, "before.png", "after.png"]
     files_4 = [1, "before.png", "after.png"]
