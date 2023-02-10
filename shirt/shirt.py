@@ -1,6 +1,6 @@
 
 import sys
-from PIL import Image
+from PIL import Image, ImageOps
 
 def main():
     files = sys.argv
@@ -18,12 +18,15 @@ def costumes(file):
         images = []
         x = splitext(file)
         print(x)
+        p_1 = Image.open(x[0])
+        p_2 = ImageOps.fit(p_1)
+
         #for arg in sys.argv:
      #   image = Image.open(arg)
       #  images.append(image)
     elif len(file) > 3:
 
-        
+
     """
     image1 = Image.open("costume1.gif")
     image2 = Image.open("costume2.gif")
