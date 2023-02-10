@@ -1,6 +1,7 @@
 
 import sys
 from PIL import Image, ImageOps
+from os.path import splitext
 
 def main():
     files = sys.argv
@@ -18,8 +19,8 @@ def costumes(file):
     extensions = [".jpg", ".jpeg", ".png"]
     if len(file) == 3 and x[1] in extensions:
         images = []
-        x = splitext(file)
-        print(x)
+        #x = splitext(file)
+        #print(x)
         #p_1 = Image.open(x[0])
         #p_2 = ImageOps.fit(p_1)
         #Image.paste
