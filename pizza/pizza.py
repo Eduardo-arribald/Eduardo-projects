@@ -17,12 +17,14 @@ def check_for(x):
         with open(x) as file:
             for line in file:
                 y = line.split(",")
-                y[0] = ''.join(['|'])
+                #y[0] = ''.join(['|'])
                 table.append(y)
                 #print(type(y))
 
         print("Paso 4:")
-        print(tabulate(table))
+        print(tabulate(
+            table, tablefmt="grid"
+            ))
     elif len(x) < 2:
         sys.exit("Too feo commnand-line arguments")
     elif len(x) == 2 and not x[1].endswith(".csv"):
