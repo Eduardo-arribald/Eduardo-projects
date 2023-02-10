@@ -10,7 +10,7 @@ def main():
     files_3 = [1, "before.png", "after.png"]
     files_4 = [1, "before.png", "after.png"]
     files_5 = [1]
-    costumes(files_2)
+    costumes(files_1)
 
 
 def costumes(file):
@@ -26,8 +26,9 @@ def costumes(file):
             mupet = file[1]
             print(mupet)
             with Image.open(mupet) as mupet:
-
                 shirt = Image.open("shirt.png")
+                print("Shirt:",shirt.size)
+                print("Mupet:",mupet.size)
                 #p_2 = ImageOps.fit(p_1)
                 #Image.paste
                 #Image.save
