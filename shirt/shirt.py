@@ -17,8 +17,8 @@ def main():
 def costumes(file):
     x = splitext(file[1])
     y = splitext(file[2])
-    print("x =", x)
-    print("y =", y)
+    #print("x =", x)
+    #print("y =", y)
     extensions = [".jpg", ".jpeg", ".png"]
     if len(file) == 3 and x[1] in extensions and y[1] in extensions:
         if x[1] == y[1]:
@@ -31,8 +31,9 @@ def costumes(file):
                 print("Shirt:",shirt.size)
                 print("Mupet:",mupet.size)
                 mupet_size = mupet.size
+
                 shirt = op.fit(shirt, size = mupet.size)
-                
+                print("Shirt:",shirt.size)
                 mupet.paste(shirt, shirt)
                 mupet.save("new_shirt.png")
 
