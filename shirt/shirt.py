@@ -6,9 +6,11 @@ from os.path import splitext
 def main():
     files = sys.argv
     files_1 = [1, "before.jpg", "after.jpg"]
-    files_2 = [1, "before.jpg", "after.jpg"]
-    files_3 = [1, "before.jpg", "after.jpg"]
-    costumes(files_1)
+    files_2 = [1, "before.png", "after.jpg"]
+    files_3 = [1, "before.png", "after.png"]
+    files_4 = [1, "before.png", "after.png"]
+    files_5 = [1]
+    costumes(files_2)
 
 
 def costumes(file):
