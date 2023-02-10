@@ -37,8 +37,8 @@ def costumes(file):
         sys.exit("Too many command-line arguments")
     elif len(file) < 3:
         sys.exit("Too few command-line arguments")
-    elif x[1] not in extensions:
-        sys.exit("")
+    elif x[1] not in extensions or y[1] not in extensions:
+        sys.exit("Invalid input")
 
     """
     image1 = Image.open("costume1.gif")
