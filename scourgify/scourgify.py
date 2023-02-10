@@ -28,7 +28,7 @@ def read_file(x):
                         "last":last,
                         "house": house
                         })
-            print(new_file)
+            print(writer[1])
 
 #    name = input("What's your name? ")
 #    home = input("What's your home? ")
