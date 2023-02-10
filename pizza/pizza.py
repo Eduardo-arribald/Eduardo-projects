@@ -14,16 +14,24 @@ def check_for(x):
         x = x[1]
         print("Paso 2:", x)
         table = []
+        heads = 1
         with open(x) as file:
             for line in file:
                 y = line.split(",")
                 #y[0] = ''.join(['|'])
-                table.append(y)
+                #table.append(y)
                 #print(type(y))
+                if heads == 1:
+                    headers = y
+                    heads -= 1
+                    #y[0] = ''.join(['|'])
+                else:
+                    table.append(y)
+                    #print(type(y))
 
         print("Paso 4:")
         print(tabulate(
-            table, tablefmt="grid"
+            table, headers, tablefmt="grid"
             ))
     elif len(x) < 2:
         sys.exit("Too feo commnand-line arguments")
