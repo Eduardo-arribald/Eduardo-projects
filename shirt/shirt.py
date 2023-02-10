@@ -19,7 +19,7 @@ def costumes(file):
     extensions = [".jpg", ".jpeg", ".png"]
     if len(file) == 3 and x[1] in extensions:
         images = []
-        x = splitext()
+        x = x[0]
         print(x)
         #p_1 = Image.open(x[0])
         #p_2 = ImageOps.fit(p_1)
