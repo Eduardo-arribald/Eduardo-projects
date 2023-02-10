@@ -12,8 +12,8 @@ def main():
 
 
 def costumes(file):
-    x = splitext(file.index(:1))
-    y = splitext(file.index(,,1))
+    x = splitext(file[1])
+    y = splitext(file[2])
     print("x =", x)
     print("y =", y)
     extensions = [".jpg", ".jpeg", ".png"]
