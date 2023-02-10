@@ -14,10 +14,12 @@ def read_file(x):
         with open(x[2], "w") as new_file:
             headers = ["first", "last", "house"]
             writer = csv.DictWriter(new_file, fieldnames = headers)
+            
             with open(x[1]) as file:
                 reader = csv.DictReader(file)
                 for row in reader:
                     last, first = row["name"].split(',')
+                    first = first.lstrip()
                     house = row["house"]
                     print(row["name"], "=", first)
                     #print(row)
