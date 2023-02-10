@@ -25,11 +25,12 @@ def costumes(file):
             images = []
             mupet = file[1]
             print(x)
-            mupet = Image.open(mupet)
-            shirt = Image.open("shirt.png")
-            #p_2 = ImageOps.fit(p_1)
-            #Image.paste
-            #Image.save
+            with Image.open(mupet) as mupet:
+                
+                shirt = Image.open("shirt.png")
+                #p_2 = ImageOps.fit(p_1)
+                #Image.paste
+                #Image.save
 
 
         else:
