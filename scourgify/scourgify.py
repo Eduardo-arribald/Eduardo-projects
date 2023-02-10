@@ -9,7 +9,7 @@ with open("students.csv") as file:
                 "home": row['home'],
                 })
 
-        name = input("What's your name? ")
+    name = input("What's your name? ")
     home = input("What's your home? ")
     with open("students.csv", "a") as file:
         writer = csv.DictWriter(file, fieldnames = ["name", "home"])
