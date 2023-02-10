@@ -3,7 +3,7 @@ import csv
 import sys
 
 def main():
-    file = sys.argv()
+    file = sys.argv
     #file = [1, "before.csv", "after.csv"]
     process_file(file)
 
