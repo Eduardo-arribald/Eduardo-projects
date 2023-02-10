@@ -11,21 +11,21 @@ def main():
 def read_file(x):
     wili = []
     if len(x) == 3 and x[1].endswith(".csv") and x[2].endswith(".csv"):
-
         with open(x[2], "w") as new_file:
             headers = ["first", "last", "house"]
             writer = csv.DictWriter(new_file, fieldnames = headers)
             with open(x[1]) as file:
                 reader = csv.DictReader(file)
                 for row in reader:
-                    name = row["name"]
+                    last, first = row["name"].split(',')
                     house = row["house"]
-                    print(name)
+                    print(row["name"], "=", first)
                     #print(row)
                     writer.writerow({
-                        "first":name
+                        "first":first,
+                        "last":last,
+                        "house": house
                         })
-                    break
 
 #    name = input("What's your name? ")
 #    home = input("What's your home? ")
