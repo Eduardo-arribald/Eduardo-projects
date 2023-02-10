@@ -11,14 +11,18 @@ def main():
 def read_file(x):
     wili = []
     if len(x) == 3 and x[1].endswith(".csv") and x[2].endswith(".csv"):
-        with open(x[1]) as file and :
-            reader = csv.DictReader(file)
-            for row in reader:
-                #print(row)
-                wili.append({
-                    "name": row['name'],
-                    "home": row['house'],
-                    })
+
+        with open(x[2], "w") as new_file:
+
+            with open(x[1]) as file and with open(x[2]) as new_file:
+                reader = csv.DictReader(file)
+                for row in reader:
+
+                    #print(row)
+                    wili.append({
+                        "name": row['name'],
+                        "home": row['house'],
+                        })
 
 #    name = input("What's your name? ")
 #    home = input("What's your home? ")
