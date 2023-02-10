@@ -12,7 +12,7 @@ def process_file(x):
     if len(x) == 3 and x[1].endswith(".csv") and x[2].endswith(".csv"):
         with open(x[2], "w") as new_file:
             headers = ["first", "last", "house"]
-            writer = csv.DictWriter(new_file, fieldnames = headers)
+            #writer = csv.DictWriter(new_file, fieldnames = headers)
             try:
                 with open(x[1]) as file:
                     reader = csv.DictReader(file)
