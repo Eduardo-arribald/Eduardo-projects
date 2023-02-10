@@ -16,8 +16,9 @@ def check_for(x):
         table = []
         with open(x) as file:
             for line in file:
-                table.append(line)
-                print(type(line))
+                y = line.split(",")
+                table.append(y)
+                #print(type(y))
 
         print("Paso 4:", tabulate(table))
     elif len(x) < 2:
