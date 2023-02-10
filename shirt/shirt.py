@@ -7,12 +7,14 @@ def main():
     files_1 = [1, "before.jpg", "after.jpg"]
     files_2 = [1, "before.jpg", "after.jpg"]
     files_3 = [1, "before.jpg", "after.jpg"]
-    costumes(file_1)
+    costumes(files_1)
 
 
 def costumes(file):
     x = splitext(file[1])
-    print(x)
+    y = splitext(file[2])
+    print("x =", x)
+    print("y =", y)
     extensions = [".jpg", ".jpeg", ".png"]
     if len(file) == 3 and x[1] in extensions:
         images = []
