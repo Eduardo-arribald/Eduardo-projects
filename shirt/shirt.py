@@ -1,6 +1,7 @@
 
 import sys
-from PIL import Image, ImageOps
+from PIL import Image
+from PIL import ImageOps as op
 from os.path import splitext
 
 def main():
@@ -29,6 +30,10 @@ def costumes(file):
                 shirt = Image.open("shirt.png")
                 print("Shirt:",shirt.size)
                 print("Mupet:",mupet.size)
+                mupet_size = mupet.size
+                shirt = op.fit(shirt, size = )
+
+
                 #p_2 = ImageOps.fit(p_1)
                 #Image.paste
                 #Image.save
