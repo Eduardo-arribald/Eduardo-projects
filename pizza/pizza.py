@@ -23,8 +23,11 @@ def check_for(x):
                     #print(type(y))
                     if heads == 1:
                         headers = y
-                        
-                        print(headers)
+                        if headers[-1].endswith("\n"):
+                            h = headers[-1][:-1]
+                            headers[-1] = h
+                            #print(h)
+                            #print(headers)
                         heads -= 1
                         #y[0] = ''.join(['|'])
                     else:
