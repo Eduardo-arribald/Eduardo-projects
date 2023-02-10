@@ -17,14 +17,18 @@ def costumes(file):
     print("x =", x)
     print("y =", y)
     extensions = [".jpg", ".jpeg", ".png"]
-    if len(file) == 3 and x[1] in extensions:
-        images = []
-        x = x[0]
-        print(x)
-        #p_1 = Image.open(x[0])
-        #p_2 = ImageOps.fit(p_1)
-        #Image.paste
-        #Image.save
+    if len(file) == 3 and x[1] in extensions and y[1] in extensions:
+        if x[1] == y[1]:
+            #try:
+            images = []
+            x = file[1]
+            print(x)
+            #p_1 = Image.open(x[0])
+            #p_2 = ImageOps.fit(p_1)
+            #Image.paste
+            #Image.save
+        else:
+            sys.exit("Input and output have different extensions")
 
         #for arg in sys.argv:
      #   image = Image.open(arg)
