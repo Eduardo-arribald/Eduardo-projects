@@ -27,8 +27,9 @@ def main():
             sys.exit()
     #if no arguments given, prompt the input message anyway.
     elif len(sys.argv) == 1:
-        x = input("Input: ")
-        print("Output:", figlet.renderText(x))
+        #x = input("Input: ")
+        #print("Output:", figlet.renderText(x))
+        sys.exit()
     #If one argument given, prompt an error message.
     elif len(sys.argv) == 2:
         print("Invalid usage")
