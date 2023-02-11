@@ -16,7 +16,9 @@ def main():
             figlet.setFont(font = sys.argv[2])
             x = input("Input: ")
             if x != " " or x != "":
-                print("Output:", figlet.renderText(x))
+                print("Output:")
+                print("")
+                print(figlet.renderText(x))
             else:
                 sys.exit()
         #if not valids, print an error message.
