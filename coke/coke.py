@@ -1,4 +1,6 @@
 
+
+
 def main():
     money = 0
     while True:
