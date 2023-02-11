@@ -23,8 +23,7 @@ def main():
                 sys.exit()
         #if not valids, print an error message.
         else:
-            print("Invalid usage")
-            sys.exit()
+            sys.exit("Invalid usage")
     #if no arguments given, prompt the input message anyway.
     elif len(sys.argv) == 1:
         #x = input("Input: ")
@@ -32,8 +31,7 @@ def main():
         sys.exit()
     #If one argument given, prompt an error message.
     elif len(sys.argv) == 2:
-        print("Invalid usage")
-        sys.exit()
+        sys.exit("Invalid usage")
 
 
 
