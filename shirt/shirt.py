@@ -1,8 +1,8 @@
 
 import sys
-from PIL import Image
-from PIL import ImageOps as op
-from os.path import splitext
+from PIL import Image #https://pillow.readthedocs.io/en/stable/reference/Image.html
+from PIL import ImageOps as op #https://pillow.readthedocs.io/en/stable/reference/ImageOps.html#PIL.ImageOps.fit
+from os.path import splitext #https://docs.python.org/3/library/csv.html#csv.DictWriter
 
 def main():
     files = sys.argv
