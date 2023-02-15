@@ -52,6 +52,7 @@ def costumes(file):
                 #Image.save
             #except:
                 #sys.exit("Invalid input")
+                
         #When the first file(x) doesn't have the correct extension.
         elif x[1] not in extensions:
             sys.exit("Invalid input")
