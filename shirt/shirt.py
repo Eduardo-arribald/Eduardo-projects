@@ -31,26 +31,27 @@ def costumes(file):
         #Then I look up for the correct extensions.
         if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
             images = []
-            try:
+            #try:
                 #Here is where I have to create the wished picture.
-                with Image.open(mupet) as mupet:
-                    shirt = Image.open("shirt.png")
-                    #print("Shirt:",shirt.size)
-                    #print("Mupet:",mupet.size)
-                    #mupet_size = mupet.size
-                    w = mupet.size[0]
-                    l = mupet.size[1]
-                    mupet_size = (w , l -150)
-                    shirt = op.fit(shirt, size = mupet_size)
-                    #print("Shirt:",shirt.size)
-                    mupet.paste(shirt, shirt)
-                    #mupet = op.fit(mupet)
-                    mupet.save("new_shirt.png")
-                    #p_2 = ImageOps.fit(p_1)
-                    #Image.paste
-                    #Image.save
-            except:
-                sys.exit("Invalid input")
+            with Image.open(mupet) as mupet:
+                shirt = Image.open("shirt.png")
+                #print("Shirt:",shirt.size)
+                #print("Mupet:",mupet.size)
+                #mupet_size = mupet.size
+                w = mupet.size[0]
+                l = mupet.size[1]
+                mupet_size = (w , l -150)
+                shirt = op.fit(shirt, size = mupet_size)
+                shirt_2 = Image.resize(mupet_size)
+                #print("Shirt:",shirt.size)
+                mupet.paste(shirt_2, shirt_2)
+                #mupet = op.fit(mupet)
+                mupet.save("new_shirt.png")
+                #p_2 = ImageOps.fit(p_1)
+                #Image.paste
+                #Image.save
+            #except:
+                #sys.exit("Invalid input")
         #When the first file(x) doesn't have the correct extension.
         elif x[1] not in extensions:
             sys.exit("Invalid input")
