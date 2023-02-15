@@ -15,12 +15,12 @@ def main():
     files_7 = [1] #check. Exits
     files_8 = [1, "before1.gif", "after.gif"] #check. Exits. Invalid input
     files_8 = [1, "before1.jpg", "after.gif"] #Exits. Invalid output
-    costumes(files_6)
+    costumes(files_7)
 
 
 def costumes(file):
-    x = splitext(file[1])
     if len(file) >2:
+        x = splitext(file[1])
         y = splitext(file[2])
     #print("x =", x)
     #print("y =", y)
