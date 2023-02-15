@@ -5,7 +5,7 @@ from PIL import ImageOps as op #https://pillow.readthedocs.io/en/stable/referenc
 from os.path import splitext #https://docs.python.org/3/library/csv.html#csv.DictWriter
 
 def main():
-    files = sys.argv()
+    #files = sys.argv()
     files_1 = [1, "before1.jpg", "after.jpg"]
     files_2 = [1, "before1.png", "after.jpg"] #check. Exits. Input and output have different extensions
     files_3 = [1, "before1.jpg", "after.png"] #check. Exits. Input and output have different extensions
@@ -15,7 +15,7 @@ def main():
     files_7 = [1] #check. Exits. Too few command-line arguments
     files_8 = [1, "before1.gif", "after.gif"] #check. Exits. Invalid input
     files_9 = [1, "before1.jpg", "after.gif"] #Exits. Invalid output
-    costumes(files)
+    costumes(files_1)
 
 
 def costumes(file):
@@ -31,29 +31,29 @@ def costumes(file):
         #Then I look up for the correct extensions.
         if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
             images = []
-            try:
-                #Here is where I have to create the wished picture.
-                with Image.open(mupet) as mupet:
-                    shirt = Image.open("shirt.png")
-                    #print("Shirt:",shirt.size)
-                    #print("Mupet:",mupet.size)
-                    #mupet_size = mupet.size
-                    w = mupet.size[0]
-                    l = mupet.size[1]
-                    mupet_size = (w, l-150)
-                    shirt = op.fit(shirt, size = mupet_size)
-                    #shirt_2 = Image.resize(mupet_size)
-                    #print("Shirt:",shirt.size)
-                    mupet.paste(shirt, shirt)
-                    mupet = op.fit(mupet, size = (w, l-300))
-                    mupet.save(new_mupet)
-                    sys.exit()
-                    #mupet.show()
-                    #p_2 = ImageOps.fit(p_1)
-                    #Image.paste
-                    #Image.save
-            except:
-                sys.exit("Invalid input")
+            #try:
+            #Here is where I have to create the wished picture.
+            with Image.open(mupet) as mupet:
+                shirt = Image.open("shirt.png")
+                #print("Shirt:",shirt.size)
+                #print("Mupet:",mupet.size)
+                #mupet_size = mupet.size
+                w = mupet.size[0]
+                l = mupet.size[1]
+                mupet_size = (w, l-150)
+                shirt = op.fit(shirt, size = mupet_size)
+                #shirt_2 = Image.resize(mupet_size)
+                #print("Shirt:",shirt.size)
+                mupet.paste(shirt, shirt, (50, 125))
+                mupet = op.fit(mupet, size = (w, l-300))
+                mupet.save(new_mupet)
+                sys.exit()
+                #mupet.show()
+                #p_2 = ImageOps.fit(p_1)
+                #Image.paste
+                #Image.save
+            #except:
+               # sys.exit("Invalid input")
 
         #When the first file(x) doesn't have the correct extension.
         elif x[1] not in extensions:
