@@ -38,8 +38,9 @@ def costumes(file):
                 #print("Shirt:",shirt.size)
                 #print("Mupet:",mupet.size)
                 #mupet_size = mupet.size
-                w = mupet.size[0]
-                l = mupet.size[1]
+                w, l = mupet.size
+                w_s, l_s = shirt.size
+                
                 mupet_size = (w, l-150)
                 shirt = op.fit(shirt, size = mupet_size)
                 shirt_2 = shirt.resize(mupet_size)
