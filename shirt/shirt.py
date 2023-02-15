@@ -22,11 +22,12 @@ def costumes(file):
     #print("x =", x)
     #print("y =", y)
     extensions = [".jpg", ".jpeg", ".png"]
+    #I have to check up for the lenght of the given list.
     if len(file) == 3:
         x = splitext(file[1])
         y = splitext(file[2])
+        #Then I look up for the correct extensions.
         if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
-            #try:
             images = []
             mupet = file[1]
             new_mupet = file[2]
@@ -50,13 +51,15 @@ def costumes(file):
                     #Image.save
             except:
                 sys.exit("Invalid input")
+        #When the first file(x) doesn't have the correct extension.
         elif x[1] not in extensions:
             sys.exit("Invalid input")
+        #When the second file(y) doesn't have the correct extension.
         elif y[1] not in extensions:
             sys.exit("Invalid output")
-        else:
+        elif y[1] in extensions and x[1] in extensions and x[1] != y[1]:
             sys.exit("Input and output have different extensions")
-
+    #If the lenght is different from 3, I have to exit and print a message.
     elif len(file) > 3:
         sys.exit("Too many command-line arguments")
     elif len(file) < 3:
