@@ -40,7 +40,9 @@ def costumes(file):
                 #mupet_size = mupet.size
                 w, l = mupet.size
                 w_s, l_s = shirt.size
-                
+                scales = (w/w_s, l/l_s)
+                print(scales)
+                shirt_scaleded
                 mupet_size = (w, l-150)
                 shirt = op.fit(shirt, size = mupet_size)
                 shirt_2 = shirt.resize(mupet_size)
