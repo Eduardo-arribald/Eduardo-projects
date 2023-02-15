@@ -15,7 +15,7 @@ def main():
     files_7 = [1] #check. Exits
     files_8 = [1, "before1.gif", "after.gif"] #check. Exits. Invalid input
     files_8 = [1, "before1.jpg", "after.gif"] #Exits. Invalid output
-    costumes(files_4)
+    costumes(files_6)
 
 
 def costumes(file):
@@ -30,7 +30,7 @@ def costumes(file):
             images = []
             mupet = file[1]
             new_mupet = file[2]
-            print(f'{mupet} and {new_mupet}')
+            print(f'{mupet} /// {new_mupet}')
             try:
                 with Image.open(mupet) as mupet:
                     shirt = Image.open("shirt.png")
