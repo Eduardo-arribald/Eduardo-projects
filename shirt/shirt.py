@@ -15,7 +15,7 @@ def main():
     files_7 = [1] #check. Exits. Too few command-line arguments
     files_8 = [1, "before1.gif", "after.gif"] #check. Exits. Invalid input
     files_9 = [1, "before1.jpg", "after.gif"] #Exits. Invalid output
-    costumes(files_1)
+    costumes(files)
 
 
 def costumes(file):
