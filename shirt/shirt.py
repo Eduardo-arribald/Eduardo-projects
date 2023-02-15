@@ -5,7 +5,7 @@ from PIL import ImageOps as op #https://pillow.readthedocs.io/en/stable/referenc
 from os.path import splitext #https://docs.python.org/3/library/csv.html#csv.DictWriter
 
 def main():
-    files = sys.argv
+    files = sys.argv()
     files_1 = [1, "before1.jpg", "after.jpg"]
     files_2 = [1, "before1.png", "after.jpg"] #check. Exits. Input and output have different extensions
     files_3 = [1, "before1.jpg", "after.png"] #check. Exits. Input and output have different extensions
