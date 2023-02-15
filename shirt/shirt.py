@@ -45,7 +45,7 @@ def costumes(file):
                 #shirt_2 = Image.resize(mupet_size)
                 #print("Shirt:",shirt.size)
                 mupet.paste(shirt, shirt)
-                #mupet = op.fit(mupet, size =mupet_size)
+                mupet = op.fit(mupet, size = (w, l-300))
                 mupet.save(new_mupet)
                 mupet.show()
                 #p_2 = ImageOps.fit(p_1)
