@@ -26,7 +26,7 @@ def costumes(file):
         y = splitext(file[2])
         mupet = file[1]
         new_mupet = file[2]
-        print(f'{mupet} /// {new_mupet}')
+        #print(f'{mupet} /// {new_mupet}')
 
         #Then I look up for the correct extensions.
         if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
@@ -72,18 +72,5 @@ def costumes(file):
     else:
         sys.exit("Invalid input")
 
-    """
-    image1 = Image.open("costume1.gif")
-    image2 = Image.open("costume2.gif")
-    images.append(image1)
-    images.append(image2)
-
-    images[0].save(
-        "costumes.gif",
-        save_all = True,
-        append_images = [images[1]],
-        duration = 200,
-        loop = 0
-    )"""
 
 main()
