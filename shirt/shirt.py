@@ -19,8 +19,6 @@ def main():
 
 
 def costumes(file):
-    #print("x =", x)
-    #print("y =", y)
     extensions = [".jpg", ".jpeg", ".png"]
     #I have to check up for the lenght of the given list.
     if len(file) == 3:
@@ -34,6 +32,7 @@ def costumes(file):
         if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
             images = []
             try:
+                #Here is where I have to create the wished picture.
                 with Image.open(mupet) as mupet:
                     shirt = Image.open("shirt.png")
                     #print("Shirt:",shirt.size)
