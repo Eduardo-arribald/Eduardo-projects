@@ -50,6 +50,10 @@ def costumes(file):
                     #Image.save
             except:
                 sys.exit("Invalid input")
+        elif x[1] not in extensions:
+            sys.exit("Invalid input")
+        elif y[1] not in extensions:
+            sys.exit("Invalid output")
         else:
             sys.exit("Input and output have different extensions")
 
@@ -57,10 +61,6 @@ def costumes(file):
         sys.exit("Too many command-line arguments")
     elif len(file) < 3:
         sys.exit("Too few command-line arguments")
-    elif x[1] not in extensions:
-        sys.exit("Invalid input")
-    elif y[1] not in extensions:
-        sys.exit("Invalid output")
     else:
         sys.exit("Invalid input")
 
