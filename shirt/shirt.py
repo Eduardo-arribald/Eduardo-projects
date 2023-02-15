@@ -59,6 +59,7 @@ def costumes(file):
             sys.exit("Invalid output")
         elif y[1] in extensions and x[1] in extensions and x[1] != y[1]:
             sys.exit("Input and output have different extensions")
+            
     #If the lenght is different from 3, I have to exit and print a message.
     elif len(file) > 3:
         sys.exit("Too many command-line arguments")
