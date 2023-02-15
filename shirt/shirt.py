@@ -20,7 +20,8 @@ def main():
 
 def costumes(file):
     x = splitext(file[1])
-    y = splitext(file[2])
+    if len(file) >2:
+        y = splitext(file[2])
     #print("x =", x)
     #print("y =", y)
     extensions = [".jpg", ".jpeg", ".png"]
