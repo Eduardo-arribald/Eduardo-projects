@@ -8,11 +8,11 @@ def main():
     files = sys.argv
     files_1 = [1, "before1.jpg", "after.jpg"]
     files_2 = [1, "before.png", "after.jpg"] #Exits.
-    files_3 = [1, "before.png", "after.png"] #Exits. Input and output have different extensions
+    files_3 = [1, "before.png", "after.png"] #check. Exits. Input and output have different extensions
     files_4 = [1, "before.png", "after.png"]
     files_5 = [1, "before.png", "after.png", "long.png"] #check. Exits. Too many command-line arguments
     files_6 = [1, "before.png"] #check. Exits. Too few command-line arguments
-    files_7 = [1] #Exits
+    files_7 = [1] #check. Exits
     files_8 = [1, "before.gif", "after.gif"] #Exits
     files_8 = [1, "before.png", "after.gif"] #Exits. Invalid output
     costumes(files_1)
