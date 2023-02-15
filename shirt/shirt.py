@@ -29,28 +29,23 @@ def costumes(file):
             #try:
             images = []
             mupet = file[1]
-            print(mupet)
+            #print(mupet)
             with Image.open(mupet) as mupet:
                 shirt = Image.open("shirt.png")
-                print("Shirt:",shirt.size)
-                print("Mupet:",mupet.size)
+                #print("Shirt:",shirt.size)
+                #print("Mupet:",mupet.size)
                 #mupet_size = mupet.size
                 w = mupet.size[0]
                 l = mupet.size[1]
                 mupet_size = (w , l -150)
-
                 shirt = op.fit(shirt, size = mupet_size)
-                print("Shirt:",shirt.size)
+                #print("Shirt:",shirt.size)
                 mupet.paste(shirt, shirt)
                 #mupet = op.fit(mupet)
                 mupet.save("new_shirt.png")
-
-
                 #p_2 = ImageOps.fit(p_1)
                 #Image.paste
                 #Image.save
-
-
         else:
             sys.exit("Input and output have different extensions")
 
@@ -58,9 +53,11 @@ def costumes(file):
         sys.exit("Too many command-line arguments")
     elif len(file) < 3:
         sys.exit("Too few command-line arguments")
-    elif x[1] not in extensions: 
+    elif x[1] not in extensions:
         sys.exit("Invalid input")
     elif y[1] not in extensions:
+        sys.exit("Invalid output")
+    else:
         sys.exit("Invalid input")
 
     """
