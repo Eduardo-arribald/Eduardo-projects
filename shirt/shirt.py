@@ -15,7 +15,7 @@ def main():
     files_7 = [1] #check. Exits. Too few command-line arguments
     files_8 = [1, "before1.gif", "after.gif"] #check. Exits. Invalid input
     files_9 = [1, "before1.jpg", "after.gif"] #Exits. Invalid output
-    costumes(files_9)
+    costumes(files_1)
 
 
 def costumes(file):
@@ -40,7 +40,7 @@ def costumes(file):
                     #mupet_size = mupet.size
                     w = mupet.size[0]
                     l = mupet.size[1]
-                    mupet_size = (w , l -150)
+                    mupet_size = (w , l)
                     shirt = op.fit(shirt, size = mupet_size)
                     #print("Shirt:",shirt.size)
                     mupet.paste(shirt, shirt)
