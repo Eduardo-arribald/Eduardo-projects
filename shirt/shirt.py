@@ -7,10 +7,12 @@ from os.path import splitext #https://docs.python.org/3/library/csv.html#csv.Dic
 def main():
     files = sys.argv
     files_1 = [1, "before1.jpg", "after.jpg"]
-    files_2 = [1, "before.png", "after.jpg"]
-    files_3 = [1, "before.png", "after.png"]
-    files_4 = [1, "before.png", "after.png"]
-    files_5 = [1]
+    files_2 = [1, "before.png", "after.jpg"] #Exits
+    files_3 = [1, "before.png", "after.png"] #Exits
+    files_4 = [1, "before.png", "after.png"] 
+    files_5 = [1, "before.png"] #Exits
+    files_6 = [1] #Exits
+    files_7 = [1, "before.gif", "after.gif"] #Exits
     costumes(files_1)
 
 
