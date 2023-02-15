@@ -19,14 +19,13 @@ def main():
 
 
 def costumes(file):
-    if len(file) >2:
-        x = splitext(file[1])
-        y = splitext(file[2])
     #print("x =", x)
     #print("y =", y)
     extensions = [".jpg", ".jpeg", ".png"]
-    if len(file) == 3 and x[1] in extensions and y[1] in extensions:
-        if x[1] == y[1]:
+    if len(file) == 3:
+        x = splitext(file[1])
+        y = splitext(file[2])
+        if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
             #try:
             images = []
             mupet = file[1]
