@@ -42,12 +42,12 @@ def costumes(file):
                 w_s, l_s = shirt.size
                 scales = (w/w_s, l/l_s)
                 print(scales)
-                shirt_scaleded
+                shirt_scaleted = op.scale(image = shirt, factor = scales[0])
                 mupet_size = (w, l-150)
                 shirt = op.fit(shirt, size = mupet_size)
                 shirt_2 = shirt.resize(mupet_size)
                 #print("Shirt:",shirt.size)
-                mupet.paste(shirt_2, shirt_2)
+                mupet.paste(shirt_scaleted, shirt_scaleted)
                 mupet = op.fit(mupet, size = (w, l-300))
                 mupet.save(new_mupet)
                 sys.exit()
