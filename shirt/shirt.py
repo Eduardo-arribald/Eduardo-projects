@@ -13,7 +13,7 @@ def main():
     files_5 = [1, "before.png", "after.png", "long.png"] #check. Exits. Too many command-line arguments
     files_6 = [1, "before.png"] #check. Exits. Too few command-line arguments
     files_7 = [1] #check. Exits
-    files_8 = [1, "before.gif", "after.gif"] #Exits
+    files_8 = [1, "before.gif", "after.gif"] #check. Exits. Invalid input
     files_8 = [1, "before.png", "after.gif"] #Exits. Invalid output
     costumes(files_1)
 
@@ -58,7 +58,9 @@ def costumes(file):
         sys.exit("Too many command-line arguments")
     elif len(file) < 3:
         sys.exit("Too few command-line arguments")
-    elif x[1] not in extensions or y[1] not in extensions:
+    elif x[1] not in extensions: 
+        sys.exit("Invalid input")
+    elif y[1] not in extensions:
         sys.exit("Invalid input")
 
     """
