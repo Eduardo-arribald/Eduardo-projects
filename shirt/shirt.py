@@ -6,6 +6,7 @@ from os.path import splitext #https://docs.python.org/3/library/csv.html#csv.Dic
 
 def main():
     #files = sys.argv()
+    '''
     files_1 = [1, "before1.jpg", "after.jpg"]
     files_2 = [1, "before1.png", "after.jpg"] #check. Exits. Input and output have different extensions
     files_3 = [1, "before1.jpg", "after.png"] #check. Exits. Input and output have different extensions
@@ -14,7 +15,7 @@ def main():
     files_6 = [1, "before1.jpg"] #check. Exits. Too few command-line arguments
     files_7 = [1] #check. Exits. Too few command-line arguments
     files_8 = [1, "before1.gif", "after.gif"] #check. Exits. Invalid input
-    files_9 = [1, "before1.jpg", "after.gif"] #Exits. Invalid output
+    files_9 = [1, "before1.jpg", "after.gif"] #Exits. Invalid output'''
     costumes(files_1)
 
 
