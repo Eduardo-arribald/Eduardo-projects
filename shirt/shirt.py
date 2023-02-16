@@ -49,7 +49,7 @@ def costumes(file):
                 #shirt_2 = shirt.resize(mupet_size)
                 print("Shirt scaleted:",shirt_scaleted.size)
                 mupet = op.fit(mupet, size = (w, l-300))
-                mupet.paste(shirt_scaleted, shirt_scaleted, )
+                mupet.paste(shirt_scaleted, shirt_scaleted, box = (800, 600))
                 #mupet.paste(shirt, shirt)
                 mupet.save(new_mupet)
                 #sys.exit()
