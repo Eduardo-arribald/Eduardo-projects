@@ -36,20 +36,20 @@ def costumes(file):
             with Image.open(mupet) as mupet:
                 shirt = Image.open("shirt.png")
                 #print("Shirt:",shirt.size)
-                #print("Mupet:",mupet.size)
+                print("Mupet:",mupet.size)
                 #mupet_size = mupet.size
                 w, l = mupet.size
                 w_s, l_s = shirt.size
                 scales = (w/w_s, l/l_s)
                 #scales = (scales[0]*w_s, scales[1]*l_s)
-                print(scales)
+                #print(scales)
                 shirt_scaleted = op.scale(image = shirt, factor = scales[0])
                 #mupet_size = (w, l-150)
                 #shirt = op.fit(shirt, size = scales)
                 #shirt_2 = shirt.resize(mupet_size)
-                #print("Shirt:",shirt.size)
+                print("Shirt scaleted:",shirt_scaleted.size)
                 mupet = op.fit(mupet, size = (w, l-300))
-                mupet.paste(shirt_scaleted, shirt_scaleted )
+                mupet.paste(shirt_scaleted, shirt_scaleted, )
                 #mupet.paste(shirt, shirt)
                 mupet.save(new_mupet)
                 #sys.exit()
