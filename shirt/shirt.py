@@ -42,7 +42,7 @@ def costumes(file):
                     shirt_scaleted = op.scale(image = shirt, factor = scales[0])
                     mupet_size = (w, l)
                     mupet.paste(shirt_scaleted, box = (0, 200), mask = shirt_scaleted)
-                    mupet = op.fit(mupet, size = (w, l-400))
+                    #mupet = op.fit(mupet, size = (w, l-400))
                     sys.exit(mupet.save(new_mupet))
             #except:
                 #sys.exit("Invalid input")
