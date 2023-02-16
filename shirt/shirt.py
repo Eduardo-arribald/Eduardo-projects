@@ -11,8 +11,8 @@ from PIL import ImageOps as op #https://pillow.readthedocs.io/en/stable/referenc
 from os.path import splitext #https://docs.python.org/3/library/csv.html#csv.DictWriter
 
 def main():
-    #files = sys.argv
-    files = [1, "before1.jpg", "after.jpg"]
+    files = sys.argv
+    #files = [1, "before1.jpg", "after.jpg"]
     costumes(files)
 
 
@@ -31,8 +31,8 @@ def costumes(file):
             #Here is where I have to create the wished picture.
             with Image.open(mupet) as mupet:
                 with Image.open("shirt.png") as shirt:
-                    accurate(shirt, mupet, new_mupet)
-                    #homework_way(shirt, mupet, new_mupet)
+                    #accurate(shirt, mupet, new_mupet)
+                    homework_way(shirt, mupet, new_mupet)
 
             #except:
                 #sys.exit("Invalid input")
