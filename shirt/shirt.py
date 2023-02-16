@@ -39,11 +39,17 @@ def costumes(file):
                     scales = (w/w_s, l/l_s)
                     #scales = (scales[0]*w_s, scales[1]*l_s)
                     #print(scales)
+
+
+                    """The most accurate way"""
                     shirt_scaleted = op.scale(image = shirt, factor = scales[0])
+                    shirt = op.fit(shirt, size = (w, l-400))
+                    mupet.paste(shirt_scaleted, box = (0, 200), mask = shirt_scaleted)
+                    mupet = op.fit(mupet, size = (w, l-400))
+
 
                     mupet_size = (w, l)
                     shirt = op.fit(shirt, size = (w, l-400))
-                    #mupet.paste(shirt_scaleted, box = (0, 200), mask = shirt_scaleted)
                     mupet.paste(shirt_scaleted, mask = shirt_scaleted)
                     #mupet = op.fit(mupet, size = (w, l-400))
                     sys.exit(mupet.save(new_mupet))
