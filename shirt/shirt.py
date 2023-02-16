@@ -35,31 +35,27 @@ def costumes(file):
             #try:
             #Here is where I have to create the wished picture.
             with Image.open(mupet) as mupet:
-                shirt = Image.open("shirt.png")
-                #print("Shirt:",shirt.size)
-                #print("Mupet:",mupet.size)
-                #mupet_size = mupet.size
-                w, l = mupet.size
-                w_s, l_s = shirt.size
-                scales = (w/w_s, l/l_s)
-                #scales = (scales[0]*w_s, scales[1]*l_s)
-                #print(scales)
-                #shirt_scaleted = op.scale(image = shirt, factor = scales[0])
-                mupet_size = (w, l)
-                shirt_scaleted = op.fit(shirt, size = mupet_size)
-                #shirt_2 = shirt.resize(mupet_size)
-                #print("Shirt scaleted:",shirt_scaleted.size)
-                mupet.paste(shirt_scaleted, shirt_scaleted)
+                with Image.open("shirt.png") as shirt:
+                    #shirt = Image.open("shirt.png")
+                    #print("Shirt:",shirt.size)
+                    #print("Mupet:",mupet.size)
+                    #mupet_size = mupet.size
+                    w, l = mupet.size
+                    w_s, l_s = shirt.size
+                    scales = (w/w_s, l/l_s)
+                    #scales = (scales[0]*w_s, scales[1]*l_s)
+                    #print(scales)
+                    #shirt_scaleted = op.scale(image = shirt, factor = scales[0])
+                    mupet_size = (w, l)
+                    shirt_scaleted = op.fit(shirt, size = mupet_size)
+                    #shirt_2 = shirt.resize(mupet_size)
+                    #print("Shirt scaleted:",shirt_scaleted.size)
+                    mupet.paste(shirt_scaleted, shirt_scaleted)
 
-                mupet = op.fit(mupet, size = (w, l))
+                    mupet = op.fit(mupet, size = (w, l))
 
-                #mupet.paste(shirt, shirt)
-                sys.exit(mupet.save(new_mupet))
-                #sys.exit()
-                #mupet.show()
-                #p_2 = ImageOps.fit(p_1)
-                #Image.paste
-                #Image.save
+                    #mupet.paste(shirt, shirt)
+                    sys.exit(mupet.save(new_mupet))
             #except:
                # sys.exit("Invalid input")
 
