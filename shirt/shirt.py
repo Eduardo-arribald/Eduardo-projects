@@ -32,21 +32,16 @@ def costumes(file):
             #Here is where I have to create the wished picture.
             with Image.open(mupet) as mupet:
                 with Image.open("shirt.png") as shirt:
-                    #print("Shirt:",shirt.size)
-                    #print("Mupet:",mupet.size)
+                    accurate(shirt, mupet, new_mupet)
+                    """
                     w, l = mupet.size
                     w_s, l_s = shirt.size
                     scales = (w/w_s, l/l_s)
-                    #scales = (scales[0]*w_s, scales[1]*l_s)
-                    #print(scales)
-
-
-
-                    """The way of the homework"""
+                    The way of the homework
                     mupet_size = (w, l)
                     shirt = op.fit(shirt, size = (w, l))
                     mupet.paste(shirt, mask = shirt)
-                    sys.exit(mupet.save(new_mupet))
+                    sys.exit(mupet.save(new_mupet))"""
             #except:
                 #sys.exit("Invalid input")
 
@@ -83,6 +78,17 @@ def accurate(camisa, marioneta, nueva_marioneta):
     mupet = op.fit(mupet, size = (w, l-400))
     sys.exit(mupet.save(new_mupet))
 
-def homework_way(camisa, marioneta, nueva_marioneta)
+def homework_way(camisa, marioneta, nueva_marioneta):
+    mupet = marioneta
+    shirt = camisa
+    new_mupet = nueva_marioneta
+    w, l = mupet.size
+    w_s, l_s = shirt.size
+    scales = (w/w_s, l/l_s)
+    """The way of the homework"""
+    mupet_size = (w, l)
+    shirt = op.fit(shirt, size = (w, l))
+    mupet.paste(shirt, mask = shirt)
+    sys.exit(mupet.save(new_mupet))
 
 main()
