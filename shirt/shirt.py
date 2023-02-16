@@ -1,12 +1,18 @@
 
+#Almost everything is ok, except for the zero code output witch IDK how to do
+# by  now.
+
+#Score 6/12
+#Not submited
+
 import sys
 from PIL import Image #https://pillow.readthedocs.io/en/stable/reference/Image.html
 from PIL import ImageOps as op #https://pillow.readthedocs.io/en/stable/reference/ImageOps.html#PIL.ImageOps.fit
 from os.path import splitext #https://docs.python.org/3/library/csv.html#csv.DictWriter
 
 def main():
-    #files = sys.argv
-    files = [1, "before2.jpg", "after.jpg"]
+    files = sys.argv
+    #files = [1, "before1.jpg", "after.jpg"]
     costumes(files)
 
 
@@ -35,11 +41,8 @@ def costumes(file):
                     #print(scales)
                     shirt_scaleted = op.scale(image = shirt, factor = scales[0])
                     mupet_size = (w, l)
-                    #shirt_scaleted = op.fit(shirt, size = mupet_size)
-                    #shirt_2 = shirt.resize(mupet_size)
-                    #print("Shirt scaleted:",shirt_scaleted.size)
-                    mupet.paste(shirt_scaleted, box = (0, 210), mask = shirt_scaleted)
-                    mupet = op.fit(mupet, size = (w, l-390))
+                    mupet.paste(shirt_scaleted, box = (0, 200), mask = shirt_scaleted)
+                    mupet = op.fit(mupet, size = (w, l-400))
                     sys.exit(mupet.save(new_mupet))
             #except:
                 #sys.exit("Invalid input")
