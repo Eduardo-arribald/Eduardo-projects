@@ -1,6 +1,6 @@
 
-#Almost everything is ok, except for the zero code output witch IDK how to do
-# by  now.
+#Almost everything is ok, except for the zero code output witch I don't know how
+# to do it by  now.
 
 #Score 6/12
 #Not submited
