@@ -44,7 +44,7 @@ def costumes(file):
                 #scales = (scales[0]*w_s, scales[1]*l_s)
                 #print(scales)
                 shirt_scaleted = op.scale(image = shirt, factor = scales[0])
-                mupet_size = (w, l-150)
+                #mupet_size = (w, l-150)
                 shirt_scaleted = op.fit(shirt_scaleted, size = mupet_size)
                 #shirt_2 = shirt.resize(mupet_size)
                 print("Shirt scaleted:",shirt_scaleted.size)
