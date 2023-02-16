@@ -5,10 +5,9 @@ from PIL import ImageOps as op #https://pillow.readthedocs.io/en/stable/referenc
 from os.path import splitext #https://docs.python.org/3/library/csv.html#csv.DictWriter
 
 def main():
-    #files = sys.argv()
-
-    files_1 = [1, "before1.jpg", "after.jpg"]
-    costumes(files_1)
+    files = sys.argv()
+    #files = [1, "before1.jpg", "after.jpg"]
+    costumes(files)
 
 
 def costumes(file):
@@ -19,7 +18,6 @@ def costumes(file):
         y = splitext(file[2])
         mupet = file[1]
         new_mupet = file[2]
-        #print(f'{mupet} /// {new_mupet}')
 
         #Then I look up for the correct extensions.
         if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
@@ -28,9 +26,8 @@ def costumes(file):
             #Here is where I have to create the wished picture.
             with Image.open(mupet) as mupet:
                 with Image.open("shirt.png") as shirt:
-                    print("Shirt:",shirt.size)
-                    print("Mupet:",mupet.size)
-                    #mupet_size = mupet.size
+                    #print("Shirt:",shirt.size)
+                    #print("Mupet:",mupet.size)
                     w, l = mupet.size
                     w_s, l_s = shirt.size
                     scales = (w/w_s, l/l_s)
@@ -40,15 +37,12 @@ def costumes(file):
                     mupet_size = (w, l)
                     #shirt_scaleted = op.fit(shirt, size = mupet_size)
                     #shirt_2 = shirt.resize(mupet_size)
-                    print("Shirt scaleted:",shirt_scaleted.size)
-                    mupet.paste(shirt_scaleted, shirt_scaleted, )
-
-                    mupet = op.fit(mupet, size = (w, l))
-
-                    #mupet.paste(shirt, shirt)
+                    #print("Shirt scaleted:",shirt_scaleted.size)
+                    mupet.paste(shirt_scaleted, box = (0, 210), mask = shirt_scaleted)
+                    mupet = op.fit(mupet, size = (w, l-390))
                     sys.exit(mupet.save(new_mupet))
             #except:
-               # sys.exit("Invalid input")
+                #sys.exit("Invalid input")
 
         #When the first file(x) doesn't have the correct extension.
         elif x[1] not in extensions:
