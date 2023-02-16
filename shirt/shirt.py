@@ -24,7 +24,6 @@ def costumes(file):
         y = splitext(file[2])
         mupet = file[1]
         new_mupet = file[2]
-
         #Then I look up for the correct extensions.
         if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
             images = []
@@ -32,17 +31,9 @@ def costumes(file):
             #Here is where I have to create the wished picture.
             with Image.open(mupet) as mupet:
                 with Image.open("shirt.png") as shirt:
-                    #accurate(shirt, mupet, new_mupet)
-                    homework_way(shirt, mupet, new_mupet)
-                    """
-                    w, l = mupet.size
-                    w_s, l_s = shirt.size
-                    scales = (w/w_s, l/l_s)
-                    The way of the homework
-                    mupet_size = (w, l)
-                    shirt = op.fit(shirt, size = (w, l))
-                    mupet.paste(shirt, mask = shirt)
-                    sys.exit(mupet.save(new_mupet))"""
+                    accurate(shirt, mupet, new_mupet)
+                    #homework_way(shirt, mupet, new_mupet)
+
             #except:
                 #sys.exit("Invalid input")
 
