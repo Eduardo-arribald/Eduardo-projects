@@ -6,7 +6,7 @@ from os.path import splitext #https://docs.python.org/3/library/csv.html#csv.Dic
 
 def main():
     #files = sys.argv()
-    '''
+
     files_1 = [1, "before1.jpg", "after.jpg"]
     files_2 = [1, "before1.png", "after.jpg"] #check. Exits. Input and output have different extensions
     files_3 = [1, "before1.jpg", "after.png"] #check. Exits. Input and output have different extensions
@@ -15,7 +15,7 @@ def main():
     files_6 = [1, "before1.jpg"] #check. Exits. Too few command-line arguments
     files_7 = [1] #check. Exits. Too few command-line arguments
     files_8 = [1, "before1.gif", "after.gif"] #check. Exits. Invalid input
-    files_9 = [1, "before1.jpg", "after.gif"] #Exits. Invalid output'''
+    files_9 = [1, "before1.jpg", "after.gif"] #Exits. Invalid output
     costumes(files_1)
 
 
@@ -45,13 +45,13 @@ def costumes(file):
                 #scales = (scales[0]*w_s, scales[1]*l_s)
                 #print(scales)
                 #shirt_scaleted = op.scale(image = shirt, factor = scales[0])
-                mupet_size = (w, l-150)
+                mupet_size = (w, l)
                 shirt_scaleted = op.fit(shirt, size = mupet_size)
                 #shirt_2 = shirt.resize(mupet_size)
                 #print("Shirt scaleted:",shirt_scaleted.size)
                 mupet.paste(shirt_scaleted, shirt_scaleted)
 
-                mupet = op.fit(mupet, size = (w, l-300))
+                mupet = op.fit(mupet, size = (w, l))
 
                 #mupet.paste(shirt, shirt)
                 sys.exit(mupet.save(new_mupet))
