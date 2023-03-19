@@ -3,10 +3,10 @@ import sys
 
 
 def main():
-    x = "255.255.255.0 "
-    #x = "255."
-    #print(validate(input("IPv4 Address: ")))
-    print(validate(x))
+    #x = "255.255.255.0"
+    #x = "1.2.3.1000"
+    print(validate(input("IPv4 Address: ")))
+    #print(validate(x))
 
 
 def validate(ip):
@@ -17,6 +17,7 @@ def validate(ip):
         return True
     else:
         return False
+
 
 if __name__ == "__main__":
     main()
