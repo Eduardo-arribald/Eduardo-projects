@@ -11,6 +11,7 @@ def main():
 def validate(ip):
     #Maximum: 255
     y = re.search(r"{0-255}+\.+{0-255}+\.+{0-255}+\.+{0-255}", ip)
+
     if y:
         return True
     else:
