@@ -3,13 +3,13 @@ import sys
 
 
 def main():
-    x = "
-
-    print(validate(input("IPv4 Address: ")))
+    x = "127.0.0.1"
+    #print(validate(input("IPv4 Address: ")))
+    print(validate(x))
 
 
 def validate(ip):
-
+    
 
 
 
