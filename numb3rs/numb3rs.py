@@ -9,7 +9,8 @@ def main():
 
 
 def validate(ip):
-    y = re.search(r"(0-9)\.(0-255)\.(0-255)\.(0-255)", ip)
+    #Maximum: 255
+    y = re.search(r"[0-2][0-9][0-9]\.[0-2][0-9][0-9]\.[0-2][0-9][0-9]\.[0-2][0-9][0-9]", ip)
     if y:
         return True
     else:
