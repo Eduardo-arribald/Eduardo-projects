@@ -9,7 +9,7 @@ def main():
 
 
 def validate(ip):
-    y = re.search(r"(0-255)\.(0-255)\.(0-255)\.(0-255)", ip)
+    y = re.search(r"(0-9)\.(0-255)\.(0-255)\.(0-255)", ip)
     if y:
         return True
     else:
