@@ -3,7 +3,7 @@ import sys
 
 
 def main():
-    x = "127.0.0.1"
+    x = "255.255.255.0 "
     #x = "255."
     #print(validate(input("IPv4 Address: ")))
     print(validate(x))
