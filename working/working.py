@@ -5,8 +5,9 @@ import sys
 
 def main():
     x = "9:00 AM to 5:00 PM"
+    x_1 = "9 AM to 5 PM"
     #print(convert(x))
-    convert(x)
+    convert(x_1)
     #print(convert(input("Hours: ")))
 
 
