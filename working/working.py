@@ -26,8 +26,11 @@ def convert(s):
         hour_2 = int(w.group(4))
         #minute_2 = int(w.group(5))
         time_2 = w.group(6)
-        if time_1 == "PM":
-            hour_1 = 
+        if time_1 == "PM" and time_2 == "PM":
+            hour_1 = hour_1+12
+            hour_2 = hour_2+12
+        
+
 
 
     else:
