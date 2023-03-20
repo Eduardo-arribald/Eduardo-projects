@@ -24,8 +24,8 @@ def parse(s):
         x = z+x
         return x
     else:
-        print("Nel")
-
+        #print("Nel")
+        return None
 
 
 
