@@ -26,7 +26,9 @@ def convert(s):
         hour_2 = int(w.group(4))
         #minute_2 = int(w.group(5))
         time_2 = w.group(6)
-        
+        if time_1 == "PM":
+            hour_1 = 
+
 
     else:
         print("Nel")
