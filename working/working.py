@@ -10,8 +10,8 @@ def main():
 
 
 def convert(s):
-    w = re.search(r'"(?:http|https)://(?:www.)?youtube.com/embed/(\w+)"', s)
-    w = re.search(r'', s)
+    #w = re.search(r'"(?:http|https)://(?:www.)?youtube.com/embed/(\w+)"', s)
+    w = re.search(r'(1?[0-9]:[0-6][0-9]) [AM|PM] \w (1?[0-9]:[0-6][0-9]) [AM|PM]', s)
 
 
 
