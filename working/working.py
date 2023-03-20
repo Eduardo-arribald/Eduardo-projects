@@ -7,8 +7,9 @@ def main():
     x = "9:00 AM to 5:00 PM"
     x_1 = "9 AM to 5 PM"
     x_2 = "5:00 PM to 9:00 AM"
+    x_3 = "9 AM to 5:30 PM"
     #print(convert(x))
-    convert(x_2)
+    convert(x_3)
     #print(convert(input("Hours: ")))
 
 
