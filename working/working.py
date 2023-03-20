@@ -8,19 +8,24 @@ def main():
     x_1 = "9 AM to 5 PM"
     x_2 = "5:00 PM to 9:00 AM"
     x_3 = "9 AM to 5:30 PM"
-    #print(convert(x))
     convert(x_3)
     #print(convert(input("Hours: ")))
-
 
 def convert(s):
     #w = re.search(r'"(?:http|https)://(?:www.)?youtube.com/embed/(\w+)"', s)
     w = re.search(r'(1[1-2]|[0-9]):?([0-5][0-9]|60)? (AM|PM) ?[a-z]* ?(1[1-2]|[0-9]):?([0-5][0-9]|60)? (AM|PM)', s)
     if w:
         print("Simon")
-        print(w.group(1))
-        print(w.group(2))
-        print(w.group(3))
+        print(w.group(1)) #hour
+        print(w.group(2)) #minutes
+        print(w.group(3)) #AM / PM
+        hour_1 = int(w.group(1)) #hour
+        minute_1 = int(w.group(2)) #minutes (can be None)
+        time_1 = w.group(3) #AM/PM
+        hour_2 = int(w.group(4))
+        minute_2 = int(w.group(5))
+        time_2 = w.group(6)
+
     else:
         print("Nel")
 
