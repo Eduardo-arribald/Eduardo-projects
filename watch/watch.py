@@ -11,7 +11,7 @@ def main():
     print(parse(input("HTTML: ")))
 
 def parse(s):
-    w = re.search(r'(?:http|https)://(?:www.)?youtube.com/embed/(\w+)', s)
+    w = re.search(r'"(?:http|https)://(?:www.)?youtube.com/embed/(\w+)"', s)
     #w = re.search(r"(embed/([a-zA-Z0-9]+))", s)
     #w = re.search(r'"', s)
     if w:
