@@ -12,7 +12,7 @@ def main():
 
 def convert(s):
     #w = re.search(r'"(?:http|https)://(?:www.)?youtube.com/embed/(\w+)"', s)
-    w = re.search(r'(1?[0-9](:[0-6][0-9])?) (AM|PM) [a-z]* (1?[0-9](:[0-6][0-9])?) (AM|PM)', s)
+    w = re.search(r'(1?[0-9](:[0-6][0-9])?) (AM|PM) ?[a-z]* ?(1?[0-9](:[0-6][0-9])?) (AM|PM)', s)
     if w:
         print("Simon")
         print(w.group(1))
