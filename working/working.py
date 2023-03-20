@@ -9,7 +9,7 @@ def main():
     x_2 = "5:00 PM to 9:00 AM"
     x_3 = "9 AM to 5:30 PM"
     x_4 = "12:60 AM to 13:00 PM"
-    convert(x_4)
+    print(convert(x_3))
     #print(convert(input("Hours: ")))
 
 def convert(s):
@@ -21,10 +21,10 @@ def convert(s):
         print(w.group(2)) #minutes
         print(w.group(3)) #AM / PM
         hour_1 = int(w.group(1)) #hour
-        #minute_1 = int(w.group(2)) #minutes (can be None)
+        minute_1 = w.group(2) #minutes (can be None)
         time_1 = w.group(3) #AM/PM
         hour_2 = int(w.group(4))
-        #minute_2 = int(w.group(5))
+        minute_2 = w.group(5)
         time_2 = w.group(6)
         if time_1 == "PM" and time_2 == "PM":
             hour_1 = hour_1+12
@@ -34,7 +34,7 @@ def convert(s):
         elif time_2 == "PM":
             hour_2 = hour_2+12
 
-        return f"
+        return f"{hour_1}:{minute_1} to {hour_2}:{minute_2}"
 
     else:
         print("Nel")
