@@ -29,9 +29,12 @@ def convert(s):
         if time_1 == "PM" and time_2 == "PM":
             hour_1 = hour_1+12
             hour_2 = hour_2+12
-        
+        elif time_1 == "PM":
+            hour_1 = hour_1+12
+        elif time_2 == "PM":
+            hour_2 = hour_2+12
 
-
+        return f"
 
     else:
         print("Nel")
