@@ -4,14 +4,13 @@ import sys
 
 
 def main():
-    """
-    x = "9:00 AM to 5:00 PM"
-    x_1 = "9 AM to 5 PM"
-    x_2 = "5:00 PM to 9:00 AM"
-    x_3 = "9 AM to 5:30 PM"
-    x_4 = "12:60 AM to 13:00 PM"
-    x_5 = "12 AM to 12 PM"
-    """
+
+    #x = "9:00 AM to 5:00 PM"
+    #x_1 = "9 AM to 5 PM"
+    #x_2 = "5:00 PM to 9:00 AM"
+    #x_3 = "9 AM to 5:30 PM"
+    #x_4 = "12:60 AM to 13:00 PM"
+    #x_5 = "12 AM to 12 PM"
     #print(convert(x_3))
     print(convert(input("Hours: ")))
 
