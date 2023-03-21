@@ -12,7 +12,7 @@ def main():
 
 def count(s):
     #s = s.lower()
-    return len(re.findall(r"um|Um\W+", s))
+    return len(re.findall(r"um\W+", s, re.IGNORECASE))
 
 
 if __name__ == "__main__":
