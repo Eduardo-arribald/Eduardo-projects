@@ -1,7 +1,5 @@
 from validator_collection import checkers
 
-x = "arriaga_@outlook.com"
-x_1 = "malan@@@harvard.edu"
 
 def main():
     #emails = ["arriaga_@outlook.com", "malan@harvard.edu", "malan@@@harvard.edu", "arriaga_@outlook..com"]
@@ -10,7 +8,6 @@ def main():
 
 
 def checker(email):
-
     if checkers.is_email(email):
         return "Valid"
     else:
