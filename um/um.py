@@ -4,25 +4,29 @@ import sys
 
 def main():
     #print(count(input("Text: ")))
-    x = "hola tum, asdasd" # 0
-    x_1 = "um?" # 1
-    x_2 = "yummy" # 0
-    x_3 = "Um" # 1
+
+    #I got this correct
+    x = "um?" # 1
+    x_1 = "yummy" # 0
+    x_2 = "Um" # 1
+
+    #I just need these too.
+    x_3 = "hola tum, asdasd" # 0
     x_4 = "hola um, asdasd" # 1
     x_5 = "Um, thanks, um..." #2
-    x_6 = "Um, thanks for the album."
-    print(count(x))
+    x_6 = "Um, thanks for the album." #1
+    print(count(x_3))
 
 def count(s):
     #s = str(s.lower())
     print(s)
     #print(len(list(s)))
     if " " in s:          #W\+
-        match = re.findall(r"(\w )*um( \w)*", s, flags = re.IGNORECASE)
+        match = re.findall(r"(\W )?um", s, flags = re.IGNORECASE)
         print(match)
         return len(match)
     else:
-        match = re.findall(r"um\W*", s, flags = re.IGNORECASE)
+        match = re.findall(r"^\W?um\W?$", s, flags = re.IGNORECASE)
 
         return len(match)
 
