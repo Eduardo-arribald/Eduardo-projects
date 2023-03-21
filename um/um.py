@@ -12,9 +12,9 @@ def main():
 
 def count(s):
     #s = s.lower()
-    w = len(re.findall(r"^um$", s, re.IGNORECASE))
-    y = re.search()
-
+    w = len(re.findall(r"um ?\W", s, re.IGNORECASE))
+    #y = re.search()
+    return w
 
 if __name__ == "__main__":
     main()
