@@ -11,11 +11,10 @@ def main():
     print(count(x_3))
 
 def count(s):
-    #s = s.lower()
-    patron = [r"um\W+"]
+    s = str(s.lower())
+    print(s)
     #w = len(re.findall(r"(um|Um)\W+", s, re.IGNORECASE))
-    for p in patron:
-        match = re.findall(p, s, flags = re.IGNORECASE)
+    match = re.findall(r"um\W+", s)#, flags = re.IGNORECASE)
 
     #y = re.search()
     return len(match)
