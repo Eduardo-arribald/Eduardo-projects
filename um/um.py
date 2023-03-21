@@ -9,8 +9,8 @@ def main():
     print(count(x_1))
 
 def count(s):
-    
-    return len(re.findall(r"\W^um$\W", s))
+
+    return len(re.findall(r"um\W", s))
 
 
 if __name__ == "__main__":
