@@ -1,9 +1,12 @@
 from working import convert
+import pytest
 
 def main():
     #Run
     test_true()
-    #test_false()
+    test_false()
+    test_false_2()
+    test_false_3()
 
 
 def test_true():
