@@ -12,7 +12,8 @@ def main():
 
 def count(s):
     #s = s.lower()
-    return len(re.findall(r"um\W+", s, re.IGNORECASE))
+    w = len(re.findall(r"um\W+", s, re.IGNORECASE))
+    y = re.search()
 
 
 if __name__ == "__main__":
