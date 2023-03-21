@@ -12,7 +12,7 @@ def main():
 
 def count(s):
     #s = s.lower()
-    w = len(re.findall(r"um\W+", s, re.IGNORECASE))
+    w = len(re.findall(r"^um$", s, re.IGNORECASE))
     y = re.search()
 
 
