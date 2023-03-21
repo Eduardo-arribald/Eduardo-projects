@@ -4,20 +4,22 @@ import sys
 
 
 def main():
+    """
     x = "9:00 AM to 5:00 PM"
     x_1 = "9 AM to 5 PM"
     x_2 = "5:00 PM to 9:00 AM"
     x_3 = "9 AM to 5:30 PM"
     x_4 = "12:60 AM to 13:00 PM"
     x_5 = "12 AM to 12 PM"
-    print(convert(x_3))
-    #print(convert(input("Hours: ")))
+    """
+    #print(convert(x_3))
+    print(convert(input("Hours: ")))
 
 def convert(s):
     w = re.search(r'([0-2]?[0-9]):?([0-5][0-9])? (AM|PM) ?[a-z]* ?([0-2]?[0-9]):?([0-5][0-9])? (AM|PM)', s)
     if w:
         #print("Simon")
-        print(w.string)
+        #print(w.string)
         #print(w.group(1)) #hour
         #print(w.group(2)) #minutes
         #print(w.group(3)) #AM / PM
@@ -29,7 +31,7 @@ def convert(s):
         time_2 = w.group(6)
         if time_1 == "PM":
             hour_1 = hour_1+12
-            
+
         if time_2 == "PM":
             hour_2 = hour_2+12
 
