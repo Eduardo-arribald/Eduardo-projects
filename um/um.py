@@ -12,7 +12,7 @@ def main():
 
 def count(s):
     #s = s.lower()
-    patron = [r"um\W+"]
+    patron = [r"um[.,?;]+"]
     #w = len(re.findall(r"(um|Um)\W+", s, re.IGNORECASE))
     for p in patron:
         match = re.findall(p, s, re.IGNORECASE)
