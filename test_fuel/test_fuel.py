@@ -20,7 +20,7 @@ def test_errors_1():
 
 def test_errors_2():
     with pytest.raises(ZeroDivisionError):
-        convert("9:60 AM to 5:60 PM") == ZeroDivisionError
+        convert("4/0") == ZeroDivisionError
 
 
 def test_gauge():
