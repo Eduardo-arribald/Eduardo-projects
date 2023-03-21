@@ -13,8 +13,11 @@ def main():
 def count(s):
     s = str(s.lower())
     print(s)
-    #w = len(re.findall(r"(um|Um)\W+", s, re.IGNORECASE))
-    match = re.findall(r"um\W+", s, flags = re.IGNORECASE)
+    if " " in s:
+        match = re.findall(r"um\W*", s, flags = re.IGNORECASE)
+    else:
+        #w = len(re.findall(r"(um|Um)\W+", s, re.IGNORECASE))
+        match = re.findall(r"um\W+", s, flags = re.IGNORECASE)
 
     #y = re.search()
     return len(match)
