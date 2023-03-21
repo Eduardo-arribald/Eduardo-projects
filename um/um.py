@@ -9,7 +9,7 @@ def main():
     x_2 = "yummy" # 0
     x_3 = "Um" # 1
     x_4 = "hola um, asdasd" # 1
-    print(count(x_1))
+    print(count(x))
 
 def count(s):
     #s = str(s.lower())
@@ -18,8 +18,8 @@ def count(s):
     if " " in s:
         match = re.findall(r"\W+um\W+", s, flags = re.IGNORECASE)
         return len(match)
-    elif len(list(s)) == 2:
-        match = re.findall(r"um[,\.;\?]\W*", s, flags = re.IGNORECASE)
+    else:
+        match = re.findall(r"um\W*", s, flags = re.IGNORECASE)
 
         return len(match)
 
