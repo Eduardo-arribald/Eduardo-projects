@@ -4,23 +4,24 @@ import sys
 
 def main():
     #print(count(input("Text: ")))
-    x = "hola um asdasd"
-    x_1 = "um?"
-    x_2 = "yummy"
-    x_3 = "Um"
-    print(count(x_3))
+    x = "hola tum, asdasd" # 0
+    x_1 = "um?" # 1
+    x_2 = "yummy" # 0
+    x_3 = "Um" # 1
+    x_4 = "hola um, asdasd" # 1
+    print(count(x_1))
 
 def count(s):
-    s = str(s.lower())
+    #s = str(s.lower())
     print(s)
+    #print(len(list(s)))
     if " " in s:
-        match = re.findall(r"um\W*", s, flags = re.IGNORECASE)
-    else:
-        #w = len(re.findall(r"(um|Um)\W+", s, re.IGNORECASE))
-        match = re.findall(r"um\W+", s, flags = re.IGNORECASE)
+        match = re.findall(r"\W+um\W+", s, flags = re.IGNORECASE)
+        return len(match)
+    elif len(list(s)) == 2:
+        match = re.findall(r"um[,\.;\?]\W*", s, flags = re.IGNORECASE)
 
-    #y = re.search()
-    return len(match)
+        return len(match)
 
 if __name__ == "__main__":
     main()
