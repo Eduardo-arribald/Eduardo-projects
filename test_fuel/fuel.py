@@ -17,7 +17,7 @@ def convert(fraction):
     x = data[0]
     y = data[1]
     if y == '0':
-        return ZeroDivisionError
+        raise ZeroDivisionError
     elif y.isdigit() and x.isdigit() and int(x) <= int(y):
         x = int(x)
         y = int(y)
@@ -26,7 +26,7 @@ def convert(fraction):
         #print(data)
         return (int(100*round(x/y, 2)))
     else:
-        return ValueError
+        raise ValueError
         #except ZeroDivisionError:
             #pass
         #except:
@@ -47,7 +47,7 @@ def gauge(percentage):
             return f"{percentage}%"
         else:
             #print("Es mayor a 100")
-            ValueError
+            raise ValueError
             #i = int('hola')
             #return percentage
 

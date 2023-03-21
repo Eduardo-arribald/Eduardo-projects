@@ -1,8 +1,10 @@
 from fuel import convert, gauge
+import pytest
 
 def main():
     test_convert()
-    #test_errors()
+    test_errors_1()
+    test_errors_2()
     test_gauge()
 
 
@@ -11,10 +13,14 @@ def test_convert():
     assert convert("4/4") == 100
 
 
-def test_errors():
-    assert convert("5/4") == ValueError
-    assert convert("4/0") == ZeroDivisionError
-    assert convert("4/0") == ZeroDivisionError
+def test_errors_1():
+    with pytest.raises(ValueError):
+        convert("5/4") == ValueError
+
+
+def test_errors_2():
+    with pytest.raises(ZeroDivisionError):
+        convert("9:60 AM to 5:60 PM") == ZeroDivisionError
 
 
 def test_gauge():
