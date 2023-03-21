@@ -18,7 +18,7 @@ def count(s):
     print(s)
     #print(len(list(s)))
     if " " in s:          #W\+
-        match = re.findall(r"[^a-z]*um\W+", s, flags = re.IGNORECASE)
+        match = re.findall(r"(\w )*um( \w)*", s, flags = re.IGNORECASE)
         print(match)
         return len(match)
     else:
