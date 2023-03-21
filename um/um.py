@@ -15,20 +15,22 @@ def main():
     x_4 = "hola um, asdasd" # 1
     x_5 = "Um, thanks, um..." #2
     x_6 = "Um, thanks for the album." #1
-    print(count(x_4))
+    print(count(x_6))
 
 def count(s):
     #s = str(s.lower())
     print(s)
     #print(len(list(s)))
     lista = s.split()
-    print(lista)
+    #print(lista)
     if " " in s:
+        nums = 0
         for i in lista:         #W\+
             match = re.findall(r"^[\W]*um[\W]*$", i, flags = re.IGNORECASE)
-            #print(match)
-            return len(match)
-        
+            nums = nums + len(match)
+            print(match)
+        return nums
+
     else:
         match = re.findall(r"^\W?um\W?$", s, flags = re.IGNORECASE)
         return len(match)
