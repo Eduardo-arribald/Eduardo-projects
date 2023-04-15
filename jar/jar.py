@@ -11,7 +11,8 @@ class Jar:
         self.n = n
 
     @deposit.setter
-    def deposit(self, deposit)
+    def __add__(self, deposit, size)
+        
         if deposit
 
 
