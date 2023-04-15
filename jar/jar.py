@@ -31,7 +31,6 @@ class Jar:
     def capacity(self):
         return self._capacity
 
-
     @property
     def size(self):
         return self._size
@@ -45,8 +44,7 @@ class Jar:
           #  if deposit
 
 
-def main():
-    print(get_cookies(input()))
+
 
 print(12*str("🍪"))
 
