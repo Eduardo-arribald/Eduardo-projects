@@ -4,16 +4,17 @@ class Jar:
         self.capacity = capacity
 
     def __str__(self):
-
         return n*str("🍪")
 
     def deposit(self, n):
         if n > 12:
             raise ValueError
-        ...
+        self.n = n
 
     def withdraw(self, n): #withdraw = retirar
         if n > deposit:
+            raise ValueError
+
 
     @property
     def capacity(self):
