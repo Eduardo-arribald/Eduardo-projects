@@ -4,7 +4,7 @@ class Jar:
         self.capacity = capacity
 
     def __str__(self):
-        return self.size
+        return "🍪"*self.size
 
     def deposit(self, n):
         if n > 12:
