@@ -1,11 +1,11 @@
 
 class Jar:
     def __init__(self, capacity=12):
-        self.
+        self.capacity = capacity
 
     def __str__(self):
 
-        return f"{n*🍪}"
+        return n*str("🍪")
 
     def deposit(self, n):
         if n > 12:
@@ -23,4 +23,4 @@ class Jar:
     def size(self):
         return self._size
 
-print(f"{2*🍪}")
+print(2*str("🍪"))
