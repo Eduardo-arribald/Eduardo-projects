@@ -13,7 +13,7 @@ class Jar:
         ...
 
     def withdraw(self, n): #withdraw = retirar
-        ...
+        if n > deposit:
 
     @property
     def capacity(self):
