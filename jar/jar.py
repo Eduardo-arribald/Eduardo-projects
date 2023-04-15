@@ -6,13 +6,12 @@ class Jar:
     def __str__(self):
         return self.size
 
-    @property
     def deposit(self, n):
         self.n = n
 
     @deposit.setter
     def __add__(self, deposit, size)
-        
+
         if deposit
 
 
@@ -32,9 +31,11 @@ class Jar:
         return self._size
 
     @size.setter
-    def size(self, n):
-        if
         return n*str("🍪")
+
+    def __add__(self, deposit, size)
+        size = 
+            if deposit
 
 
 print(2*str("🍪"))
