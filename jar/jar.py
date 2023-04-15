@@ -45,6 +45,9 @@ class Jar:
           #  if deposit
 
 
+def main():
+    print()
+
 print(12*str("🍪"))
 
 jar = Jar()
