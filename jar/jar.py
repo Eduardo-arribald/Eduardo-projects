@@ -1,35 +1,37 @@
 
 class Jar:
-    def __init__(self, capacity=12, ):
+    def __init__(self, capacity=12, size = 0):
         self.capacity = capacity
 
     def __str__(self):
         return "🍪"*self.size
 
     def deposit(self, n):
-        if n > 12:
+        if n + self.size > self.capacity:
             raise ValueError
-        self.n = n
+        self._size += n
 
 
     def withdraw(self, n): #withdraw = retirar
-        if n > deposit:
+        if n > self._size:
             raise ValueError
-        self.n = n
+        self._size -= n
 
     @property #All property decorators must have a setter.
     def capacity(self):
         return self._capacity
 
     @capacity.setter
+    def capacity(self):
+        return self._capacity
 
     @property
     def size(self):
         return self._size
 
-    @size.setter(self, )
-    def __add__()
-        return n*str("🍪")
+    @size.setter
+    def size(self):
+        return self._size
 
     #def __add__(self, deposit, size)
         #size =
