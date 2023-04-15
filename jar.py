@@ -7,7 +7,8 @@ class Jar:
         ...
 
     def deposit(self, n):
-        if n < 0 
+        if n > 12:
+            raise ValueError
         ...
 
     def withdraw(self, n): #withdraw = retirar
