@@ -5,7 +5,8 @@ from jar import Jar
 
 
 def test_init():
-    ...
+    jar = Jar()
+    assert str(jar.capacity) == 12
 
 
 def test_str():
@@ -24,7 +25,7 @@ def test_deposit():
 def test_withdraw():
     jar = Jar()
     jar.withdraw(1)
-    assert str(jar) == 
+    assert str(jar) ==
 
 if __name__ == "__main__":
     main()
