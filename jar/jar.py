@@ -1,6 +1,6 @@
 
 class Jar:
-    def __init__(self, capacity=12, size = 0):
+    def __init__(self, capacity=12, size = 0): #This are the characteristics of the object.
         if capacity < 0:
             raise ValueError
         else:
