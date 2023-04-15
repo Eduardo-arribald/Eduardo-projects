@@ -15,29 +15,34 @@ class Jar:
             raise ValueError
 
 
-    @property
+    @property #All property decorators must have a setter.
     def capacity(self):
         return self._capacity
 
+    @capacity.setter
+    
 
-    @property
-    def size(self):
-        return self._size
+    #@property
+    #def size(self):
+        #return self._size
 
-    @size.setter
-        return n*str("🍪")
+    #@size.setter
+        #return n*str("🍪")
 
-    def __add__(self, deposit, size)
-        size =
-            if deposit
+    #def __add__(self, deposit, size)
+        #size =
+          #  if deposit
 
 
-print(2*str("🍪"))
+print(12*str("🍪"))
 
 jar = Jar()
-
-print(str(jar))
+"""
+print(str(jar)) #Output: ""
 
 jar.deposit(1)
+print(str(jar)) #Output: "🍪"
 
-print(jar)
+jar.deposit(11)
+print(str(jar)) #Output: "🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪"
+"""
