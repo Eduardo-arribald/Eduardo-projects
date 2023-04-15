@@ -7,6 +7,7 @@ class Jar:
         return n*str("🍪")
 
     def deposit(self, n):
+        
         if n > 12:
             raise ValueError
         self.n = n
