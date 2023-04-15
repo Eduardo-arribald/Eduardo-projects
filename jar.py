@@ -7,9 +7,10 @@ class Jar:
         ...
 
     def deposit(self, n):
+        if n < 0 
         ...
 
-    def withdraw(self, n):
+    def withdraw(self, n): #withdraw = retirar
         ...
 
     @property
