@@ -4,7 +4,8 @@ class Jar:
         self.
 
     def __str__(self):
-        ...
+
+        return f"{n*🍪}"
 
     def deposit(self, n):
         if n > 12:
@@ -21,3 +22,5 @@ class Jar:
     @property
     def size(self):
         return self._size
+
+print(f"{2*🍪}")
