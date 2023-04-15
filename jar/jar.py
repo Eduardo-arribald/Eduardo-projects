@@ -1,8 +1,11 @@
 
 class Jar:
     def __init__(self, capacity=12, size = 0):
-        self.capacity = capacity
-        self.size = size
+        if capacity < 0:
+            raise ValueError
+        else:
+            self._capacity = capacity
+            self._size = size
 
     def __str__(self):
         return "🍪"*self.size
@@ -42,7 +45,7 @@ class Jar:
 print(12*str("🍪"))
 
 jar = Jar()
-"""
+
 print(str(jar)) #Output: ""
 
 jar.deposit(1)
@@ -50,4 +53,3 @@ print(str(jar)) #Output: "🍪"
 
 jar.deposit(11)
 print(str(jar)) #Output: "🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪"
-"""
