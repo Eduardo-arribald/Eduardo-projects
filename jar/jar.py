@@ -4,14 +4,15 @@ class Jar:
         self.capacity = capacity
 
     def __str__(self):
-        return n*str("🍪")
+        return self.size
 
     @property
     def deposit(self, n):
         self.n = n
 
     @deposit.setter
-    def deposit(self)
+    def deposit(self, deposit)
+        if deposit
 
 
 
@@ -28,6 +29,12 @@ class Jar:
     @property
     def size(self):
         return self._size
+
+    @size.setter
+    def size(self, n):
+        if
+        return n*str("🍪")
+
 
 print(2*str("🍪"))
 
