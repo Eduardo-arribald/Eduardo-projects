@@ -25,3 +25,5 @@ class Jar:
         return self._size
 
 print(2*str("🍪"))
+
+print(Jar.)
