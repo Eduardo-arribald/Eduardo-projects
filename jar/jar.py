@@ -46,7 +46,7 @@ class Jar:
 
 
 
-print(12*str("🍪"))
+#print(12*str("🍪"))
 
 jar = Jar()
 
@@ -57,3 +57,5 @@ print(str(jar)) #Output: "🍪"
 
 jar.deposit(11)
 print(str(jar)) #Output: "🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪"
+
+print(str(jar.capacity))

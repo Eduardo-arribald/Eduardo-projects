@@ -1,31 +1,30 @@
-from jar import convert
+from jar import Jar
 import pytest
 
-from jar import Jar
-
-
 def test_init():
-    jar = Jar()
-    assert str(jar.capacity) == 12
-
+    jar_1 = Jar()
+    assert str(jar_1.capacity) == 12
+    assert str(jar_1.size) == 0
 
 def test_str():
-    jar = Jar()
-    assert str(jar) == ""
-    jar.deposit(1)
-    assert str(jar) == "🍪"
-    jar.deposit(11)
-    assert str(jar) == "🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪"
+    jar_2 = Jar()
+    assert str(jar_2) == ""
+    jar_2.deposit(1)
+    assert str(jar_2) == "🍪"
+    jar_2.deposit(11)
+    assert str(jar_2) == "🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪"
 
 
 def test_deposit():
-    jar.deposit(14)
+    jar_3 = Jar()
+    with pytest.raises(ValueError):
+        jar_3.deposit(14) == ValueError
 
 
 def test_withdraw():
-    jar = Jar()
-    jar.withdraw(1)
-    assert str(jar) ==
+    jar_4 = Jar()
+    with pytest.raises(ValueError):
+        jar_4.withdraw(1) == ValueError
 
 if __name__ == "__main__":
     main()
