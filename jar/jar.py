@@ -46,7 +46,7 @@ class Jar:
 
 
 def main():
-    print()
+    print(get_cookies(input()))
 
 print(12*str("🍪"))
 
