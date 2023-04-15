@@ -9,12 +9,6 @@ class Jar:
     def deposit(self, n):
         self.n = n
 
-    @deposit.setter
-    def __add__(self, deposit, size)
-
-        if deposit
-
-
 
     def withdraw(self, n): #withdraw = retirar
         if n > deposit:
@@ -34,7 +28,7 @@ class Jar:
         return n*str("🍪")
 
     def __add__(self, deposit, size)
-        size = 
+        size =
             if deposit
 
 
