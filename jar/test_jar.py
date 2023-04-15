@@ -18,11 +18,13 @@ def test_str():
 
 
 def test_deposit():
-    ...
+    jar.deposit(14)
 
 
 def test_withdraw():
-    ...
+    jar = Jar()
+    jar.withdraw(1)
+    assert str(jar) == 
 
 if __name__ == "__main__":
     main()
