@@ -3,7 +3,7 @@ import pytest
 
 def test_init():
     jar_1 = Jar()
-    assert str(jar_1.capacity()) == 12
+    assert str(jar_1.capacity) == '12'
     assert str(jar_1.size) == 0
 
 def test_str():

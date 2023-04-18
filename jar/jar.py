@@ -3,9 +3,10 @@ class Jar:
     def __init__(self, capacity=12, size = 0): #This are the characteristics of the object.
         if capacity < 0:
             raise ValueError
-        else:
-            self._capacity = capacity
-            self._size = size
+        #else:
+            #self.capacity = 12
+        self._capacity = capacity
+        self._size = size
 
     def __str__(self):
         return "🍪"*self.size
@@ -25,7 +26,7 @@ class Jar:
 
     @property #All property decorators must have a setter.
     def capacity(self):
-        return self._capacity
+        return int(self._capacity)
 
     @capacity.setter
     def capacity(self):
@@ -33,7 +34,7 @@ class Jar:
 
     @property
     def size(self):
-        return self._size
+        return int(self._size)
 
     @size.setter
     def size(self):
