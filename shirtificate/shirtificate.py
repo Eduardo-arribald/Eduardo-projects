@@ -3,6 +3,7 @@ from fpdf import FPDF
 
 class PDF(FPDF):
     def header(self):
+        self.set_margin(0)
         # Rendering logo:
         self.image("shirtificate.png", h=pdf.eph*(1/3))
         # Setting font: helvetica bold 15
