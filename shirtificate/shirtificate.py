@@ -16,11 +16,11 @@ class PDF(FPDF):
 
     def shirtname(self, shirtname):
         # Position cursor at 1.5 cm from bottom:
-        self.set_y(-15)
+        self.set_y(100)
         # Setting font: helvetica italic 8
         self.set_font("helvetica", "I", 8)
         # Printing page number:
-        self.cell(0, 10, f"Page {self.page_no()}/{{nb}}", align="C")
+        self.cell(10, 10, f"{shirtname}", align="C")
 
 
 #pdf = FPDF(orientation = "Portrait", format = "A4")
@@ -30,6 +30,7 @@ pdf.add_page()
 #for do this, I firstly have to define the font.
 #pdf.set_font('helvetica', 'B', 16)
 #pdf.image("shirtificate.png")
+pdf.shirtname("Eduardo")
 pdf.output("shirtificate_1.pdf")
 
 
