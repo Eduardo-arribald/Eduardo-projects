@@ -8,7 +8,7 @@ class PDF(FPDF):
         #The size is not ready.
         self.image("shirtificate.png", y = 80, x = "C", w = pdf.epw*(3.8/4))
         #
-        self.set_font("Courier", "B", 40)
+        self.set_font("Times", "B", 50)
         self.set_y(20)
         #Centering the text "CS50 Shirtificate".
         #self.cell(80)
