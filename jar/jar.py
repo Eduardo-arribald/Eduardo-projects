@@ -49,14 +49,14 @@ class Jar:
 
 #print(12*str("🍪"))
 
-jar = Jar()
+#jar = Jar()
 
-print(str(jar)) #Output: ""
+#print(str(jar)) #Output: ""
 
-jar.deposit(1)
-print(str(jar)) #Output: "🍪"
+#jar.deposit(1)
+#print(str(jar)) #Output: "🍪"
 
-jar.deposit(11)
-print(str(jar)) #Output: "🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪"
+#jar.deposit(11)
+#print(str(jar)) #Output: "🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪"
 
-print(str(jar.capacity))
+#print(str(jar.capacity))
