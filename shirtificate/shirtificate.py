@@ -8,7 +8,7 @@ class PDF(FPDF):
         #The size is not ready.
         self.image("shirtificate.png", y = 80, x = "C", w = pdf.epw*(3.8/4))
         #
-        self.set_font("Times", "", 40)
+        self.set_font("Courier", "B", 40)
         self.set_y(20)
         #Centering the text "CS50 Shirtificate".
         #self.cell(80)
@@ -17,12 +17,9 @@ class PDF(FPDF):
 
 
     def shirtname(self, shirtname):
-        # Position cursor at 1.5 cm from bottom:
         self.set_y(150)
-        # Setting font: helvetica italic 8
         self.set_font("Times", "", 30)
-        self.set_text_color(255, 255, 0)
-        # Printing page number:
+        self.set_text_color(255, 255, 255)
         self.cell(0, 10, f"{shirtname} took CS50", align="C")
 
 
@@ -33,7 +30,7 @@ pdf.add_page()
 #for do this, I firstly have to define the font.
 #pdf.set_font('helvetica', 'B', 16)
 #pdf.image("shirtificate.png")
-pdf.shirtname("Eduardo")
+pdf.shirtname("John Harvard")
 pdf.output("shirtificate_1.pdf")
 
 
