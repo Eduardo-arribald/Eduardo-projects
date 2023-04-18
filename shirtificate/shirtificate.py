@@ -14,7 +14,7 @@ class PDF(FPDF):
         # Performing a line break:
         #self.ln(20)
 
-    def footer(self):
+    def shirtname(self, shirtname):
         # Position cursor at 1.5 cm from bottom:
         self.set_y(-15)
         # Setting font: helvetica italic 8
@@ -24,11 +24,11 @@ class PDF(FPDF):
 
 
 #pdf = FPDF(orientation = "Portrait", format = "A4")
-pdf = PDF()
+pdf = PDF(orientation = "Portrait", format = "A4")
 pdf.add_page()
 #I first write the header of the image: "CS50 Shirtificate".
 #for do this, I firstly have to define the font.
-pdf.set_font('helvetica', 'B', 16)
+#pdf.set_font('helvetica', 'B', 16)
 #pdf.image("shirtificate.png")
 pdf.output("shirtificate_1.pdf")
 
