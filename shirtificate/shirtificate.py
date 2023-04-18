@@ -1,5 +1,7 @@
-import fpdf2
-from PIL import Image
+import fpdf
+from fpdf import FPDF
 
-with Image.open("shirtificate.png") as shirt:
-    pdf 
+pdf = FPDF()
+pdf.add_page()
+pdf.image("shirtificate.png", x = 20, y = 60)
+pdf.output("shirtificate_1.pdf")
