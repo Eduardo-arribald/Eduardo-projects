@@ -4,14 +4,14 @@ from fpdf import FPDF
 class PDF(FPDF):
     def header(self):
         # Rendering logo:
-        self.image("shirtificate.png", w=pdf.epw/2)
+        self.image("shirtificate.png", h=pdf.eph/)
         # Setting font: helvetica bold 15
         self.set_font("helvetica", "B", 15)
         # Moving cursor to the right:
         self.cell(80)
         # Printing title:
         self.cell(50, 10, "CS50 Shirtificate", align="C")
-       
+
 
     def shirtname(self, shirtname):
         # Position cursor at 1.5 cm from bottom:
