@@ -3,14 +3,15 @@ from PIL.Image import Image
 
 class PDF(FPDF):
     def header(self):
-        self.set_margin(0)
-        # Rendering logo:
-        self.image("shirtificate.png", x = Align.C, w = pdf.epw/2)
-        # Setting font: helvetica bold 15
+        #self.set_margin(0)
+        #Putting the shirt.
+        #The size is not ready.
+        self.image("shirtificate.png", x = "C", w = pdf.epw/2)
+        #Setting font: helvetica bold 15
         self.set_font("helvetica", "B", 15)
-        # Moving cursor to the right:
+        #Centering the text "CS50 Shirtificate".
         self.cell(80)
-        # Printing title:
+        #Printing the title
         self.cell(50, 10, "CS50 Shirtificate", align="C")
 
 
