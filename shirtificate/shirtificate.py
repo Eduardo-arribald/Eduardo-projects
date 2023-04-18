@@ -5,7 +5,7 @@ class PDF(FPDF):
     def header(self):
         self.set_margin(0)
         # Rendering logo:
-        self.image(0, 10, "shirtificate.png", h=pdf.eph*(2/3))
+        self.image("shirtificate.png", x = Align.C, w = pdf.epw/2)
         # Setting font: helvetica bold 15
         self.set_font("helvetica", "B", 15)
         # Moving cursor to the right:
