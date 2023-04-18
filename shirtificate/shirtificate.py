@@ -18,9 +18,9 @@ class PDF(FPDF):
         # Position cursor at 1.5 cm from bottom:
         self.set_y(50)
         # Setting font: helvetica italic 8
-        self.set_font("helvetica", "I", 8)
+        self.set_font("helvetica", "I", 50)
         # Printing page number:
-        self.cell(100, 100, f"{shirtname} took CS50", align="C")
+        self.cell(0, 10, f"{shirtname} took CS50", align="C")
 
 
 #pdf = FPDF(orientation = "Portrait", format = "A4")
