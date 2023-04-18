@@ -7,8 +7,8 @@ class PDF(FPDF):
         #Putting the shirt.
         #The size is not ready.
         self.image("shirtificate.png", x = "C", w = pdf.epw/2)
-        #Setting font: helvetica bold 15
-        self.set_font("helvetica", "B", 15)
+        #
+        self.set_font("Times", "", 10)
         #Centering the text "CS50 Shirtificate".
         self.cell(80)
         #Printing the title
@@ -19,7 +19,7 @@ class PDF(FPDF):
         # Position cursor at 1.5 cm from bottom:
         self.set_y(50)
         # Setting font: helvetica italic 8
-        self.set_font("helvetica", "I", 50)
+        self.set_font("Times", "", 50)
         # Printing page number:
         self.cell(0, 10, f"{shirtname} took CS50", align="C")
 
