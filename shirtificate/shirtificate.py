@@ -6,7 +6,7 @@ class PDF(FPDF):
         #self.set_margin(0)
         #Putting the shirt.
         #The size is not ready.
-        self.image("shirtificate.png", y = 80, x = "C", w = pdf.epw*(3.8/4))
+        self.image("shirtificate.png", y = 70, x = "C", w = pdf.epw*(3.8/4))
         #
         self.set_font("Times", "B", 50)
         self.set_y(20)
@@ -17,7 +17,7 @@ class PDF(FPDF):
 
 
     def shirtname(self, shirtname):
-        self.set_y(150)
+        self.set_y(130)
         self.set_font("Times", "", 30)
         self.set_text_color(255, 255, 255)
         self.cell(0, 10, f"{shirtname} took CS50", align="C")
@@ -30,10 +30,9 @@ pdf.add_page()
 #for do this, I firstly have to define the font.
 #pdf.set_font('helvetica', 'B', 16)
 #pdf.image("shirtificate.png")
-pdf.shirtname("John Harvard")
-pdf.output("shirtificate_1.pdf")
+pdf.shirtname(input("Name: "))
+pdf.output("shirtificate.pdf")
 
 
 
 
-pdf = PDF()
