@@ -21,6 +21,7 @@ class PDF(FPDF):
         self.set_y(150)
         # Setting font: helvetica italic 8
         self.set_font("Times", "", 30)
+        self.set_text_color(255, 255, 0)
         # Printing page number:
         self.cell(0, 10, f"{shirtname} took CS50", align="C")
 
