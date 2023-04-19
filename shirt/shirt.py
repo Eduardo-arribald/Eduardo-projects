@@ -78,11 +78,11 @@ def homework_way(camisa, marioneta, nueva_marioneta):
     mupet = marioneta
     shirt = camisa
     new_mupet = nueva_marioneta
-    w, l = mupet.size
-    w_s, l_s = shirt.size
-    scales = (w/w_s, l/l_s)
+    #w, l = mupet.size
+    #w_s, l_s = shirt.size
+    #scales = (w/w_s, l/l_s)
     """The way of the homework"""
-    mupet_size = (w, l)
+    #mupet_size = (w, l)
     shirt = op.fit(shirt)
     mupet.paste(shirt, mask = shirt)
     mupet.save(new_mupet)
