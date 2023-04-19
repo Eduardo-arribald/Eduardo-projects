@@ -70,6 +70,10 @@ def accurate(camisa, marioneta, nueva_marioneta):
     mupet = op.fit(mupet, size = (w, l-400))
     sys.exit(mupet.save(new_mupet))
 
+
+#Look for the hints.
+#Use fit.
+
 def homework_way(camisa, marioneta, nueva_marioneta):
     mupet = marioneta
     shirt = camisa
