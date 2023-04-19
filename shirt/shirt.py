@@ -85,6 +85,6 @@ def homework_way(camisa, marioneta, nueva_marioneta):
     mupet_size = (w, l)
     shirt = op.fit(shirt)
     mupet.paste(shirt, mask = shirt)
-    sys.exit(mupet.save(new_mupet))
+    mupet.save(new_mupet)
 
 main()
