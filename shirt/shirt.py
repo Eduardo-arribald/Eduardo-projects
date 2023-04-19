@@ -31,7 +31,7 @@ def costumes(file):
             #Here is where I have to create the wished picture.
             with Image.open(mupet) as mupet:
                 with Image.open("shirt.png") as shirt:
-                    accurate(shirt, mupet, new_mupet)
+                    homework_way(shirt, mupet, new_mupet)
                     #homework_way(shirt, mupet, new_mupet)
 
             #except:
