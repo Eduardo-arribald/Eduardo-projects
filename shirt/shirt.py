@@ -27,10 +27,9 @@ def check_command_line_arg():
         sys.exit("Input and output have different extensions")
 
 def check_extensions(file):
-    if file in [".jpg", ".jepg", ".png"]:
+    if file in [".jpg", ".jpeg", ".png"]:
         return True
-    else:
-        return False
+    return False
 
 if __name__ == "__main__":
     main()
