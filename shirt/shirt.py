@@ -8,7 +8,9 @@ def main():
         imagefile = Image.open(sys.argv[1])
     except FileNotFoundError:
         sys.exit("Input does not exist")
-    shirtfile = ImageOps.fit(imagefile, size)
+    shirtfile = Image.open("shirt.png")
+    size = shirtfile.size
+    muppet = ImageOps.fit(imagefile, size)
     muppet.paste(shirtfile, shirtfile)
     muppet.save(sys.argv[2])
 
