@@ -54,20 +54,6 @@ def costumes(file):
     except FileNotFoundError:
         sys.exit("Input does not exist")
 
-def accurate(camisa, marioneta, nueva_marioneta):
-    mupet = marioneta
-    shirt = camisa
-    new_mupet = nueva_marioneta
-    w, l = mupet.size
-    w_s, l_s = shirt.size
-    scales = (w/w_s, l/l_s)
-    """The most accurate way"""
-    """This scales the picture to the real scale size and
-    pastes it correctly located in the mupet image. """
-    shirt_scaleted = op.scale(image = shirt, factor = scales[0])
-    mupet.paste(shirt_scaleted, box = (0, 200), mask = shirt_scaleted)
-    mupet = op.fit(mupet, size = (w, l-400))
-    sys.exit(mupet.save(new_mupet))
 
 
 #Look for the hints.
@@ -78,12 +64,12 @@ def homework_way(camisa, marioneta, nueva_marioneta):
     shirt = camisa
     new_mupet = nueva_marioneta
     #w, l = mupet.size
-    #w_s, l_s = shirt.size
+    size = shirt.size
     #scales = (w/w_s, l/l_s)
     """The way of the homework"""
     #mupet_size = (w, l)
-    shirt = op.fit(shirt)
-    mupet.paste(shirt, mask = shirt)
+    mupet = op.fit(mupet, size)
+    mupet.paste(shirt, shirt)
     sys.exit(mupet.save(new_mupet))
 
 if __name__ == "__main__":
