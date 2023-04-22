@@ -17,7 +17,7 @@ def main():
 
 
 def costumes(file):
-    extensions = [".jpg", ".jpeg", ".png"]
+    extensions = [".jpg", ".jepg", ".png"]
     #I have to check up for the lenght of the given list.
     if len(file) == 3:
         x = splitext(file[1])
