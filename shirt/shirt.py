@@ -25,15 +25,13 @@ def costumes(file):
         #Then I look up for the correct extensions.
         if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
 
-            try:
-                #Here is where I have to create the wished picture.
-                #with Image.open(mupet) as mupet:
-                with Image.open("shirt.png") as shirt:
-                    homework_way(shirt, mupet, new_mupet)
-                    #homework_way(shirt, mupet, new_mupet)
 
-            except:
-                sys.exit("Invalid input")
+            #Here is where I have to create the wished picture.
+            #with Image.open(mupet) as mupet:
+            with Image.open("shirt.png") as shirt:
+                homework_way(shirt, mupet, new_mupet)
+                #homework_way(shirt, mupet, new_mupet)
+
 
         #When the first file(x) doesn't have the correct extension.
         if x[1] not in extensions:
