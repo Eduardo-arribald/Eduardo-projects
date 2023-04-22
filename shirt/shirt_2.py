@@ -1,6 +1,6 @@
 import sys
-import Image
-
+from os.path import splitext
+from PIL import Image, ImageOps
 
 def main():
     check_command_line_arg()
