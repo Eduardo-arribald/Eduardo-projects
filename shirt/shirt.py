@@ -15,44 +15,42 @@ def main():
 
 def costumes(file):
     extensions = [".jpg", ".jepg", ".png"]
-    try:
-        #I have to check up for the lenght of the given list.
-        if len(file) == 3:
-            x = splitext(file[1])
-            y = splitext(file[2])
-            mupet = file[1]
-            new_mupet = file[2]
-            #Then I look up for the correct extensions.
-            if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
 
-                #try:
+    #I have to check up for the lenght of the given list.
+    if len(file) == 3:
+        x = splitext(file[1])
+        y = splitext(file[2])
+        mupet = file[1]
+        new_mupet = file[2]
+        #Then I look up for the correct extensions.
+        if x[1] == y[1] and x[1] in extensions and y[1] in extensions:
+
+            try:
                 #Here is where I have to create the wished picture.
                 #with Image.open(mupet) as mupet:
                 with Image.open("shirt.png") as shirt:
                     homework_way(shirt, mupet, new_mupet)
                     #homework_way(shirt, mupet, new_mupet)
 
-                #except:
-                    #sys.exit("Invalid input")
-
-            #When the first file(x) doesn't have the correct extension.
-            elif x[1] not in extensions:
+            except:
                 sys.exit("Invalid input")
-            #When the second file(y) doesn't have the correct extension.
-            elif y[1] not in extensions:
-                sys.exit("Invalid output")
-            elif y[1] in extensions and x[1] in extensions and x[1] != y[1]:
-                sys.exit("Input and output have different extensions")
 
-        #If the lenght is different from 3, I have to exit and print a message.
-        elif len(file) > 3:
-            sys.exit("Too many command-line arguments")
-        elif len(file) < 3:
-            sys.exit("Too few command-line arguments")
-        else:
+        #When the first file(x) doesn't have the correct extension.
+        if x[1] not in extensions:
             sys.exit("Invalid input")
-    except FileNotFoundError:
-        sys.exit("Input does not exist")
+        #When the second file(y) doesn't have the correct extension.
+        if y[1] not in extensions:
+            sys.exit("Invalid output")
+        if y[1] in extensions and x[1] in extensions and x[1] != y[1]:
+            sys.exit("Input and output have different extensions")
+
+    #If the lenght is different from 3, I have to exit and print a message.
+    elif len(file) > 3:
+        sys.exit("Too many command-line arguments")
+    elif len(file) < 3:
+        sys.exit("Too few command-line arguments")
+    else:
+        sys.exit("Invalid input")
 
 
 
