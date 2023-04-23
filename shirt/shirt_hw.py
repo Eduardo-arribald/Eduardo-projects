@@ -1,3 +1,4 @@
+"""
 import sys
 from os.path import splitext
 from PIL import Image, ImageOps
@@ -35,3 +36,4 @@ def check_extensions(file):
 
 if __name__ == "__main__":
     main()
+"""
