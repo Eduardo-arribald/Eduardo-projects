@@ -29,8 +29,9 @@ def costumes(file):
             #Here is where I have to create the wished picture.
             #with Image.open(mupet) as mupet:
             with Image.open("shirt.png") as shirt:
-                homework_way(shirt, mupet, new_mupet)
-                #homework_way(shirt, mupet, new_mupet)
+                with Image.open(mupet) as mupet:
+                    homework_way(shirt, mupet, new_mupet)
+                    #homework_way(shirt, mupet, new_mupet)
 
 
         #When the first file(x) doesn't have the correct extension.
