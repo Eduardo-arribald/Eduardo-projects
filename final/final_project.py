@@ -15,6 +15,8 @@
    A good outcome would be an excel sheet with just the statement of income of all the information inputed, sorted and easily readable.
    A better outcome would be a combination of these two.
 
+Based in the book: Contabilidad para PYMES, FAECO.
+
 libraries:
 import xlsxwriter as xl
 import openpyxl as op
@@ -25,13 +27,11 @@ from openpyxl.worksheet.filters import AutoFilter
    """
 
 
-
 def main():
     print("Here is the begining of the end.")
 
 
 #These three functions will have to be tested with pytest.
-#Notes:
 #
 
 
@@ -43,3 +43,7 @@ def function_2():
 
 def function_3():
     print("idk what this is going to do x3.")
+
+
+if __name__ == "__main__":
+    main()
