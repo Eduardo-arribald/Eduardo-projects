@@ -13,8 +13,18 @@
   in a fixed amount of time than you hope. What might you consider to be a good outcome for your project? A better outcome? The best outcome?
    The best outcome would be an excel sheet in wich you could see all the information inputed, sorted and easily readable.
    A good outcome would be an excel sheet with just the statement of income of all the information inputed, sorted and easily readable.
-   A better outcome would be a combination of these two. 
-"""
+   A better outcome would be a combination of these two.
+
+libraries:
+import xlsxwriter as xl
+import openpyxl as op
+from openpyxl.worksheet.table import Table, TableStyleInfo
+from openpyxl.styles.borders import Border, Side
+from openpyxl.styles import Font
+from openpyxl.worksheet.filters import AutoFilter
+   """
+
+
 
 def main():
     print("Here is the begining of the end.")
