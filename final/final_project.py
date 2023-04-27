@@ -33,7 +33,7 @@ def main():
           "visualizer of your Balance Sheet and your Income statement that will be returned in", n/,
           "a excel file if prefered, and you can manage dates and amounts entered to get the", n/,
           "financial control of your company.")
-    question_1 = lower(input("Is this a new report? (yes/no)"))
+    question_1 = input("Is this a new report? (yes/no)").lower()
     dates(question_1)
     print("Here is the begining of the end.")
 
@@ -55,6 +55,7 @@ def clasify_assets_liabilities_equity():
 def dates(question_1):
 
     if question_1 == "yes":
+        
     print("idk what this is going to do x3.")
 
 
