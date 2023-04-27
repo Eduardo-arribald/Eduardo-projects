@@ -25,6 +25,12 @@ from openpyxl.styles.borders import Border, Side
 from openpyxl.styles import Font
 from openpyxl.worksheet.filters import AutoFilter
    """
+import xlsxwriter as xl
+import openpyxl as op
+from openpyxl.worksheet.table import Table, TableStyleInfo
+from openpyxl.styles.borders import Border, Side
+from openpyxl.styles import Font
+from openpyxl.worksheet.filters import AutoFilter
 
 
 def main():
@@ -52,10 +58,14 @@ def clasify_assets_liabilities_equity():
     #user.
     print("idk what this is going to do x2.")
 
-def dates(question_1):
-
+def dates_boolean(question_1):
     if question_1 == "yes":
-        
+        return True
+    else:
+        return False
+
+def date_clasifier():
+    if dates_boolean
     print("idk what this is going to do x3.")
 
 
