@@ -41,8 +41,7 @@ def main():
           "financial control of your company.")
     question_1 = input("Is this a new report? (yes/no)").lower()
     dates(question_1)
-    print("Here is the begining of the end.")
-
+    question_2 = input("Are we working with Assets, Liabilities or Equity?")
 
 #These three functions will have to be tested with pytest.
 #
@@ -56,6 +55,7 @@ def search_for():
 def clasify_assets_liabilities_equity():
     #This function clasifies the amount entered based on the information given by the
     #user.
+
     print("idk what this is going to do x2.")
 
 def dates_boolean(question_1):
@@ -64,9 +64,9 @@ def dates_boolean(question_1):
     else:
         return False
 
-def date_clasifier():
-    if dates_boolean
-    print("idk what this is going to do x3.")
+def dates(question_1):
+    if dates_boolean(question_1):
+        print("idk what this is going to do x3.")
 
 
 if __name__ == "__main__":
