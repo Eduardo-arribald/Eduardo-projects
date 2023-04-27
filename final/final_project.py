@@ -28,6 +28,13 @@ from openpyxl.worksheet.filters import AutoFilter
 
 
 def main():
+    print("Hi, this is an Enterpreneur Simple Administration Program, or ESAP.", n/,
+          "You can enter information about your company to get a simple administrative", n/,
+          "visualizer of your Balance Sheet and your Income statement that will be returned in", n/,
+          "a excel file if prefered, and you can manage dates and amounts entered to get the", n/,
+          "financial control of your company.")
+    question_1 = lower(input("Is this a new report? (yes/no)"))
+    dates(question_1)
     print("Here is the begining of the end.")
 
 
@@ -36,13 +43,18 @@ def main():
 
 
 def search_for():
-    #A function that will search for the right 
+    #A function that will search for the right accounting item in a given range.
+    #This given range
     print("idk what this is going to do.")
 
-def function_2():
+def clasify_assets_liabilities_equity():
+    #This function clasifies the amount entered based on the information given by the
+    #user.
     print("idk what this is going to do x2.")
 
-def function_3():
+def dates(question_1):
+
+    if question_1 == "yes":
     print("idk what this is going to do x3.")
 
 
