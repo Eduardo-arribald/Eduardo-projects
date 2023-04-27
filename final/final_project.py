@@ -35,7 +35,8 @@ def main():
 #
 
 
-def function_1():
+def search_for():
+    #A function that will search for the right 
     print("idk what this is going to do.")
 
 def function_2():
