@@ -46,7 +46,7 @@ def main():
     if new_file == "yes":
         #Creating the file
         actual_date = str(datetime.date.today())
-        with open("C:/Users/arria/OneDrive/Documentos/Python/CS50/Final project/Balance Sheet "+actual_date+".csv", "w", newline= "") as csvfile:
+        with open("Balance Sheet "+actual_date+".csv", "w", newline= "") as csvfile:
             #List of liabilities accounts
             liabilities_list = [
                 "Circulating Liabilities", "Providers", "Bank loans ST",
