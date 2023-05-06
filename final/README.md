@@ -19,4 +19,9 @@ I worked hard to cover as many wrong answers as I could, but because I made this
     - Watch list of accounting items(answer): Depending on answer(yes/no), this prints the list of items of the three big parts of the balance sheet: assets, liabilities and equity. It recognizes wrong answers and gives the option to the user to search again or just to skip.
     - New_or_current_balance(balance_sheet, account_1, account_2, amount): This makes all the adding and substracting with a given dictionary and gives the option to the user to see the balance sheet after changes were made.
     - add_or_substract(data, amount, account_1, account_2): This makes all the addition and substraction given a dictionary, the accounts and the amount. Print error messages for inexisting accounts.
-    - operation(dictionary, key, id, amount): Taking the dictionary, key, id and amount, this function checks with the amount, key and id given if the amount is less than zero
+    - operation(dictionary, key, id, amount): Taking the dictionary, key, id and amount, this function checks if the amount is less than zero for accounts different from Accumulated amortization and depretiation.
+    - actualization_date(answer): Given a yes/no answer, if answer == yes, returns the actual date in yyyy-mm-dd format.
+    - add_money_format(number): Takes an int and returns as a string with "$" symbol on the side.
+    - quit_money_format(number): Takes an str made of a "$" symbol and a number to the right and returns that number as an int.
+    - totals(dictionay): Makes the addition of the subtotals and totals accounts and checks if Assets = Equity + Liabilities is correct.
+    - totals_2(lista, inicial, final, account): Takes a list, its first and final index and the account name(can be "assets" or "liabilities and equity")
