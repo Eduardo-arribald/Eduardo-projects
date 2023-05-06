@@ -38,3 +38,5 @@ def test_quit_money_format():
     assert quit_money_format("$ 99") == 99
     assert quit_money_format("$ 51204") == 51204
     assert quit_money_format("$ ")
+    with pytest.raises(ValueError):
+        quit_money_format("$ asdad")
