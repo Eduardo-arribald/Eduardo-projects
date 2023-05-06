@@ -27,8 +27,11 @@ def test_search_for_index():
     assert search_for_index(balance_sheet, "Machinery") == "Assets", 11
 
 
-def test_function_2():
-    ...
+def test_add_money_format():
+    assert add_money_format(40) == "$ 40"
+    assert add_money_format(12442) == "$ 12442"
+    assert add_money_format(9302) == "$ 9302"
+
 
 
 def test_function_n():
