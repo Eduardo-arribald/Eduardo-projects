@@ -34,5 +34,7 @@ def test_add_money_format():
 
 
 
-def test_function_n():
-    ...
+def test_quit_money_format():
+    assert quit_money_format("$ 99") == 99
+    assert quit_money_format("$ 51204") == 51204
+    assert quit_money_format("$ ")
