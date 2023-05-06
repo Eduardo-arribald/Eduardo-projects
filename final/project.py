@@ -28,12 +28,6 @@ from tabulate import tabulate
 
 
 def main():
-    # Hi, this is an Enterpreneur Simple Administration Program, or ESAP.
-    # You can enter information about your company to get a simple administrative
-    # visualizer of your Balance Sheet and your Income statement that will be returned in
-    # a excel file if prefered, and you can manage dates and amounts entered to get the
-    # financial control of your company.
-
     #Question 0: Are we working with a new file? (yes/no)
     new_file = input("Are we working with a new file?(yes/no) ").lower()
     #new_file = "no"
