@@ -24,4 +24,8 @@ I worked hard to cover as many wrong answers as I could, but because I made this
     - add_money_format(number): Takes an int and returns as a string with "$" symbol on the side.
     - quit_money_format(number): Takes an str made of a "$" symbol and a number to the right and returns that number as an int.
     - totals(dictionay): Makes the addition of the subtotals and totals accounts and checks if Assets = Equity + Liabilities is correct.
-    - totals_2(lista, inicial, final, account): Takes a list, its first and final index and the account name(can be "assets" or "liabilities and equity")
+    - totals_2(lista, inicial, final, account): Takes a list, its first and final index and the account name(can be "assets" or "liabilities and equity"), and makes the sum of the subtotals. This lists(lista) are the subtotals of the balance sheet.
+
+- Final comments
+
+I would like to say that some fun and hard time working with this project because of it's incremental difficulty when I firts started it, and I hope that somebody finds it useful one day.
