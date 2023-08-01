@@ -1,4 +1,4 @@
-# Entrepreneur Balance Sheet Program
+# Balance Sheet Program
 
 #### Description:
 
