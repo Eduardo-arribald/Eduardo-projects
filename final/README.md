@@ -1,5 +1,5 @@
 # Entrepreneur Balance Sheet Program
-#### Video Demo:  <https://youtu.be/ejMRtzXsD3A>
+
 #### Description:
 
 This is an Enterpreneur Balance Sheet Program, or EBSP. You can enter information about your company to get a simple administrative visualizer of your Balance Sheet that will be returned in a csv file, and you can manage dates and amounts entered to get the financial control of your company. I have to say that accouting items can't be changed to keep the simplicity of the program.
@@ -14,7 +14,7 @@ Once a change is made, the program gives the option to the user to see the balan
 
 I worked hard to cover as many wrong answers as I could, but because I made this project in five days, I am mostly sure that not all user mistakes are covered. Despite this, the most basic errors(from my point of view) were covered like in yes/no questions and inexisting account names or file names. One user error that I wasn't sure about how to cover was a file without the format that my program creates, I have an idea of how to deal with it(wich involves "try" and "except" functions) but I just make the program to reject any error not mentioned here in old files printing "file not found".
 
-- Functionality of functions
+- Functions:
     - Checker_of_amount_inputed(): Asks the user for an amount and if not a number, displays an error message and prompt the question again to the user.
     - Watch list of accounting items(answer): Depending on answer(yes/no), this prints the list of items of the three big parts of the balance sheet: assets, liabilities and equity. It recognizes wrong answers and gives the option to the user to search again or just to skip.
     - New_or_current_balance(balance_sheet, account_1, account_2, amount): This makes all the adding and substracting with a given dictionary and gives the option to the user to see the balance sheet after changes were made.
